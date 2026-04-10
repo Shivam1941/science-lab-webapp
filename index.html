@@ -4,9 +4,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Science Digital Laboratory</title>
+  <title>Science Digital Lab — Interactive Virtual Experiments</title>
   <meta name="description"
-    content="Interactive Physics, Chemistry & Biology virtual lab experiments. Simulate Ohm's Law, Pendulum, pH Scale, Cell Structure and more." />
+    content="Interactive Physics, Chemistry & Biology virtual lab experiments. Simulate Ohm's Law, Pendulum, pH Scale, Cell Structure and more. Built for CBSE students." />
+  <meta name="keywords" content="virtual lab, science experiments, physics, chemistry, biology, CBSE, interactive simulations" />
+  <meta property="og:title" content="Science Digital Lab" />
+  <meta property="og:description" content="34 interactive CBSE science experiments — Physics, Chemistry & Biology — in your browser." />
+  <meta property="og:type" content="website" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -19,11 +23,52 @@
 
 <body>
 
+  <!-- ═══════════════════════════════════════════════
+       LANDING HERO — Full-viewport welcome screen
+       ═══════════════════════════════════════════════ -->
+  <section class="landing-hero" id="landing-hero">
+    <div class="landing-hero-bg">
+      <div class="landing-orb landing-orb-1"></div>
+      <div class="landing-orb landing-orb-2"></div>
+      <div class="landing-orb landing-orb-3"></div>
+      <div class="landing-grid-overlay"></div>
+    </div>
+    <div class="landing-hero-content">
+      <div class="landing-badge">🔬 Virtual Science Lab · CBSE Curriculum</div>
+      <h1 class="landing-title">
+        Science Digital<br>
+        <span class="landing-gradient">Laboratory</span>
+      </h1>
+      <p class="landing-desc">
+        Explore 34 interactive experiments across Physics, Chemistry &amp; Biology.
+        Real-time simulations, detailed observations, and viva assessments — all in your browser.
+      </p>
+      <div class="landing-cta-group">
+        <button class="landing-cta-btn" id="landing-cta" onclick="scrollToApp()">
+          Start Exploring
+          <span class="landing-cta-arrow">→</span>
+        </button>
+        <div class="landing-cta-sub">Free · No signup required · Works offline</div>
+      </div>
+      <div class="landing-pills">
+        <span class="landing-pill">⚡ Physics</span>
+        <span class="landing-pill">🧪 Chemistry</span>
+        <span class="landing-pill">🌿 Biology</span>
+        <span class="landing-pill">📊 34 Experiments</span>
+        <span class="landing-pill">🌐 7 Languages</span>
+      </div>
+    </div>
+    <div class="landing-scroll-hint" id="scroll-hint">
+      <span>Scroll to explore</span>
+      <div class="landing-scroll-arrow">↓</div>
+    </div>
+  </section>
+
   <!-- NAVBAR -->
   <nav class="navbar" id="navbar">
     <div class="navbar-inner">
       <div class="nav-brand" id="nav-brand" onclick="navigateTo('dashboard')">
-        <div class="nav-logo">⚗️</div>
+        <div class="nav-logo">🔬</div>
         <div class="nav-title-group">
           <span class="nav-title" id="nav-title">Digital Lab</span>
           <span class="nav-subtitle" id="nav-subtitle">Science Experiments</span>
@@ -157,8 +202,8 @@
         </div>
       </div>
 
-      <div class="stats-bar">
-        <div class="stat-item"><span class="stat-num">19</span><span class="stat-label">Experiments</span></div>
+      <div class="stats-bar glass-card">
+        <div class="stat-item"><span class="stat-num">34</span><span class="stat-label">Experiments</span></div>
         <div class="stat-divider"></div>
         <div class="stat-item"><span class="stat-num">3</span><span class="stat-label">Subjects</span></div>
         <div class="stat-divider"></div>
@@ -269,6 +314,47 @@
   <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
   <script src="experiments/biology/heart_3d.js"></script>
+
+  <!-- Landing hero scroll logic -->
+  <script>
+    function scrollToApp() {
+      var appRoot = document.getElementById('app-root');
+      if (appRoot) {
+        appRoot.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+    // Hide scroll hint on scroll
+    (function () {
+      var hint = document.getElementById('scroll-hint');
+      var hero = document.getElementById('landing-hero');
+      if (!hint || !hero) return;
+      window.addEventListener('scroll', function () {
+        if (window.scrollY > 100) {
+          hint.style.opacity = '0';
+        } else {
+          hint.style.opacity = '1';
+        }
+      }, { passive: true });
+    })();
+  </script>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo">🔬</span>
+        <span class="footer-name">Science Digital Lab</span>
+      </div>
+      <p class="footer-copy">Interactive virtual experiments for CBSE students · Built with ❤️</p>
+      <div class="footer-links">
+        <span class="footer-link-item">Physics</span>
+        <span class="footer-sep">·</span>
+        <span class="footer-link-item">Chemistry</span>
+        <span class="footer-sep">·</span>
+        <span class="footer-link-item">Biology</span>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
