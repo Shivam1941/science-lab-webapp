@@ -7,9 +7,11 @@
   <title>Science Digital Lab — Interactive Virtual Experiments</title>
   <meta name="description"
     content="Interactive Physics, Chemistry & Biology virtual lab experiments. Simulate Ohm's Law, Pendulum, pH Scale, Cell Structure and more. Built for CBSE students." />
-  <meta name="keywords" content="virtual lab, science experiments, physics, chemistry, biology, CBSE, interactive simulations" />
+  <meta name="keywords"
+    content="virtual lab, science experiments, physics, chemistry, biology, CBSE, interactive simulations" />
   <meta property="og:title" content="Science Digital Lab" />
-  <meta property="og:description" content="34 interactive CBSE science experiments — Physics, Chemistry & Biology — in your browser." />
+  <meta property="og:description"
+    content="34 interactive CBSE science experiments — Physics, Chemistry & Biology — in your browser." />
   <meta property="og:type" content="website" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,7 +24,7 @@
 </head>
 
 <body>
-
+  <!-- deploy trigger -->
   <!-- ═══════════════════════════════════════════════
        LANDING HERO — Full-viewport welcome screen
        ═══════════════════════════════════════════════ -->
@@ -327,11 +329,11 @@
     function scrollToApp() {
       var hero = document.getElementById('landing-hero');
       var appRoot = document.getElementById('app-root');
-      
+
       if (hero && !hero.classList.contains('landing-hero-hidden') && !hero.classList.contains('landing-hero-dismissed')) {
         sessionStorage.setItem('lab_hero_dismissed', 'true');
         hero.classList.add('landing-hero-dismissed');
-        setTimeout(function() {
+        setTimeout(function () {
           hero.classList.add('landing-hero-hidden');
           window.scrollTo({ top: 0, behavior: 'smooth' });
         }, 500); // Wait for CSS transition
@@ -339,7 +341,7 @@
         appRoot.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
     }
-    
+
     // Hide scroll hint on scroll, and dismiss hero if scrolled past
     (function () {
       var hint = document.getElementById('scroll-hint');
@@ -352,7 +354,7 @@
           if (!sessionStorage.getItem('lab_hero_dismissed') && window.scrollY > (window.innerHeight * 0.4)) {
             sessionStorage.setItem('lab_hero_dismissed', 'true');
             hero.classList.add('landing-hero-dismissed');
-            setTimeout(function() {
+            setTimeout(function () {
               hero.classList.add('landing-hero-hidden');
               window.scrollTo({ top: 0 }); // Snap to top of dashboard after dismissal
             }, 500);
