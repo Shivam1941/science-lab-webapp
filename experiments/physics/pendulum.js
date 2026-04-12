@@ -17,6 +17,7 @@
     let angle = 30;      // degrees initial
     let damping = 0.999;
     let theta, omega, running = true;
+    let simSpeed = 1.0;
     let animFrame = null;
     let canvas, ctx;
     let trail = [];
@@ -53,6 +54,15 @@
             <div class="sim-btn-group" style="margin-top:12px;">
               <button class="sim-btn btn-primary" id="pend-reset">↺ Reset</button>
               <button class="sim-btn" id="pend-toggle">${running ? '⏸ Pause' : '▶ Play'}</button>
+            </div>
+            <div style="margin-top:16px;">
+              <span class="sim-control-label" style="display:block;margin-bottom:8px;font-size:11px;">Simulation Speed</span>
+              <div class="sim-btn-group" id="pend-speed-btns">
+                <button class="sim-btn speed-btn" data-speed="0.25" style="padding:4px 8px;font-size:12px;">0.25x</button>
+                <button class="sim-btn speed-btn" data-speed="0.5" style="padding:4px 8px;font-size:12px;">0.5x</button>
+                <button class="sim-btn speed-btn" data-speed="0.75" style="padding:4px 8px;font-size:12px;">0.75x</button>
+                <button class="sim-btn speed-btn" data-speed="1.0" style="padding:4px 8px;font-size:12px;background:rgba(59,130,246,0.2);color:#60a5fa;border-color:rgba(59,130,246,0.4);">1x</button>
+              </div>
             </div>
           </div>
           <div class="sim-results">
@@ -113,6 +123,21 @@
       document.getElementById('pend-toggle').textContent = running ? '⏸ Pause' : '▶ Play';
     });
 
+    const speedBtns = document.querySelectorAll('#pend-speed-btns .speed-btn');
+    speedBtns.forEach(btn => {
+      btn.addEventListener('click', e => {
+        simSpeed = parseFloat(e.target.dataset.speed);
+        speedBtns.forEach(b => {
+          b.style.background = '';
+          b.style.color = '';
+          b.style.borderColor = '';
+        });
+        e.target.style.background = 'rgba(59,130,246,0.2)';
+        e.target.style.color = '#60a5fa';
+        e.target.style.borderColor = 'rgba(59,130,246,0.4)';
+      });
+    });
+
     function draw() {
       const w = canvas.width, h = canvas.height;
       const now = performance.now();
@@ -122,9 +147,9 @@
       // Physics update
       if (running) {
         const alpha = -(gravity / (length * 100)) * Math.sin(theta);
-        omega += alpha;
-        omega *= damping;
-        theta += omega;
+        omega += alpha * simSpeed;
+        omega *= Math.pow(damping, simSpeed);
+        theta += omega * simSpeed;
       }
 
       ctx.clearRect(0, 0, w, h);

@@ -317,13 +317,30 @@
 
   <!-- Landing hero scroll logic -->
   <script>
+    (function () {
+      var hero = document.getElementById('landing-hero');
+      if (hero && sessionStorage.getItem('lab_hero_dismissed') === 'true') {
+        hero.classList.add('landing-hero-hidden');
+      }
+    })();
+
     function scrollToApp() {
+      var hero = document.getElementById('landing-hero');
       var appRoot = document.getElementById('app-root');
-      if (appRoot) {
+      
+      if (hero && !hero.classList.contains('landing-hero-hidden') && !hero.classList.contains('landing-hero-dismissed')) {
+        sessionStorage.setItem('lab_hero_dismissed', 'true');
+        hero.classList.add('landing-hero-dismissed');
+        setTimeout(function() {
+          hero.classList.add('landing-hero-hidden');
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }, 500); // Wait for CSS transition
+      } else if (appRoot) {
         appRoot.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
     }
-    // Hide scroll hint on scroll
+    
+    // Hide scroll hint on scroll, and dismiss hero if scrolled past
     (function () {
       var hint = document.getElementById('scroll-hint');
       var hero = document.getElementById('landing-hero');
@@ -331,6 +348,15 @@
       window.addEventListener('scroll', function () {
         if (window.scrollY > 100) {
           hint.style.opacity = '0';
+          // Auto-dismiss if scrolled more than half the hero height and not yet dismissed
+          if (!sessionStorage.getItem('lab_hero_dismissed') && window.scrollY > (window.innerHeight * 0.4)) {
+            sessionStorage.setItem('lab_hero_dismissed', 'true');
+            hero.classList.add('landing-hero-dismissed');
+            setTimeout(function() {
+              hero.classList.add('landing-hero-hidden');
+              window.scrollTo({ top: 0 }); // Snap to top of dashboard after dismissal
+            }, 500);
+          }
         } else {
           hint.style.opacity = '1';
         }

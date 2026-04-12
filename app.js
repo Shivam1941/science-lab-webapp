@@ -466,6 +466,13 @@ let activeSimCleanup = null;
 
 // ── Navigation ───────────────────────────────────────────────
 function navigateTo(view, id) {
+  // Dismiss landing hero if it's still present when navigating
+  const hero = document.getElementById('landing-hero');
+  if (hero && !hero.classList.contains('landing-hero-hidden') && !sessionStorage.getItem('lab_hero_dismissed')) {
+    sessionStorage.setItem('lab_hero_dismissed', 'true');
+    hero.classList.add('landing-hero-hidden');
+  }
+
   // Cleanup previous sim
   if (activeSimCleanup) {
     activeSimCleanup();
