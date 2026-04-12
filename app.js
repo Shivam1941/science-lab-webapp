@@ -465,10 +465,10 @@ let currentExperiment = null;
 let activeSimCleanup = null;
 
 // ── Navigation ───────────────────────────────────────────────
-function navigateTo(view, id) {
+function navigateTo(view, id, isInit = false) {
   // Dismiss landing hero if it's still present when navigating
   const hero = document.getElementById('landing-hero');
-  if (hero && !hero.classList.contains('landing-hero-hidden') && !sessionStorage.getItem('lab_hero_dismissed')) {
+  if (!isInit && hero && !hero.classList.contains('landing-hero-hidden')) {
     sessionStorage.setItem('lab_hero_dismissed', 'true');
     hero.classList.add('landing-hero-hidden');
   }
@@ -789,7 +789,7 @@ window.experimentRenderers = window.experimentRenderers || {};
 document.addEventListener('DOMContentLoaded', () => {
   // Init language picker (i18n.js must be loaded before app.js)
   if (typeof initLangPicker === 'function') initLangPicker();
-  navigateTo('dashboard');
+  navigateTo('dashboard', null, true);
   // Apply dashboard translations after render
   if (typeof renderDashboard === 'function') renderDashboard();
 });
