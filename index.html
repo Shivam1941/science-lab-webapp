@@ -5,10 +5,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- ADDED: Updated SEO Title -->
-  <title>Virtual Science Lab for Schools | SchoolUp Lab</title>
+  <title>Virtual Science Lab for CBSE Students | Online Experiments</title>
   <!-- ADDED: Updated Meta Description -->
   <meta name="description"
-    content="Perform physics, chemistry and biology experiments online. A virtual science lab designed for schools and students." />
+    content="Perform physics, chemistry, and biology experiments online. Virtual science lab for CBSE students and schools with interactive simulations." />
   <meta name="keywords"
     content="virtual lab, science experiments, physics, chemistry, biology, CBSE, interactive simulations" />
   <meta property="og:title" content="Science Digital Lab" />
@@ -147,7 +147,7 @@
       <div class="section-label" id="section-label-subjects">Choose Your Subject</div>
 
       <div class="subject-grid" id="subject-grid">
-        <div class="subject-card subject-physics" onclick="navigateTo('subject','physics')">
+        <div class="subject-card subject-physics" id="physics" onclick="navigateTo('subject','physics')">
           <div class="subject-card-glow"></div>
           <div class="subject-icon-wrap">
             <div class="subject-icon">⚡</div>
@@ -167,7 +167,7 @@
           </div>
         </div>
 
-        <div class="subject-card subject-chemistry" onclick="navigateTo('subject','chemistry')">
+        <div class="subject-card subject-chemistry" id="chemistry" onclick="navigateTo('subject','chemistry')">
           <div class="subject-card-glow"></div>
           <div class="subject-icon-wrap">
             <div class="subject-icon">🧪</div>
@@ -186,7 +186,7 @@
           </div>
         </div>
 
-        <div class="subject-card subject-biology" onclick="navigateTo('subject','biology')">
+        <div class="subject-card subject-biology" id="biology" onclick="navigateTo('subject','biology')">
           <div class="subject-card-glow"></div>
           <div class="subject-icon-wrap">
             <div class="subject-icon">🌿</div>
@@ -373,8 +373,28 @@
     <h2 style="font-family: 'Space Grotesk', sans-serif; font-size: 24px; font-weight: 700; color: var(--text-primary); margin-bottom: 16px;">
       Online Science Lab Experiments for Students
     </h2>
+    <p style="font-size: 16px; color: var(--text-secondary); line-height: 1.6; margin-bottom: 40px;">
+      This virtual science lab provides interactive physics, chemistry, and biology experiments aligned with the CBSE curriculum.
+      Students can perform simulations such as Ohm’s Law, pendulum experiments, pH testing, and cell structure analysis directly in their browser.
+      It is designed for schools, teachers, and students who need a digital alternative to physical laboratories.
+    </p>
+
+    <!-- ADDED: Internal Navigation Links -->
+    <h3 style="font-family: 'Space Grotesk', sans-serif; font-size: 20px; font-weight: 600; color: var(--text-primary); margin-bottom: 20px;">
+      Explore Experiments by Subject
+    </h3>
+    <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-bottom: 48px;">
+      <a href="#physics" style="display: inline-block; padding: 12px 24px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; color: var(--text-primary); text-decoration: none; font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 600; transition: background 0.2s;" onmouseover="this.style.background='rgba(255,255,255,0.1)'" onmouseout="this.style.background='rgba(255,255,255,0.05)'" onclick="navigateTo('subject','physics'); window.scrollTo(0, 0); event.preventDefault();">⚡ Physics Experiments</a>
+      <a href="#chemistry" style="display: inline-block; padding: 12px 24px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; color: var(--text-primary); text-decoration: none; font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 600; transition: background 0.2s;" onmouseover="this.style.background='rgba(255,255,255,0.1)'" onmouseout="this.style.background='rgba(255,255,255,0.05)'" onclick="navigateTo('subject','chemistry'); window.scrollTo(0, 0); event.preventDefault();">🧪 Chemistry Experiments</a>
+      <a href="#biology" style="display: inline-block; padding: 12px 24px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; color: var(--text-primary); text-decoration: none; font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 600; transition: background 0.2s;" onmouseover="this.style.background='rgba(255,255,255,0.1)'" onmouseout="this.style.background='rgba(255,255,255,0.05)'" onclick="navigateTo('subject','biology'); window.scrollTo(0, 0); event.preventDefault();">🌿 Biology Experiments</a>
+    </div>
+
+    <!-- ADDED: Basic Structured Content for SEO Boost -->
+    <h2 style="font-family: 'Space Grotesk', sans-serif; font-size: 24px; font-weight: 700; color: var(--text-primary); margin-bottom: 16px;">
+      Virtual Science Lab for Schools
+    </h2>
     <p style="font-size: 16px; color: var(--text-secondary); line-height: 1.6;">
-      This virtual lab allows students to perform physics, chemistry, and biology experiments online. It is designed for schools that may not have access to physical lab infrastructure.
+      Our platform empowers schools and educational institutions by overcoming the limitations of physical lab infrastructure. It comprehensively supports the CBSE curriculum, offering highly interactive simulations that allow students to practice and master scientific concepts from anywhere.
     </p>
   </section>
 
