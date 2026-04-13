@@ -177,7 +177,7 @@
 
             <div style="margin-top:auto; display:flex; gap:8px;">
               <button class="sim-btn" style="flex:1;font-size:12px;" onclick="window._vcReset()">↺ Reset</button>
-              <button class="sim-btn sim-btn-primary" style="flex:1;font-size:12px;" onclick="window.VIVA_SYSTEM.open(VIVA)">🎓 Viva</button>
+              <button class="sim-btn sim-btn-primary" style="flex:1;font-size:12px;" onclick="window.VIVA_SYSTEM.open(${JSON.stringify(VIVA_QUESTIONS).replace(/&/g, '&amp;').replace(/\"/g, '&quot;')})">🎓 Viva</button>
             </div>
           </div>
         </div>

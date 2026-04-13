@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Viva & Assessments | Virtual Science Lab</title>
+  <meta name="description" content="Interactive viva questions and assessments for CBSE science experiments." />
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+</head>
+<body>
+  <div id="navbar-container"></div>
+  <main class="main-container" id="app-root">
+    <section class="seo-viva" style="padding: 60px 20px; max-width: 800px; margin: 0 auto; min-height:80vh;">
+      <h1 style="font-family:'Space Grotesk', sans-serif; font-size:42px; margin-bottom:24px; text-align:center;">Viva Assessments</h1>
+      <div class="glass-card" style="padding:40px; margin-bottom:40px; text-align:center;">
+        <h2 style="font-size:24px; margin-bottom:16px;">Test Your Knowledge</h2>
+        <p style="color:var(--text-secondary); line-height:1.6; font-size:16px; margin-bottom:24px;">
+          Viva questions test your theoretical understanding and practical observations. Choose an experiment to begin its dedicated Viva session.
+        </p>
+        <a href="/experiments.html" style="display:inline-block; padding:12px 24px; background:var(--chemistry-bg); color:var(--chemistry-primary); border-radius:8px; text-decoration:none; font-weight:bold;">Browse Experiments to Start Viva</a>
+      </div>
+      
+      <!-- Fallback container for viva_system.js to mount dynamically if needed -->
+      <div id="quiz-container" style="display:none;"></div>
+    </section>
+  </main>
+  
+  <script src="/assets/js/navbar.js"></script>
+  <script src="/assets/js/viva_system.js"></script>
+  <script src="/assets/js/app.js"></script>
+</body>
+</html>

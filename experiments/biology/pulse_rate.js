@@ -159,7 +159,7 @@
           
           <div style="display: flex; gap: 10px;">
              <button class="sim-btn" style="flex: 1;" onclick="window._resetPulseExp()">↺ Reset</button>
-             <button class="sim-btn sim-btn-primary" style="flex: 1;" onclick="window.VIVA_SYSTEM.open(VIVA_QUESTIONS)">🎓 Viva</button>
+             <button class="sim-btn sim-btn-primary" style="flex: 1;" onclick="window.VIVA_SYSTEM.open(${JSON.stringify(VIVA_QUESTIONS).replace(/&/g, '&amp;').replace(/\"/g, '&quot;')})">🎓 Viva</button>
           </div>
           
         </div>

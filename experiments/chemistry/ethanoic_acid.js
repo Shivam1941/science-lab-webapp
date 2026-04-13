@@ -31,7 +31,7 @@
             <button class="sim-btn btn-primary" style="margin-top:8px;width:100%;" onclick="window._runEthaTest()">🧪 Run Test</button>
           </div>
           <div class="sim-results">
-<button class="sim-btn sim-btn-primary" style="margin-top:10px; width: 100%;" onclick="window.VIVA_SYSTEM.open(VIVA_QUESTIONS)">🎓 Start Viva</button>
+<button class="sim-btn sim-btn-primary" style="margin-top:10px; width: 100%;" onclick="window.VIVA_SYSTEM.open(${JSON.stringify(VIVA_QUESTIONS).replace(/&/g, '&amp;').replace(/\"/g, '&quot;')})">🎓 Start Viva</button>
 
             <div class="sim-results-title"><span class="ctrl-icon">📊</span> Result</div>
             <div class="sim-result-row"><span class="sim-result-label">Test</span><span class="sim-result-value" id="etha-test-name" style="color:#0ea5e9;font-size:13px;">${tests[0].name}</span></div>

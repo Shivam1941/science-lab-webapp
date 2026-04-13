@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plant Cell Explorer | Virtual Science Lab</title>
+  <meta name="description" content="Examine the structure of a plant cell with interactive labelled diagrams." />
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+</head>
+<body data-exp-id="plant_cell_explorer">
+  <div id="navbar-container"></div>
+  <main class="main-container" id="app-root">
+    
+      <section class="seo-experiment" style="padding: 40px 20px; max-width: 1000px; margin: 0 auto;">
+        
+        <!-- SEO Semantic Content -->
+        <article style="display:none;">
+          <h1>Plant Cell Explorer</h1>
+          <h2>Theory</h2>
+          <p>To prepare a temporary mount of an onion peel and observe plant cell structure under a microscope.</p>
+          <h2>Procedure</h2>
+          <ul><li>Peel a thin layer from the inner surface of an onion scale.</li><li>Place the peel on a clean glass slide.</li><li>Add a drop of safranin stain and wait 2 minutes.</li><li>Place a cover slip gently, avoiding air bubbles.</li><li>Observe under low power (10x) then high power (40x).</li><li>Identify cell wall, cell membrane, nucleus, and vacuole.</li></ul>
+          <h2>Apparatus</h2>
+          <ul><li>Microscope</li><li>Onion</li><li>Glass slides and cover slips</li><li>Forceps and needle</li><li>Safranin stain</li><li>Dropper and blotting paper</li><li>Watch glass</li></ul>
+          <h2>Viva Questions</h2>
+          <p>Interactive viva questions embedded within simulation.</p>
+        </article>
+
+        
+    <!-- EXPERIMENT VIEW (Required by app.js) -->
+    <section class="view" id="view-experiment" style="margin-top: 40px; padding: 20px;">
+      <div class="exp-topbar">
+        <button class="back-btn" id="exp-back-btn">
+          <span class="back-arrow">←</span> Back
+        </button>
+        <div class="exp-title-wrap">
+          <span class="exp-subject-badge" id="exp-subject-badge"></span>
+          <h2 class="exp-title" id="exp-title"></h2>
+        </div>
+      </div>
+      <div class="lab-record glass-card" id="lab-record">
+        <button class="lab-record-toggle" id="lab-record-toggle" onclick="toggleLabRecord()">
+          <span>📋 Lab Record</span>
+          <span class="toggle-icon" id="toggle-icon">▼</span>
+        </button>
+        <div class="lab-record-body" id="lab-record-body">
+          <div class="lab-record-grid" id="lab-record-grid"></div>
+        </div>
+      </div>
+      <div class="sim-area" id="sim-area"></div>
+    </section>
+
+
+      </section>
+    
+  </main>
+  
+  <script src="/assets/js/navbar.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="/assets/js/gamification.js"></script>
+  <script src="/assets/js/i18n.js"></script>
+  <script src="/assets/js/i18n_experiments_hi.js"></script>
+  <script src="/assets/js/i18n_experiments_ta.js"></script>
+  <script src="/assets/js/i18n_experiments_te.js"></script>
+  <script src="/assets/js/i18n_experiments_kn.js"></script>
+  <script src="/assets/js/i18n_experiments_bn.js"></script>
+  <script src="/assets/js/i18n_experiments_mr.js"></script>
+  <script src="/assets/js/viva_system.js"></script>
+  <script src="/assets/js/app.js"></script>
+  
+  <!-- All experiments attached so simulation logic is available -->
+  <script src="/experiments/physics/ohms_law.js"></script>
+  <script src="/experiments/physics/simple_pendulum.js"></script>
+  <script src="/experiments/physics/reflection_of_light.js"></script>
+  <script src="/experiments/physics/lens_formation.js"></script>
+  <script src="/experiments/physics/motion_simulator.js"></script>
+  <script src="/experiments/physics/refraction_dispersion_prism.js"></script>
+  <script src="/experiments/physics/virtual_breadboard.js"></script>
+  <script src="/experiments/physics/lateral_displacement_refraction.js"></script>
+  <script src="/experiments/physics/buoyancy_density_lab.js"></script>
+  <script src="/experiments/physics/pulse_velocity_experiment.js"></script>
+  <script src="/experiments/physics/sound_reflection_workstation.js"></script>
+  <script src="/experiments/physics/magnetic_field_sim.js"></script>
+  <script src="/experiments/physics/heat_transfer_sim.js"></script>
+  <script src="/experiments/physics/energy_conservation.js"></script>
+  <script src="/experiments/physics/vernier_caliper.js"></script>
+  <script src="/experiments/chemistry/ph_scale.js"></script>
+  <script src="/experiments/chemistry/sublimation_ammonium_chloride.js"></script>
+  <script src="/experiments/chemistry/reaction_lab.js"></script>
+  <script src="/experiments/chemistry/solutions_colloids_suspensions.js"></script>
+  <script src="/experiments/chemistry/chemical_reactivity_workstation.js"></script>
+  <script src="/experiments/chemistry/metal_reactivity_matrix.js"></script>
+  <script src="/experiments/chemistry/ethanoic_acid_properties.js"></script>
+  <script src="/experiments/chemistry/soap_capacity_hard_water.js"></script>
+  <script src="/experiments/biology/plant_cell_explorer.js"></script>
+  <script src="/experiments/biology/cell_structure.js"></script>
+  <script src="/experiments/biology/microscopic_stomata.js"></script>
+  <script src="/experiments/biology/respiration_lab.js"></script>
+  <script src="/experiments/biology/asexual_reproduction.js"></script>
+  <script src="/experiments/biology/virtual_seed_dissection.js"></script>
+  <script src="/experiments/biology/photosynthesis_starch_test.js"></script>
+  <script src="/experiments/biology/water_transport_xylem.js"></script>
+  <script src="/experiments/biology/bread_mold_fungus.js"></script>
+  <script src="/experiments/biology/pulse_rate_experiment.js"></script>
+  <script src="/experiments/biology/heart_3d_explorer.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+  <script src="/experiments/biology/heart_3d.js"></script>
+</body>
+</html>

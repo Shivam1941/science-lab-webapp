@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chemistry Experiments | Virtual Science Lab</title>
+  <meta name="description" content="Interactive chemistry virtual lab experiments." />
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+</head>
+<body >
+  <div id="navbar-container"></div>
+  <main class="main-container" id="app-root">
+    <div id="view-subject" style="display:none;"></div>
+    <section class="seo-subject" style="padding: 40px 20px; max-width: 850px; margin: 0 auto; min-height:80vh;">
+      <button onclick="window.location.href='/index.html'" style="background:transparent; border:none; color:var(--text-secondary); cursor:pointer; font-family:'Inter', sans-serif; font-size:14px; margin-bottom:20px;">
+        <span style="margin-right:8px;">←</span> Back to Dashboard
+      </button>
+      <h1 style="font-family:'Space Grotesk', sans-serif; text-transform:capitalize; font-size:36px; margin-bottom:10px;">chemistry Experiments</h1>
+      <p style="color:var(--text-secondary); margin-bottom:40px; font-size:16px;">Explore all <strong>8</strong> interactive chemistry experiments for CBSE curriculum.</p>
+      
+    <a href="/experiments/chemistry/ph_scale.html" style="display:block; text-decoration:none; color:inherit; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.1); padding:20px; border-radius:12px; margin-bottom:16px; cursor:pointer;" onmouseover="this.style.background='rgba(255,255,255,0.07)'" onmouseout="this.style.background='rgba(255,255,255,0.03)'">
+      <div style="font-size:32px; display:inline-block; vertical-align:middle; margin-right:16px; background:rgba(6, 182, 212, 0.15); padding:10px; border-radius:8px;">🧫</div>
+      <div style="display:inline-block; vertical-align:middle;">
+        <h2 style="margin:0; font-family:'Space Grotesk', sans-serif; font-size:20px; color:var(--chemistry-primary, var(--text-primary));">pH Scale & Indicators</h2>
+        <p style="margin:4px 0 0; color:var(--text-secondary); font-size:14px;">Measure pH of various solutions using a digital pH meter and indicator colours.</p>
+      </div>
+    </a>
+  
+    <a href="/experiments/chemistry/sublimation_ammonium_chloride.html" style="display:block; text-decoration:none; color:inherit; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.1); padding:20px; border-radius:12px; margin-bottom:16px; cursor:pointer;" onmouseover="this.style.background='rgba(255,255,255,0.07)'" onmouseout="this.style.background='rgba(255,255,255,0.03)'">
+      <div style="font-size:32px; display:inline-block; vertical-align:middle; margin-right:16px; background:rgba(139, 92, 246, 0.15); padding:10px; border-radius:8px;">🔥</div>
+      <div style="display:inline-block; vertical-align:middle;">
+        <h2 style="margin:0; font-family:'Space Grotesk', sans-serif; font-size:20px; color:var(--chemistry-primary, var(--text-primary));">Sublimation of NH₄Cl</h2>
+        <p style="margin:4px 0 0; color:var(--text-secondary); font-size:14px;">Separate ammonium chloride from sand by sublimation with animated vapor simulation.</p>
+      </div>
+    </a>
+  
+    <a href="/experiments/chemistry/reaction_lab.html" style="display:block; text-decoration:none; color:inherit; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.1); padding:20px; border-radius:12px; margin-bottom:16px; cursor:pointer;" onmouseover="this.style.background='rgba(255,255,255,0.07)'" onmouseout="this.style.background='rgba(255,255,255,0.03)'">
+      <div style="font-size:32px; display:inline-block; vertical-align:middle; margin-right:16px; background:rgba(14, 165, 233, 0.15); padding:10px; border-radius:8px;">⚗️</div>
+      <div style="display:inline-block; vertical-align:middle;">
+        <h2 style="margin:0; font-family:'Space Grotesk', sans-serif; font-size:20px; color:var(--chemistry-primary, var(--text-primary));">Chemical Reactions Lab</h2>
+        <p style="margin:4px 0 0; color:var(--text-secondary); font-size:14px;">Observe different types of chemical reactions: combination, decomposition, displacement.</p>
+      </div>
+    </a>
+  
+    <a href="/experiments/chemistry/solutions_colloids_suspensions.html" style="display:block; text-decoration:none; color:inherit; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.1); padding:20px; border-radius:12px; margin-bottom:16px; cursor:pointer;" onmouseover="this.style.background='rgba(255,255,255,0.07)'" onmouseout="this.style.background='rgba(255,255,255,0.03)'">
+      <div style="font-size:32px; display:inline-block; vertical-align:middle; margin-right:16px; background:rgba(6, 182, 212, 0.15); padding:10px; border-radius:8px;">💧</div>
+      <div style="display:inline-block; vertical-align:middle;">
+        <h2 style="margin:0; font-family:'Space Grotesk', sans-serif; font-size:20px; color:var(--chemistry-primary, var(--text-primary));">Solutions, Colloids & Suspensions</h2>
+        <p style="margin:4px 0 0; color:var(--text-secondary); font-size:14px;">Compare true solutions, colloids, and suspensions using the Tyndall effect.</p>
+      </div>
+    </a>
+  
+    <a href="/experiments/chemistry/chemical_reactivity_workstation.html" style="display:block; text-decoration:none; color:inherit; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.1); padding:20px; border-radius:12px; margin-bottom:16px; cursor:pointer;" onmouseover="this.style.background='rgba(255,255,255,0.07)'" onmouseout="this.style.background='rgba(255,255,255,0.03)'">
+      <div style="font-size:32px; display:inline-block; vertical-align:middle; margin-right:16px; background:rgba(20, 184, 166, 0.15); padding:10px; border-radius:8px;">🔬</div>
+      <div style="display:inline-block; vertical-align:middle;">
+        <h2 style="margin:0; font-family:'Space Grotesk', sans-serif; font-size:20px; color:var(--chemistry-primary, var(--text-primary));">Chemical Reactivity Workstation</h2>
+        <p style="margin:4px 0 0; color:var(--text-secondary); font-size:14px;">Test reactivity of different metals with acids, water, and salt solutions.</p>
+      </div>
+    </a>
+  
+    <a href="/experiments/chemistry/metal_reactivity_matrix.html" style="display:block; text-decoration:none; color:inherit; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.1); padding:20px; border-radius:12px; margin-bottom:16px; cursor:pointer;" onmouseover="this.style.background='rgba(255,255,255,0.07)'" onmouseout="this.style.background='rgba(255,255,255,0.03)'">
+      <div style="font-size:32px; display:inline-block; vertical-align:middle; margin-right:16px; background:rgba(15, 118, 110, 0.15); padding:10px; border-radius:8px;">📊</div>
+      <div style="display:inline-block; vertical-align:middle;">
+        <h2 style="margin:0; font-family:'Space Grotesk', sans-serif; font-size:20px; color:var(--chemistry-primary, var(--text-primary));">Metal Reactivity Matrix</h2>
+        <p style="margin:4px 0 0; color:var(--text-secondary); font-size:14px;">Compare displacement reactions between different metals and salt solutions in a matrix.</p>
+      </div>
+    </a>
+  
+    <a href="/experiments/chemistry/ethanoic_acid_properties.html" style="display:block; text-decoration:none; color:inherit; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.1); padding:20px; border-radius:12px; margin-bottom:16px; cursor:pointer;" onmouseover="this.style.background='rgba(255,255,255,0.07)'" onmouseout="this.style.background='rgba(255,255,255,0.03)'">
+      <div style="font-size:32px; display:inline-block; vertical-align:middle; margin-right:16px; background:rgba(14, 165, 233, 0.15); padding:10px; border-radius:8px;">🧪</div>
+      <div style="display:inline-block; vertical-align:middle;">
+        <h2 style="margin:0; font-family:'Space Grotesk', sans-serif; font-size:20px; color:var(--chemistry-primary, var(--text-primary));">Properties of Ethanoic Acid</h2>
+        <p style="margin:4px 0 0; color:var(--text-secondary); font-size:14px;">Study physical and chemical properties of acetic acid including esterification.</p>
+      </div>
+    </a>
+  
+    <a href="/experiments/chemistry/soap_capacity_hard_water.html" style="display:block; text-decoration:none; color:inherit; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.1); padding:20px; border-radius:12px; margin-bottom:16px; cursor:pointer;" onmouseover="this.style.background='rgba(255,255,255,0.07)'" onmouseout="this.style.background='rgba(255,255,255,0.03)'">
+      <div style="font-size:32px; display:inline-block; vertical-align:middle; margin-right:16px; background:rgba(37, 99, 235, 0.15); padding:10px; border-radius:8px;">🫧</div>
+      <div style="display:inline-block; vertical-align:middle;">
+        <h2 style="margin:0; font-family:'Space Grotesk', sans-serif; font-size:20px; color:var(--chemistry-primary, var(--text-primary));">Soap in Hard vs Soft Water</h2>
+        <p style="margin:4px 0 0; color:var(--text-secondary); font-size:14px;">Compare the cleaning capacity of soap in hard water vs soft water.</p>
+      </div>
+    </a>
+  
+    </section>
+  
+  </main>
+  
+  <script src="/assets/js/navbar.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="/assets/js/gamification.js"></script>
+  <script src="/assets/js/i18n.js"></script>
+  <script src="/assets/js/i18n_experiments_hi.js"></script>
+  <script src="/assets/js/i18n_experiments_ta.js"></script>
+  <script src="/assets/js/i18n_experiments_te.js"></script>
+  <script src="/assets/js/i18n_experiments_kn.js"></script>
+  <script src="/assets/js/i18n_experiments_bn.js"></script>
+  <script src="/assets/js/i18n_experiments_mr.js"></script>
+  <script src="/assets/js/viva_system.js"></script>
+  <script src="/assets/js/app.js"></script>
+  
+  <!-- All experiments attached so simulation logic is available -->
+  <script src="/experiments/physics/ohms_law.js"></script>
+  <script src="/experiments/physics/simple_pendulum.js"></script>
+  <script src="/experiments/physics/reflection_of_light.js"></script>
+  <script src="/experiments/physics/lens_formation.js"></script>
+  <script src="/experiments/physics/motion_simulator.js"></script>
+  <script src="/experiments/physics/refraction_dispersion_prism.js"></script>
+  <script src="/experiments/physics/virtual_breadboard.js"></script>
+  <script src="/experiments/physics/lateral_displacement_refraction.js"></script>
+  <script src="/experiments/physics/buoyancy_density_lab.js"></script>
+  <script src="/experiments/physics/pulse_velocity_experiment.js"></script>
+  <script src="/experiments/physics/sound_reflection_workstation.js"></script>
+  <script src="/experiments/physics/magnetic_field_sim.js"></script>
+  <script src="/experiments/physics/heat_transfer_sim.js"></script>
+  <script src="/experiments/physics/energy_conservation.js"></script>
+  <script src="/experiments/physics/vernier_caliper.js"></script>
+  <script src="/experiments/chemistry/ph_scale.js"></script>
+  <script src="/experiments/chemistry/sublimation_ammonium_chloride.js"></script>
+  <script src="/experiments/chemistry/reaction_lab.js"></script>
+  <script src="/experiments/chemistry/solutions_colloids_suspensions.js"></script>
+  <script src="/experiments/chemistry/chemical_reactivity_workstation.js"></script>
+  <script src="/experiments/chemistry/metal_reactivity_matrix.js"></script>
+  <script src="/experiments/chemistry/ethanoic_acid_properties.js"></script>
+  <script src="/experiments/chemistry/soap_capacity_hard_water.js"></script>
+  <script src="/experiments/biology/plant_cell_explorer.js"></script>
+  <script src="/experiments/biology/cell_structure.js"></script>
+  <script src="/experiments/biology/microscopic_stomata.js"></script>
+  <script src="/experiments/biology/respiration_lab.js"></script>
+  <script src="/experiments/biology/asexual_reproduction.js"></script>
+  <script src="/experiments/biology/virtual_seed_dissection.js"></script>
+  <script src="/experiments/biology/photosynthesis_starch_test.js"></script>
+  <script src="/experiments/biology/water_transport_xylem.js"></script>
+  <script src="/experiments/biology/bread_mold_fungus.js"></script>
+  <script src="/experiments/biology/pulse_rate_experiment.js"></script>
+  <script src="/experiments/biology/heart_3d_explorer.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+  <script src="/experiments/biology/heart_3d.js"></script>
+</body>
+</html>

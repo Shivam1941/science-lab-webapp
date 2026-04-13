@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Biology Experiments | Virtual Science Lab</title>
+  <meta name="description" content="Interactive biology virtual lab experiments." />
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+</head>
+<body >
+  <div id="navbar-container"></div>
+  <main class="main-container" id="app-root">
+    <div id="view-subject" style="display:none;"></div>
+    <section class="seo-subject" style="padding: 40px 20px; max-width: 850px; margin: 0 auto; min-height:80vh;">
+      <button onclick="window.location.href='/index.html'" style="background:transparent; border:none; color:var(--text-secondary); cursor:pointer; font-family:'Inter', sans-serif; font-size:14px; margin-bottom:20px;">
+        <span style="margin-right:8px;">←</span> Back to Dashboard
+      </button>
+      <h1 style="font-family:'Space Grotesk', sans-serif; text-transform:capitalize; font-size:36px; margin-bottom:10px;">biology Experiments</h1>
+      <p style="color:var(--text-secondary); margin-bottom:40px; font-size:16px;">Explore all <strong>11</strong> interactive biology experiments for CBSE curriculum.</p>
+      
+    <a href="/experiments/biology/plant_cell_explorer.html" style="display:block; text-decoration:none; color:inherit; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.1); padding:20px; border-radius:12px; margin-bottom:16px; cursor:pointer;" onmouseover="this.style.background='rgba(255,255,255,0.07)'" onmouseout="this.style.background='rgba(255,255,255,0.03)'">
+      <div style="font-size:32px; display:inline-block; vertical-align:middle; margin-right:16px; background:rgba(34, 197, 94, 0.15); padding:10px; border-radius:8px;">🌱</div>
+      <div style="display:inline-block; vertical-align:middle;">
+        <h2 style="margin:0; font-family:'Space Grotesk', sans-serif; font-size:20px; color:var(--biology-primary, var(--text-primary));">Plant Cell Explorer</h2>
+        <p style="margin:4px 0 0; color:var(--text-secondary); font-size:14px;">Examine the structure of a plant cell with interactive labelled diagrams.</p>
+      </div>
+    </a>
+  
+    <a href="/experiments/biology/cell_structure.html" style="display:block; text-decoration:none; color:inherit; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.1); padding:20px; border-radius:12px; margin-bottom:16px; cursor:pointer;" onmouseover="this.style.background='rgba(255,255,255,0.07)'" onmouseout="this.style.background='rgba(255,255,255,0.03)'">
+      <div style="font-size:32px; display:inline-block; vertical-align:middle; margin-right:16px; background:rgba(34, 197, 94, 0.15); padding:10px; border-radius:8px;">🔬</div>
+      <div style="display:inline-block; vertical-align:middle;">
+        <h2 style="margin:0; font-family:'Space Grotesk', sans-serif; font-size:20px; color:var(--biology-primary, var(--text-primary));">Cell Structure Explorer</h2>
+        <p style="margin:4px 0 0; color:var(--text-secondary); font-size:14px;">Explore animal and plant cell structures with interactive labelled diagrams.</p>
+      </div>
+    </a>
+  
+    <a href="/experiments/biology/microscopic_stomata.html" style="display:block; text-decoration:none; color:inherit; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.1); padding:20px; border-radius:12px; margin-bottom:16px; cursor:pointer;" onmouseover="this.style.background='rgba(255,255,255,0.07)'" onmouseout="this.style.background='rgba(255,255,255,0.03)'">
+      <div style="font-size:32px; display:inline-block; vertical-align:middle; margin-right:16px; background:rgba(22, 163, 74, 0.15); padding:10px; border-radius:8px;">🍃</div>
+      <div style="display:inline-block; vertical-align:middle;">
+        <h2 style="margin:0; font-family:'Space Grotesk', sans-serif; font-size:20px; color:var(--biology-primary, var(--text-primary));">Stomata Exploration</h2>
+        <p style="margin:4px 0 0; color:var(--text-secondary); font-size:14px;">Observe stomatal pores on leaf epidermis under a virtual microscope.</p>
+      </div>
+    </a>
+  
+    <a href="/experiments/biology/respiration_lab.html" style="display:block; text-decoration:none; color:inherit; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.1); padding:20px; border-radius:12px; margin-bottom:16px; cursor:pointer;" onmouseover="this.style.background='rgba(255,255,255,0.07)'" onmouseout="this.style.background='rgba(255,255,255,0.03)'">
+      <div style="font-size:32px; display:inline-block; vertical-align:middle; margin-right:16px; background:rgba(14, 165, 233, 0.15); padding:10px; border-radius:8px;">🫁</div>
+      <div style="display:inline-block; vertical-align:middle;">
+        <h2 style="margin:0; font-family:'Space Grotesk', sans-serif; font-size:20px; color:var(--biology-primary, var(--text-primary));">Respiration Lab</h2>
+        <p style="margin:4px 0 0; color:var(--text-secondary); font-size:14px;">Demonstrate aerobic and anaerobic respiration using interactive simulations.</p>
+      </div>
+    </a>
+  
+    <a href="/experiments/biology/asexual_reproduction.html" style="display:block; text-decoration:none; color:inherit; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.1); padding:20px; border-radius:12px; margin-bottom:16px; cursor:pointer;" onmouseover="this.style.background='rgba(255,255,255,0.07)'" onmouseout="this.style.background='rgba(255,255,255,0.03)'">
+      <div style="font-size:32px; display:inline-block; vertical-align:middle; margin-right:16px; background:rgba(168, 85, 247, 0.15); padding:10px; border-radius:8px;">🧬</div>
+      <div style="display:inline-block; vertical-align:middle;">
+        <h2 style="margin:0; font-family:'Space Grotesk', sans-serif; font-size:20px; color:var(--biology-primary, var(--text-primary));">Asexual Reproduction</h2>
+        <p style="margin:4px 0 0; color:var(--text-secondary); font-size:14px;">Study different modes of asexual reproduction: binary fission, budding, spore formation.</p>
+      </div>
+    </a>
+  
+    <a href="/experiments/biology/virtual_seed_dissection.html" style="display:block; text-decoration:none; color:inherit; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.1); padding:20px; border-radius:12px; margin-bottom:16px; cursor:pointer;" onmouseover="this.style.background='rgba(255,255,255,0.07)'" onmouseout="this.style.background='rgba(255,255,255,0.03)'">
+      <div style="font-size:32px; display:inline-block; vertical-align:middle; margin-right:16px; background:rgba(132, 204, 22, 0.15); padding:10px; border-radius:8px;">🌰</div>
+      <div style="display:inline-block; vertical-align:middle;">
+        <h2 style="margin:0; font-family:'Space Grotesk', sans-serif; font-size:20px; color:var(--biology-primary, var(--text-primary));">Virtual Seed Dissection</h2>
+        <p style="margin:4px 0 0; color:var(--text-secondary); font-size:14px;">Dissect and explore the internal structure of monocot and dicot seeds.</p>
+      </div>
+    </a>
+  
+    <a href="/experiments/biology/photosynthesis_starch_test.html" style="display:block; text-decoration:none; color:inherit; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.1); padding:20px; border-radius:12px; margin-bottom:16px; cursor:pointer;" onmouseover="this.style.background='rgba(255,255,255,0.07)'" onmouseout="this.style.background='rgba(255,255,255,0.03)'">
+      <div style="font-size:32px; display:inline-block; vertical-align:middle; margin-right:16px; background:rgba(34, 197, 94, 0.15); padding:10px; border-radius:8px;">🍃</div>
+      <div style="display:inline-block; vertical-align:middle;">
+        <h2 style="margin:0; font-family:'Space Grotesk', sans-serif; font-size:20px; color:var(--biology-primary, var(--text-primary));">Photosynthesis – Starch Test (Iodine)</h2>
+        <p style="margin:4px 0 0; color:var(--text-secondary); font-size:14px;">Perform the iodine starch test on a variegated leaf to prove photosynthesis requires light and chlorophyll.</p>
+      </div>
+    </a>
+  
+    <a href="/experiments/biology/water_transport_xylem.html" style="display:block; text-decoration:none; color:inherit; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.1); padding:20px; border-radius:12px; margin-bottom:16px; cursor:pointer;" onmouseover="this.style.background='rgba(255,255,255,0.07)'" onmouseout="this.style.background='rgba(255,255,255,0.03)'">
+      <div style="font-size:32px; display:inline-block; vertical-align:middle; margin-right:16px; background:rgba(6, 182, 212, 0.15); padding:10px; border-radius:8px;">💧</div>
+      <div style="display:inline-block; vertical-align:middle;">
+        <h2 style="margin:0; font-family:'Space Grotesk', sans-serif; font-size:20px; color:var(--biology-primary, var(--text-primary));">Water Transport in Plants (Xylem)</h2>
+        <p style="margin:4px 0 0; color:var(--text-secondary); font-size:14px;">Demonstrate how water travels through xylem vessels using a coloured dye and celery / white flower stem.</p>
+      </div>
+    </a>
+  
+    <a href="/experiments/biology/bread_mold_fungus.html" style="display:block; text-decoration:none; color:inherit; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.1); padding:20px; border-radius:12px; margin-bottom:16px; cursor:pointer;" onmouseover="this.style.background='rgba(255,255,255,0.07)'" onmouseout="this.style.background='rgba(255,255,255,0.03)'">
+      <div style="font-size:32px; display:inline-block; vertical-align:middle; margin-right:16px; background:rgba(234, 179, 8, 0.15); padding:10px; border-radius:8px;">🍞</div>
+      <div style="display:inline-block; vertical-align:middle;">
+        <h2 style="margin:0; font-family:'Space Grotesk', sans-serif; font-size:20px; color:var(--biology-primary, var(--text-primary));">Microorganisms – Bread Mold Growth</h2>
+        <p style="margin:4px 0 0; color:var(--text-secondary); font-size:14px;">Simulate fungal growth (Rhizopus) on bread over time under different environmental conditions.</p>
+      </div>
+    </a>
+  
+    <a href="/experiments/biology/pulse_rate_experiment.html" style="display:block; text-decoration:none; color:inherit; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.1); padding:20px; border-radius:12px; margin-bottom:16px; cursor:pointer;" onmouseover="this.style.background='rgba(255,255,255,0.07)'" onmouseout="this.style.background='rgba(255,255,255,0.03)'">
+      <div style="font-size:32px; display:inline-block; vertical-align:middle; margin-right:16px; background:rgba(239, 68, 68, 0.15); padding:10px; border-radius:8px;">🫀</div>
+      <div style="display:inline-block; vertical-align:middle;">
+        <h2 style="margin:0; font-family:'Space Grotesk', sans-serif; font-size:20px; color:var(--biology-primary, var(--text-primary));">Measurement of Pulse Rate</h2>
+        <p style="margin:4px 0 0; color:var(--text-secondary); font-size:14px;">Measure pulse rate before and after different exercises to understand cardiovascular response.</p>
+      </div>
+    </a>
+  
+    <a href="/experiments/biology/heart_3d_explorer.html" style="display:block; text-decoration:none; color:inherit; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.1); padding:20px; border-radius:12px; margin-bottom:16px; cursor:pointer;" onmouseover="this.style.background='rgba(255,255,255,0.07)'" onmouseout="this.style.background='rgba(255,255,255,0.03)'">
+      <div style="font-size:32px; display:inline-block; vertical-align:middle; margin-right:16px; background:rgba(220, 38, 38, 0.15); padding:10px; border-radius:8px;">🫀</div>
+      <div style="display:inline-block; vertical-align:middle;">
+        <h2 style="margin:0; font-family:'Space Grotesk', sans-serif; font-size:20px; color:var(--biology-primary, var(--text-primary));">3D Human Heart Explorer</h2>
+        <p style="margin:4px 0 0; color:var(--text-secondary); font-size:14px;">Interactive 3D dissection, labelled anatomy, and blood flow simulation of the human heart.</p>
+      </div>
+    </a>
+  
+    </section>
+  
+  </main>
+  
+  <script src="/assets/js/navbar.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="/assets/js/gamification.js"></script>
+  <script src="/assets/js/i18n.js"></script>
+  <script src="/assets/js/i18n_experiments_hi.js"></script>
+  <script src="/assets/js/i18n_experiments_ta.js"></script>
+  <script src="/assets/js/i18n_experiments_te.js"></script>
+  <script src="/assets/js/i18n_experiments_kn.js"></script>
+  <script src="/assets/js/i18n_experiments_bn.js"></script>
+  <script src="/assets/js/i18n_experiments_mr.js"></script>
+  <script src="/assets/js/viva_system.js"></script>
+  <script src="/assets/js/app.js"></script>
+  
+  <!-- All experiments attached so simulation logic is available -->
+  <script src="/experiments/physics/ohms_law.js"></script>
+  <script src="/experiments/physics/simple_pendulum.js"></script>
+  <script src="/experiments/physics/reflection_of_light.js"></script>
+  <script src="/experiments/physics/lens_formation.js"></script>
+  <script src="/experiments/physics/motion_simulator.js"></script>
+  <script src="/experiments/physics/refraction_dispersion_prism.js"></script>
+  <script src="/experiments/physics/virtual_breadboard.js"></script>
+  <script src="/experiments/physics/lateral_displacement_refraction.js"></script>
+  <script src="/experiments/physics/buoyancy_density_lab.js"></script>
+  <script src="/experiments/physics/pulse_velocity_experiment.js"></script>
+  <script src="/experiments/physics/sound_reflection_workstation.js"></script>
+  <script src="/experiments/physics/magnetic_field_sim.js"></script>
+  <script src="/experiments/physics/heat_transfer_sim.js"></script>
+  <script src="/experiments/physics/energy_conservation.js"></script>
+  <script src="/experiments/physics/vernier_caliper.js"></script>
+  <script src="/experiments/chemistry/ph_scale.js"></script>
+  <script src="/experiments/chemistry/sublimation_ammonium_chloride.js"></script>
+  <script src="/experiments/chemistry/reaction_lab.js"></script>
+  <script src="/experiments/chemistry/solutions_colloids_suspensions.js"></script>
+  <script src="/experiments/chemistry/chemical_reactivity_workstation.js"></script>
+  <script src="/experiments/chemistry/metal_reactivity_matrix.js"></script>
+  <script src="/experiments/chemistry/ethanoic_acid_properties.js"></script>
+  <script src="/experiments/chemistry/soap_capacity_hard_water.js"></script>
+  <script src="/experiments/biology/plant_cell_explorer.js"></script>
+  <script src="/experiments/biology/cell_structure.js"></script>
+  <script src="/experiments/biology/microscopic_stomata.js"></script>
+  <script src="/experiments/biology/respiration_lab.js"></script>
+  <script src="/experiments/biology/asexual_reproduction.js"></script>
+  <script src="/experiments/biology/virtual_seed_dissection.js"></script>
+  <script src="/experiments/biology/photosynthesis_starch_test.js"></script>
+  <script src="/experiments/biology/water_transport_xylem.js"></script>
+  <script src="/experiments/biology/bread_mold_fungus.js"></script>
+  <script src="/experiments/biology/pulse_rate_experiment.js"></script>
+  <script src="/experiments/biology/heart_3d_explorer.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+  <script src="/experiments/biology/heart_3d.js"></script>
+</body>
+</html>

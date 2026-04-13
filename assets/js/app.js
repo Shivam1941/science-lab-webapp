@@ -473,6 +473,32 @@ function navigateTo(view, id, isInit = false) {
     hero.classList.add('landing-hero-hidden');
   }
 
+  // Cross-page routing support for Multi-Page Architecture
+  if (!isInit) {
+    if (view === 'dashboard' && !document.getElementById('view-dashboard')) {
+      window.location.href = '/index.html';
+      return;
+    }
+    if (view === 'subject' && !document.getElementById('view-subject')) {
+      window.location.href = `/experiments/${id}.html`;
+      return;
+    }
+    if (view === 'experiment' && !document.getElementById('view-experiment')) {
+      // Find the subject for this experiment to form the URL
+      let expSubject = 'physics';
+      for (const subj of Object.keys(EXPERIMENTS)) {
+        if (EXPERIMENTS[subj].find(e => e.id === id)) { expSubject = subj; break; }
+      }
+      window.location.href = `/experiments/${expSubject}/${id}.html`;
+      return;
+    }
+    if (view === 'profile' && !document.getElementById('view-profile')) {
+      // For now fallback to index
+      window.location.href = '/index.html'; 
+      return;
+    }
+  }
+
   // Cleanup previous sim
   if (activeSimCleanup) {
     activeSimCleanup();
@@ -789,7 +815,22 @@ window.experimentRenderers = window.experimentRenderers || {};
 document.addEventListener('DOMContentLoaded', () => {
   // Init language picker (i18n.js must be loaded before app.js)
   if (typeof initLangPicker === 'function') initLangPicker();
-  navigateTo('dashboard', null, true);
-  // Apply dashboard translations after render
-  if (typeof renderDashboard === 'function') renderDashboard();
+  
+  const expId = document.body.getAttribute('data-exp-id');
+  if (expId) {
+    // MPA Mode: Experiment Page Auto-load
+    navigateTo('experiment', expId, true);
+  } else {
+    // Check if we are on a subject page via body attribute
+    const subjId = document.body.getAttribute('data-subject-id');
+    if (subjId) {
+      navigateTo('subject', subjId, true);
+    } else {
+      // SPA or Homepage mode
+      if (document.getElementById('view-dashboard')) {
+        navigateTo('dashboard', null, true);
+        if (typeof renderDashboard === 'function') renderDashboard();
+      }
+    }
+  }
 });

@@ -39,7 +39,7 @@
             <button class="sim-btn" style="width:100%;margin-bottom:12px;" id="seed-dissect-btn" onclick="window._dissectSeed()">🔪 ${dissected ? 'Close Seed' : 'Dissect Seed'}</button>
             <div class="sim-controls" style="margin-bottom:12px;max-height:200px;overflow-y:auto;" id="seed-parts-list"></div>
             <div class="sim-results">
-<button class="sim-btn sim-btn-primary" style="margin-top:10px; width: 100%;" onclick="window.VIVA_SYSTEM.open(VIVA_QUESTIONS)">🎓 Start Viva</button>
+<button class="sim-btn sim-btn-primary" style="margin-top:10px; width: 100%;" onclick="window.VIVA_SYSTEM.open(${JSON.stringify(VIVA_QUESTIONS).replace(/&/g, '&amp;').replace(/\"/g, '&quot;')})">🎓 Start Viva</button>
 
               <div class="sim-results-title"><span class="ctrl-icon">📋</span> Details</div>
               <p style="font-size:13px;color:var(--text-muted);" id="seed-desc">Dissect the seed to explore its internal structure.</p>

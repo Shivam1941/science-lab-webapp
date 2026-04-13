@@ -51,7 +51,7 @@
             <div id="ph-solution-list"></div>
           </div>
           <div class="sim-results">
-<button class="sim-btn sim-btn-primary" style="margin-top:10px; width: 100%;" onclick="window.VIVA_SYSTEM.open(VIVA_QUESTIONS)">🎓 Start Viva</button>
+<button class="sim-btn sim-btn-primary" style="margin-top:10px; width: 100%;" onclick="window.VIVA_SYSTEM.open(${JSON.stringify(VIVA_QUESTIONS).replace(/&/g, '&amp;').replace(/\"/g, '&quot;')})">🎓 Start Viva</button>
 
             <div class="sim-results-title"><span class="ctrl-icon">📊</span> pH Reading</div>
             <div class="sim-result-row">

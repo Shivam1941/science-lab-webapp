@@ -79,7 +79,7 @@
             </div>
           </div>
           <div class="sim-results">
-<button class="sim-btn sim-btn-primary" style="margin-top:10px; width: 100%;" onclick="window.VIVA_SYSTEM.open(VIVA_QUESTIONS)">🎓 Start Viva</button>
+<button class="sim-btn sim-btn-primary" style="margin-top:10px; width: 100%;" onclick="window.VIVA_SYSTEM.open(${JSON.stringify(VIVA_QUESTIONS).replace(/&/g, '&amp;').replace(/\"/g, '&quot;')})">🎓 Start Viva</button>
 
             <div class="sim-results-title"><span class="ctrl-icon">📊</span> Image Properties</div>
             <div class="sim-result-row">
@@ -201,20 +201,20 @@
         if (lensType === 'convex') {
           ctx.beginPath();
           ctx.moveTo(cx, cy - lensH / 2);
-          ctx.quadraticBezierTo(cx + 20, cy, cx, cy + lensH / 2);
+          ctx.quadraticCurveTo(cx + 20, cy, cx, cy + lensH / 2);
           ctx.stroke();
           ctx.beginPath();
           ctx.moveTo(cx, cy - lensH / 2);
-          ctx.quadraticBezierTo(cx - 20, cy, cx, cy + lensH / 2);
+          ctx.quadraticCurveTo(cx - 20, cy, cx, cy + lensH / 2);
           ctx.stroke();
         } else {
           ctx.beginPath();
           ctx.moveTo(cx, cy - lensH / 2);
-          ctx.quadraticBezierTo(cx - 15, cy, cx, cy + lensH / 2);
+          ctx.quadraticCurveTo(cx - 15, cy, cx, cy + lensH / 2);
           ctx.stroke();
           ctx.beginPath();
           ctx.moveTo(cx, cy - lensH / 2);
-          ctx.quadraticBezierTo(cx + 15, cy, cx, cy + lensH / 2);
+          ctx.quadraticCurveTo(cx + 15, cy, cx, cy + lensH / 2);
           ctx.stroke();
         }
 

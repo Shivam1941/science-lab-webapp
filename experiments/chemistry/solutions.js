@@ -44,7 +44,7 @@
             <button class="sim-btn" id="sol-laser-btn" style="margin-top:12px;width:100%;" onclick="window._toggleSolLaser()">🔦 Toggle Laser Beam</button>
           </div>
           <div class="sim-results">
-<button class="sim-btn sim-btn-primary" style="margin-top:10px; width: 100%;" onclick="window.VIVA_SYSTEM.open(VIVA_QUESTIONS)">🎓 Start Viva</button>
+<button class="sim-btn sim-btn-primary" style="margin-top:10px; width: 100%;" onclick="window.VIVA_SYSTEM.open(${JSON.stringify(VIVA_QUESTIONS).replace(/&/g, '&amp;').replace(/\"/g, '&quot;')})">🎓 Start Viva</button>
 
             <div class="sim-results-title"><span class="ctrl-icon">📊</span> Properties</div>
             <div class="sim-result-row"><span class="sim-result-label">Tyndall Effect</span><span class="sim-result-value" id="sol-tyndall" style="color:#ef4444">No</span></div>

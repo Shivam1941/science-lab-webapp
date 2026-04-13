@@ -141,7 +141,7 @@
             <div style="font-size:11px; color:var(--text-secondary); line-height:1.5;" id="ec-obs">Release the ball to begin observing energy conversion.</div>
 
             <div style="margin-top:auto; display:flex; gap:8px;">
-              <button class="sim-btn sim-btn-primary" style="flex:1;font-size:12px;" onclick="window.VIVA_SYSTEM.open(VIVA)">🎓 Viva</button>
+              <button class="sim-btn sim-btn-primary" style="flex:1;font-size:12px;" onclick="window.VIVA_SYSTEM.open(${JSON.stringify(VIVA_QUESTIONS).replace(/&/g, '&amp;').replace(/\"/g, '&quot;')})">🎓 Viva</button>
             </div>
           </div>
         </div>

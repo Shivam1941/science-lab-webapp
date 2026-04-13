@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All Science Experiments | Virtual Science Lab</title>
+  <meta name="description" content="Explore interactive CBSE science experiments categorized by Physics, Chemistry, and Biology." />
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+</head>
+<body>
+  <div id="navbar-container"></div>
+  <main class="main-container" id="app-root">
+    <section class="seo-subjects" style="padding: 40px 20px; max-width: 1000px; margin: 0 auto; min-height:80vh;">
+      
+      <div style="text-align: center; margin-bottom: 60px;">
+        <h1 style="font-family:'Space Grotesk', sans-serif; font-size:42px; margin-bottom:16px;">Science Experiments</h1>
+        <p style="color:var(--text-secondary); font-size:18px; max-width: 600px; margin: 0 auto;">Select a subject to discover interactive lab simulations for the CBSE curriculum.</p>
+      </div>
+
+      <div class="subject-grid" id="subject-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px;">
+        <!-- Physics -->
+        <a href="/experiments/physics.html" class="subject-card subject-physics" style="text-decoration:none;">
+          <div class="subject-card-glow"></div>
+          <div class="subject-icon-wrap"><div class="subject-icon">⚡</div></div>
+          <div class="subject-info">
+            <h2 class="subject-name">Physics</h2>
+            <p class="subject-desc">Circuits, pendulums, optics, motion & more</p>
+            <div class="subject-meta"><span class="exp-count">11 Experiments</span><span class="subject-arrow">→</span></div>
+          </div>
+        </a>
+
+        <!-- Chemistry -->
+        <a href="/experiments/chemistry.html" class="subject-card subject-chemistry" style="text-decoration:none;">
+          <div class="subject-card-glow"></div>
+          <div class="subject-icon-wrap"><div class="subject-icon">🧪</div></div>
+          <div class="subject-info">
+            <h2 class="subject-name">Chemistry</h2>
+            <p class="subject-desc">pH, reactions, sublimation, acids & solutions</p>
+            <div class="subject-meta"><span class="exp-count">9 Experiments</span><span class="subject-arrow">→</span></div>
+          </div>
+        </a>
+
+        <!-- Biology -->
+        <a href="/experiments/biology.html" class="subject-card subject-biology" style="text-decoration:none;">
+          <div class="subject-card-glow"></div>
+          <div class="subject-icon-wrap"><div class="subject-icon">🌿</div></div>
+          <div class="subject-info">
+            <h2 class="subject-name">Biology</h2>
+            <p class="subject-desc">Cells, stomata, respiration, reproduction</p>
+            <div class="subject-meta"><span class="exp-count">11 Experiments</span><span class="subject-arrow">→</span></div>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+  
+  <script src="/assets/js/navbar.js"></script>
+  <script src="/assets/js/app.js"></script>
+</body>
+</html>

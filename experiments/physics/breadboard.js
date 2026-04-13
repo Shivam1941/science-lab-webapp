@@ -101,7 +101,7 @@
             <button class="sim-btn" style="width:100%;margin-top:10px;" onclick="window._bbClear()">🗑 Clear All</button>
           </div>
           <div class="sim-results">
-<button class="sim-btn sim-btn-primary" style="margin-top:10px; width: 100%;" onclick="window.VIVA_SYSTEM.open(VIVA_QUESTIONS)">🎓 Start Viva</button>
+<button class="sim-btn sim-btn-primary" style="margin-top:10px; width: 100%;" onclick="window.VIVA_SYSTEM.open(${JSON.stringify(VIVA_QUESTIONS).replace(/&/g, '&amp;').replace(/\"/g, '&quot;')})">🎓 Start Viva</button>
 
             <div class="sim-results-title"><span class="ctrl-icon">📊</span> Multimeter</div>
             <div style="text-align:center;padding:16px;background:rgba(34,197,94,0.06);border-radius:12px;border:1px solid rgba(34,197,94,0.15);margin-bottom:12px;">
