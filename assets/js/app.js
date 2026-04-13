@@ -634,7 +634,6 @@ function renderSubjectView(subject) {
       <span class="exp-item-arrow">→</span>
     </div>
   `}).join('');
-  document.getElementById('biology-count').textContent = exps.length + ' Experiments';
 }
 
 // ── Experiment View ──────────────────────────────────────────
@@ -813,6 +812,29 @@ window.experimentRenderers = window.experimentRenderers || {};
 
 // ── Init ─────────────────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', () => {
+  // Dynamically update experiment counts in UI
+  let totalExps = 0;
+  for (const subj of Object.keys(EXPERIMENTS)) {
+    const count = (EXPERIMENTS[subj] || []).length;
+    totalExps += count;
+    
+    // Update dashboard subject counts
+    const countEl = document.getElementById(`${subj}-count`);
+    if (countEl) countEl.textContent = `${count} Experiments`;
+  }
+  
+  // Update total counts in stats bar
+  const statNum = document.querySelector('.stats-bar .stat-item:first-child .stat-num');
+  if (statNum) statNum.textContent = totalExps;
+  
+  // Update landing pills
+  const pills = document.querySelectorAll('.landing-pill');
+  pills.forEach(pill => {
+    if (pill.textContent.includes('Experiments') && pill.textContent.match(/\d+/)) {
+      pill.textContent = `📊 ${totalExps} Experiments`;
+    }
+  });
+
   // Init language picker (i18n.js must be loaded before app.js)
   if (typeof initLangPicker === 'function') initLangPicker();
   
