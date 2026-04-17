@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
           </div>
         </div>
         <div class="nav-time" id="nav-time"></div>
+        <button class="theme-toggle-btn" id="theme-toggle-btn" onclick="toggleTheme()" title="Toggle theme" aria-label="Toggle theme">☀️</button>
         <button class="nav-profile-btn" onclick="navigateTo('profile')" aria-label="My Profile">👤</button>
       </div>
     </div>
