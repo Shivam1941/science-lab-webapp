@@ -30,7 +30,11 @@
         "Tap the key briefly first to confirm correct polarity.",
         "Take at least 5 readings for an accurate graph."
       ],
-      "conclusion": "The V-I graph is a straight line through the origin, confirming V = IR. The slope of the graph gives the resistance R of the conductor."
+      "conclusion": "The V-I graph is a straight line through the origin, confirming V = IR. The slope of the graph gives the resistance R of the conductor.",
+      "subject": "physics",
+      "class": "9-10",
+      "category": "electricity",
+      "difficulty": "intermediate"
     },
     {
       "id": "simple_pendulum",
@@ -62,7 +66,11 @@
         "Avoid air drafts during experiment.",
         "Measure length to the centre of the bob."
       ],
-      "conclusion": "T² is directly proportional to L. The graph of T² vs L is a straight line through the origin, verifying T = 2π√(L/g)."
+      "conclusion": "T² is directly proportional to L. The graph of T² vs L is a straight line through the origin, verifying T = 2π√(L/g).",
+      "subject": "physics",
+      "class": "9-10",
+      "category": "motion",
+      "difficulty": "beginner"
     },
     {
       "id": "reflection_of_light",
@@ -95,7 +103,11 @@
         "Measure angles from the normal, not from the mirror surface.",
         "Use at least 5 different angles for verification."
       ],
-      "conclusion": "For every angle of incidence, the angle of reflection is equal. The incident ray, normal, and reflected ray lie in the same plane. This verifies both laws of reflection."
+      "conclusion": "For every angle of incidence, the angle of reflection is equal. The incident ray, normal, and reflected ray lie in the same plane. This verifies both laws of reflection.",
+      "subject": "physics",
+      "class": "9-10",
+      "category": "optics",
+      "difficulty": "beginner"
     },
     {
       "id": "lens_formation",
@@ -127,7 +139,11 @@
         "Use sign convention consistently.",
         "Ensure the image is sharp before recording."
       ],
-      "conclusion": "The lens formula 1/v − 1/u = 1/f is verified. Convex lens forms real, inverted images for objects beyond F, and virtual, erect, magnified images for objects within F."
+      "conclusion": "The lens formula 1/v − 1/u = 1/f is verified. Convex lens forms real, inverted images for objects beyond F, and virtual, erect, magnified images for objects within F.",
+      "subject": "physics",
+      "class": "9-10",
+      "category": "optics",
+      "difficulty": "intermediate"
     },
     {
       "id": "motion_simulator",
@@ -157,7 +173,11 @@
         "Minimize friction for accurate results.",
         "Use SI units consistently."
       ],
-      "conclusion": "Uniform motion produces a linear s-t graph and a horizontal v-t line. Uniformly accelerated motion produces a parabolic s-t graph and a linear v-t line. The area under v-t graph equals displacement."
+      "conclusion": "Uniform motion produces a linear s-t graph and a horizontal v-t line. Uniformly accelerated motion produces a parabolic s-t graph and a linear v-t line. The area under v-t graph equals displacement.",
+      "subject": "physics",
+      "class": "9-10",
+      "category": "motion",
+      "difficulty": "intermediate"
     },
     {
       "id": "refraction_dispersion_prism",
@@ -190,7 +210,11 @@
         "Measure all angles from the normal, not from the surface.",
         "Darken the room for better spectrum observation."
       ],
-      "conclusion": "White light disperses into VIBGYOR spectrum because different wavelengths have different refractive indices (violet bends most, red least). The deviation angle D = (i + e) − A, and the i-D graph shows a minimum deviation."
+      "conclusion": "White light disperses into VIBGYOR spectrum because different wavelengths have different refractive indices (violet bends most, red least). The deviation angle D = (i + e) − A, and the i-D graph shows a minimum deviation.",
+      "subject": "physics",
+      "class": "9-10",
+      "category": "optics",
+      "difficulty": "intermediate"
     },
     {
       "id": "virtual_breadboard",
@@ -222,7 +246,11 @@
         "Verify polarity of ammeter/voltmeter connections.",
         "Use color bands to identify resistor values."
       ],
-      "conclusion": "In series, Req = R₁ + R₂ + R₃... (resistance adds up). In parallel, 1/Req = 1/R₁ + 1/R₂ + 1/R₃... (effective resistance decreases). A combination of both gives hybrid circuits."
+      "conclusion": "In series, Req = R₁ + R₂ + R₃... (resistance adds up). In parallel, 1/Req = 1/R₁ + 1/R₂ + 1/R₃... (effective resistance decreases). A combination of both gives hybrid circuits.",
+      "subject": "physics",
+      "class": "9-10",
+      "category": "electricity",
+      "difficulty": "advanced"
     },
     {
       "id": "lateral_displacement_refraction",
@@ -255,7 +283,11 @@
         "Mark entry and exit points precisely.",
         "The emergent ray should be parallel to the incident ray."
       ],
-      "conclusion": "The emergent ray is parallel to the incident ray but laterally displaced. Lateral displacement d = t × sin(i−r) / cos(r), where t is slab thickness. It increases with angle of incidence and slab thickness."
+      "conclusion": "The emergent ray is parallel to the incident ray but laterally displaced. Lateral displacement d = t × sin(i−r) / cos(r), where t is slab thickness. It increases with angle of incidence and slab thickness.",
+      "subject": "physics",
+      "class": "9-10",
+      "category": "optics",
+      "difficulty": "intermediate"
     },
     {
       "id": "buoyancy_density_lab",
@@ -287,7 +319,11 @@
         "Fill the overflow can to the brim before submerging.",
         "Use thread thin enough not to affect readings."
       ],
-      "conclusion": "Archimedes' principle is verified: the buoyant force equals the weight of liquid displaced. Objects with density less than the liquid float; denser objects sink. The apparent weight loss equals the buoyant force."
+      "conclusion": "Archimedes' principle is verified: the buoyant force equals the weight of liquid displaced. Objects with density less than the liquid float; denser objects sink. The apparent weight loss equals the buoyant force.",
+      "subject": "physics",
+      "class": "9-10",
+      "category": "forces",
+      "difficulty": "beginner"
     },
     {
       "id": "pulse_velocity_experiment",
@@ -319,7 +355,11 @@
         "Avoid reflecting waves from the far end.",
         "Use a stopwatch to time several oscillations for accurate frequency."
       ],
-      "conclusion": "The wave velocity v = fλ is verified. In transverse waves, particles oscillate perpendicular to the wave direction. In longitudinal waves, particles oscillate along the wave direction. Velocity depends on the medium, not on frequency or amplitude."
+      "conclusion": "The wave velocity v = fλ is verified. In transverse waves, particles oscillate perpendicular to the wave direction. In longitudinal waves, particles oscillate along the wave direction. Velocity depends on the medium, not on frequency or amplitude.",
+      "subject": "physics",
+      "class": "9-10",
+      "category": "waves",
+      "difficulty": "intermediate"
     },
     {
       "id": "sound_reflection_workstation",
@@ -351,7 +391,11 @@
         "Minimum distance must be about 17 m for a distinct echo.",
         "Repeat measurements and take average for accuracy."
       ],
-      "conclusion": "Sound reflects from hard surfaces following the law of reflection. Echo is heard when the time gap is ≥ 0.1 s. Speed of sound at room temperature ≈ 343 m/s. Soft surfaces like curtains absorb more sound and produce weaker echoes."
+      "conclusion": "Sound reflects from hard surfaces following the law of reflection. Echo is heard when the time gap is ≥ 0.1 s. Speed of sound at room temperature ≈ 343 m/s. Soft surfaces like curtains absorb more sound and produce weaker echoes.",
+      "subject": "physics",
+      "class": "9-10",
+      "category": "waves",
+      "difficulty": "beginner"
     },
     {
       "id": "magnetic_field_sim",
@@ -385,7 +429,11 @@
         "Do not short-circuit the battery.",
         "Use a rheostat to control current."
       ],
-      "conclusion": "Magnetic field lines form closed loops from N to S pole externally. Around a straight conductor, field lines are concentric circles (right-hand rule). A solenoid behaves like a bar magnet with well-defined poles."
+      "conclusion": "Magnetic field lines form closed loops from N to S pole externally. Around a straight conductor, field lines are concentric circles (right-hand rule). A solenoid behaves like a bar magnet with well-defined poles.",
+      "subject": "physics",
+      "class": "9-10",
+      "category": "magnetism",
+      "difficulty": "intermediate"
     },
     {
       "id": "heat_transfer_sim",
@@ -416,7 +464,11 @@
         "Keep flammable materials away from flame.",
         "Use a thermometer carefully."
       ],
-      "conclusion": "Solids expand on heating and contract on cooling. Heat transfers via conduction (particle to particle), convection (bulk fluid movement), and radiation (electromagnetic waves without medium)."
+      "conclusion": "Solids expand on heating and contract on cooling. Heat transfers via conduction (particle to particle), convection (bulk fluid movement), and radiation (electromagnetic waves without medium).",
+      "subject": "physics",
+      "class": "9-10",
+      "category": "heat",
+      "difficulty": "beginner"
     },
     {
       "id": "energy_conservation",
@@ -445,7 +497,11 @@
         "Note that with friction, total energy decreases over time.",
         "Compare velocity at the lowest and highest points of the track."
       ],
-      "conclusion": "Mechanical energy (PE + KE) is conserved in the absence of friction. PE converts to KE during descent and KE converts to PE during ascent. Friction causes energy dissipation as heat."
+      "conclusion": "Mechanical energy (PE + KE) is conserved in the absence of friction. PE converts to KE during descent and KE converts to PE during ascent. Friction causes energy dissipation as heat.",
+      "subject": "physics",
+      "class": "9-10",
+      "category": "energy",
+      "difficulty": "intermediate"
     },
     {
       "id": "vernier_caliper",
@@ -476,7 +532,11 @@
         "Read the scale at eye level to avoid parallax.",
         "Handle the caliper by the frame, not the jaws."
       ],
-      "conclusion": "The Vernier caliper allows measurement with a precision of 0.01 cm (0.1 mm). The least count is the difference between one MSD and one VSD. Zero error must be accounted for in every reading."
+      "conclusion": "The Vernier caliper allows measurement with a precision of 0.01 cm (0.1 mm). The least count is the difference between one MSD and one VSD. Zero error must be accounted for in every reading.",
+      "subject": "physics",
+      "class": "11-12",
+      "category": "measurement",
+      "difficulty": "beginner"
     },
     {
       "id": "meter_bridge",
@@ -511,7 +571,11 @@
         "The null point should preferably be between 30 cm and 70 cm for minimum error.",
         "Correct for end error if balance point is near the ends."
       ],
-      "conclusion": "The unknown resistance X is determined using the balance condition X = R(100 − l)/l. When the bridge is balanced, no current flows through the galvanometer, confirming the Wheatstone bridge principle."
+      "conclusion": "The unknown resistance X is determined using the balance condition X = R(100 − l)/l. When the bridge is balanced, no current flows through the galvanometer, confirming the Wheatstone bridge principle.",
+      "subject": "physics",
+      "class": "11-12",
+      "category": "electricity",
+      "difficulty": "advanced"
     }
   ],
   "chemistry": [
@@ -542,7 +606,11 @@
         "Rinse the dropper between samples.",
         "Handle HCl and NaOH with care — they are corrosive."
       ],
-      "conclusion": "Solutions with pH < 7 are acidic, pH = 7 are neutral, and pH > 7 are basic. The pH scale provides a quantitative measure of the hydrogen ion concentration in a solution."
+      "conclusion": "Solutions with pH < 7 are acidic, pH = 7 are neutral, and pH > 7 are basic. The pH scale provides a quantitative measure of the hydrogen ion concentration in a solution.",
+      "subject": "chemistry",
+      "class": "9-10",
+      "category": "acids-bases",
+      "difficulty": "beginner"
     },
     {
       "id": "sublimation_ammonium_chloride",
@@ -576,7 +644,11 @@
         "Let the apparatus cool before scraping.",
         "Handle hot apparatus with tongs only."
       ],
-      "conclusion": "NH₄Cl sublimes at ~338°C and deposits on the cool funnel surface. Sand remains in the china dish. This confirms sublimation can separate sublimable substances from non-sublimable impurities."
+      "conclusion": "NH₄Cl sublimes at ~338°C and deposits on the cool funnel surface. Sand remains in the china dish. This confirms sublimation can separate sublimable substances from non-sublimable impurities.",
+      "subject": "chemistry",
+      "class": "9-10",
+      "category": "separation-techniques",
+      "difficulty": "beginner"
     },
     {
       "id": "reaction_lab",
@@ -604,7 +676,11 @@
         "Heat test tubes pointing away from people.",
         "Dispose of chemicals safely after the experiment."
       ],
-      "conclusion": "Different types of chemical reactions were observed and classified. The changes in colour, temperature, and precipitate formation confirm the occurrence of chemical reactions."
+      "conclusion": "Different types of chemical reactions were observed and classified. The changes in colour, temperature, and precipitate formation confirm the occurrence of chemical reactions.",
+      "subject": "chemistry",
+      "class": "9-10",
+      "category": "reactions",
+      "difficulty": "intermediate"
     },
     {
       "id": "solutions_colloids_suspensions",
@@ -636,7 +712,11 @@
         "Use a narrow beam of light for Tyndall effect.",
         "Label all beakers clearly."
       ],
-      "conclusion": "True solutions are transparent, show no Tyndall effect, and cannot be filtered. Colloids show the Tyndall effect but do not settle. Suspensions are opaque, settle on standing, and can be filtered."
+      "conclusion": "True solutions are transparent, show no Tyndall effect, and cannot be filtered. Colloids show the Tyndall effect but do not settle. Suspensions are opaque, settle on standing, and can be filtered.",
+      "subject": "chemistry",
+      "class": "9-10",
+      "category": "solutions",
+      "difficulty": "beginner"
     },
     {
       "id": "chemical_reactivity_workstation",
@@ -666,7 +746,11 @@
         "Use small pieces of metal for uniform results.",
         "Perform in a well-ventilated area."
       ],
-      "conclusion": "Reactivity order: Mg > Zn > Fe > Cu. Magnesium reacts vigorously, zinc and iron react moderately, copper does not react with dilute HCl."
+      "conclusion": "Reactivity order: Mg > Zn > Fe > Cu. Magnesium reacts vigorously, zinc and iron react moderately, copper does not react with dilute HCl.",
+      "subject": "chemistry",
+      "class": "9-10",
+      "category": "reactions",
+      "difficulty": "intermediate"
     },
     {
       "id": "metal_reactivity_matrix",
@@ -696,7 +780,11 @@
         "Do not touch chemicals with bare hands.",
         "Allow sufficient time for slower reactions."
       ],
-      "conclusion": "The reactivity series Zn > Fe > Pb > Cu is verified. A more reactive metal can displace a less reactive metal from its salt solution, confirming the activity series."
+      "conclusion": "The reactivity series Zn > Fe > Pb > Cu is verified. A more reactive metal can displace a less reactive metal from its salt solution, confirming the activity series.",
+      "subject": "chemistry",
+      "class": "9-10",
+      "category": "reactions",
+      "difficulty": "advanced"
     },
     {
       "id": "ethanoic_acid_properties",
@@ -729,7 +817,11 @@
         "Use very small quantities of chemicals.",
         "Perform in well-ventilated area."
       ],
-      "conclusion": "Ethanoic acid is a weak acid. It reacts with NaHCO₃ to give CO₂, with NaOH in neutralization, and with ethanol to form a sweet-smelling ester via esterification."
+      "conclusion": "Ethanoic acid is a weak acid. It reacts with NaHCO₃ to give CO₂, with NaOH in neutralization, and with ethanol to form a sweet-smelling ester via esterification.",
+      "subject": "chemistry",
+      "class": "9-10",
+      "category": "acids-bases",
+      "difficulty": "intermediate"
     },
     {
       "id": "soap_capacity_hard_water",
@@ -759,7 +851,11 @@
         "Use freshly prepared soap solution.",
         "Label test tubes clearly as Hard and Soft."
       ],
-      "conclusion": "Soap produces more and longer-lasting foam in soft water. In hard water, soap reacts with Ca²⁺/Mg²⁺ ions to form an insoluble scum, reducing its cleaning ability."
+      "conclusion": "Soap produces more and longer-lasting foam in soft water. In hard water, soap reacts with Ca²⁺/Mg²⁺ ions to form an insoluble scum, reducing its cleaning ability.",
+      "subject": "chemistry",
+      "class": "9-10",
+      "category": "solutions",
+      "difficulty": "beginner"
     },
     {
       "id": "filtration_technique",
@@ -789,7 +885,11 @@
         "Pour the mixture slowly to avoid overflowing the filter paper.",
         "Use a glass rod to guide the liquid into the funnel."
       ],
-      "conclusion": "Filtration effectively separates insoluble solids from liquids. The clear liquid collected is the filtrate, and the solid left behind is the residue."
+      "conclusion": "Filtration effectively separates insoluble solids from liquids. The clear liquid collected is the filtrate, and the solid left behind is the residue.",
+      "subject": "chemistry",
+      "class": "9-10",
+      "category": "separation-techniques",
+      "difficulty": "beginner"
     },
     {
       "id": "evaporation_technique",
@@ -818,7 +918,11 @@
         "Do not evaporate to complete dryness rapidly, to avoid charring.",
         "Use tongs to handle the hot china dish."
       ],
-      "conclusion": "Evaporation separates a volatile solvent from a non-volatile solute. The water turns into vapor, leaving the solid salt behind."
+      "conclusion": "Evaporation separates a volatile solvent from a non-volatile solute. The water turns into vapor, leaving the solid salt behind.",
+      "subject": "chemistry",
+      "class": "9-10",
+      "category": "separation-techniques",
+      "difficulty": "beginner"
     },
     {
       "id": "distillation_technique",
@@ -849,7 +953,11 @@
         "Ensure cold water flows into the condenser from the lower end and out from the upper end.",
         "Monitor the temperature carefully to identify the boiling component."
       ],
-      "conclusion": "Distillation separates components based on boiling point differences. The lower boiling component evaporates, condenses, and is collected as distillate."
+      "conclusion": "Distillation separates components based on boiling point differences. The lower boiling component evaporates, condenses, and is collected as distillate.",
+      "subject": "chemistry",
+      "class": "11-12",
+      "category": "separation-techniques",
+      "difficulty": "intermediate"
     },
     {
       "id": "fractional_distillation",
@@ -879,7 +987,11 @@
         "Wrap the fractionating column with insulator if necessary to prevent heat loss.",
         "Change the receiving flask immediately when the temperature jumps."
       ],
-      "conclusion": "The fractionating column allows multiple evaporation-condensation cycles, resulting in efficient separation of liquids with close boiling points."
+      "conclusion": "The fractionating column allows multiple evaporation-condensation cycles, resulting in efficient separation of liquids with close boiling points.",
+      "subject": "chemistry",
+      "class": "11-12",
+      "category": "separation-techniques",
+      "difficulty": "advanced"
     },
     {
       "id": "chromatography_technique",
@@ -910,7 +1022,11 @@
         "Cover the jar to prevent solvent evaporation.",
         "Remove the paper before the solvent front reaches the very top."
       ],
-      "conclusion": "Chromatography separates mixture components based on how fast they travel with the solvent. Different dyes in the black ink have different solubilities and rise at different rates."
+      "conclusion": "Chromatography separates mixture components based on how fast they travel with the solvent. Different dyes in the black ink have different solubilities and rise at different rates.",
+      "subject": "chemistry",
+      "class": "9-10",
+      "category": "separation-techniques",
+      "difficulty": "intermediate"
     }
   ],
   "biology": [
@@ -945,7 +1061,11 @@
         "Do not over-stain — it makes structures less visible.",
         "Handle microscope with care."
       ],
-      "conclusion": "Plant cells have a rigid cell wall, large central vacuole, and well-defined nucleus. The cell wall gives the characteristic rectangular shape to plant cells."
+      "conclusion": "Plant cells have a rigid cell wall, large central vacuole, and well-defined nucleus. The cell wall gives the characteristic rectangular shape to plant cells.",
+      "subject": "biology",
+      "class": "9-10",
+      "category": "cells",
+      "difficulty": "beginner"
     },
     {
       "id": "cell_structure",
@@ -973,7 +1093,11 @@
         "Clean the lens with lens paper only.",
         "Draw diagrams to scale with proper labelling."
       ],
-      "conclusion": "Plant cells have a rigid cell wall, large vacuole, and chloroplasts which are absent in animal cells. Both have nucleus, cell membrane, cytoplasm, and mitochondria."
+      "conclusion": "Plant cells have a rigid cell wall, large vacuole, and chloroplasts which are absent in animal cells. Both have nucleus, cell membrane, cytoplasm, and mitochondria.",
+      "subject": "biology",
+      "class": "9-10",
+      "category": "cells",
+      "difficulty": "beginner"
     },
     {
       "id": "microscopic_stomata",
@@ -1005,7 +1129,11 @@
         "Avoid air bubbles under cover slip.",
         "Do not press the cover slip too hard."
       ],
-      "conclusion": "Stomata are minute pores on the leaf surface, each surrounded by two kidney-shaped guard cells. They regulate gas exchange and transpiration in plants."
+      "conclusion": "Stomata are minute pores on the leaf surface, each surrounded by two kidney-shaped guard cells. They regulate gas exchange and transpiration in plants.",
+      "subject": "biology",
+      "class": "9-10",
+      "category": "plant-physiology",
+      "difficulty": "intermediate"
     },
     {
       "id": "respiration_lab",
@@ -1037,7 +1165,11 @@
         "Use fresh lime water for clear results.",
         "Keep control setup (boiled seeds) for comparison."
       ],
-      "conclusion": "Germinating seeds release CO₂ during respiration, which turns lime water milky. Boiled seeds show no CO₂ release, confirming that respiration occurs only in living cells."
+      "conclusion": "Germinating seeds release CO₂ during respiration, which turns lime water milky. Boiled seeds show no CO₂ release, confirming that respiration occurs only in living cells.",
+      "subject": "biology",
+      "class": "9-10",
+      "category": "life-processes",
+      "difficulty": "intermediate"
     },
     {
       "id": "asexual_reproduction",
@@ -1067,7 +1199,11 @@
         "Do not press cover slip on yeast mount.",
         "Draw diagrams with proper labels and titles."
       ],
-      "conclusion": "Asexual reproduction involves a single parent. Binary fission (Amoeba) splits the cell into two, budding (Hydra/Yeast) produces a small outgrowth, and spore formation (Rhizopus) disperses spores for new organisms."
+      "conclusion": "Asexual reproduction involves a single parent. Binary fission (Amoeba) splits the cell into two, budding (Hydra/Yeast) produces a small outgrowth, and spore formation (Rhizopus) disperses spores for new organisms.",
+      "subject": "biology",
+      "class": "9-10",
+      "category": "reproduction",
+      "difficulty": "beginner"
     },
     {
       "id": "virtual_seed_dissection",
@@ -1099,7 +1235,11 @@
         "Avoid damaging the embryo during cutting.",
         "Compare structures side by side."
       ],
-      "conclusion": "Dicot seeds have two cotyledons and store food in cotyledons, while monocot seeds have one cotyledon and store food in endosperm. Both contain embryo (radicle + plumule) protected by the seed coat."
+      "conclusion": "Dicot seeds have two cotyledons and store food in cotyledons, while monocot seeds have one cotyledon and store food in endosperm. Both contain embryo (radicle + plumule) protected by the seed coat.",
+      "subject": "biology",
+      "class": "9-10",
+      "category": "plant-physiology",
+      "difficulty": "beginner"
     },
     {
       "id": "photosynthesis_starch_test",
@@ -1136,7 +1276,11 @@
         "Handle hot apparatus with forceps.",
         "Use fresh iodine solution for accurate colour change."
       ],
-      "conclusion": "The part of the leaf exposed to sunlight turns blue-black with iodine, confirming starch production by photosynthesis. The covered part does not turn blue-black, proving that light is essential for photosynthesis."
+      "conclusion": "The part of the leaf exposed to sunlight turns blue-black with iodine, confirming starch production by photosynthesis. The covered part does not turn blue-black, proving that light is essential for photosynthesis.",
+      "subject": "biology",
+      "class": "6-8",
+      "category": "life-processes",
+      "difficulty": "intermediate"
     },
     {
       "id": "water_transport_xylem",
@@ -1169,7 +1313,11 @@
         "Do not leave the stem out of water after cutting — air enters and blocks xylem.",
         "Keep the plant in a warm, lit area to promote transpiration."
       ],
-      "conclusion": "The coloured dye moves upward through the xylem vessels, colouring the stem, veins, and petals. This confirms that xylem is responsible for the upward transport of water and dissolved substances in plants, driven by transpiration pull."
+      "conclusion": "The coloured dye moves upward through the xylem vessels, colouring the stem, veins, and petals. This confirms that xylem is responsible for the upward transport of water and dissolved substances in plants, driven by transpiration pull.",
+      "subject": "biology",
+      "class": "6-8",
+      "category": "plant-physiology",
+      "difficulty": "beginner"
     },
     {
       "id": "bread_mold_fungus",
@@ -1201,7 +1349,11 @@
         "Keep containers sealed to prevent the spread of fungal spores in the room.",
         "Do not directly inhale spores."
       ],
-      "conclusion": "Fungi (such as Rhizopus) grow best in environments that are rich in nutrients, moist, and warm. Cold or very dry environments significantly inhibit or halt fungal growth."
+      "conclusion": "Fungi (such as Rhizopus) grow best in environments that are rich in nutrients, moist, and warm. Cold or very dry environments significantly inhibit or halt fungal growth.",
+      "subject": "biology",
+      "class": "6-8",
+      "category": "microorganisms",
+      "difficulty": "beginner"
     },
     {
       "id": "pulse_rate_experiment",
@@ -1229,7 +1381,11 @@
         "Do not press too hard while feeling the pulse.",
         "Count accurately or use the auto-calculation feature."
       ],
-      "conclusion": "Exercise increases the body's demand for oxygen and energy, causing the heart to pump blood faster, thus increasing the pulse rate. Faster recovery indicates a higher fitness level."
+      "conclusion": "Exercise increases the body's demand for oxygen and energy, causing the heart to pump blood faster, thus increasing the pulse rate. Faster recovery indicates a higher fitness level.",
+      "subject": "biology",
+      "class": "9-10",
+      "category": "human-biology",
+      "difficulty": "beginner"
     },
     {
       "id": "heart_3d_explorer",
@@ -1258,7 +1414,11 @@
         "Note the direction of blood flow through each valve.",
         "Understand why the septum prevents mixing of oxygenated and deoxygenated blood."
       ],
-      "conclusion": "The human heart is a four-chambered organ that acts as a double pump. The right side handles deoxygenated blood (to lungs), and the left side handles oxygenated blood (to body). Valves ensure unidirectional flow."
+      "conclusion": "The human heart is a four-chambered organ that acts as a double pump. The right side handles deoxygenated blood (to lungs), and the left side handles oxygenated blood (to body). Valves ensure unidirectional flow.",
+      "subject": "biology",
+      "class": "11-12",
+      "category": "human-biology",
+      "difficulty": "advanced"
     }
   ]
 }

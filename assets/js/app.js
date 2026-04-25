@@ -438,6 +438,7 @@ async function initApp() {
 
   // Init language picker (i18n.js must be loaded before app.js)
   if (typeof initLangPicker === 'function') initLangPicker();
+  if (typeof initExplorationUI === 'function') initExplorationUI(EXPERIMENTS);
   
   const expId = document.body.getAttribute('data-exp-id');
   if (expId) {

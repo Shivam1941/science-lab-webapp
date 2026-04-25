@@ -19,10 +19,10 @@ const TRANSLATIONS = {
     navTitle: 'Digital Lab',
     navSubtitle: 'Science Experiments',
     /* Dashboard */
-    heroBadge: '🔬 Virtual Science Lab',
-    heroTitle1: 'Science Digital',
-    heroTitle2: 'Laboratory',
-    heroDesc: 'Explore interactive experiments in Physics, Chemistry & Biology. Real-time simulations, animated canvases, and detailed observations — all in your browser.',
+    heroBadge: '🔬 SchoolUp Lab',
+    heroTitle1: 'Interactive Science',
+    heroTitle2: 'Experiments',
+    heroDesc: 'Interactive Science Experiments for Classes 6–12. Explore by subject, class, concept, and difficulty with simulations, procedures, and viva practice.',
     chooseSubject: 'Choose Your Subject',
     allExperiments: 'All Experiments',
     /* Subjects */

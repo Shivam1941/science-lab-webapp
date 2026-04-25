@@ -4,58 +4,64 @@
   <script src="/assets/js/theme.js"></script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>All Science Experiments | Virtual Science Lab</title>
-  <meta name="description" content="Explore interactive CBSE science experiments categorized by Physics, Chemistry, and Biology." />
+  <title>Explore Science Experiments | SchoolUp Lab</title>
+  <meta name="description" content="Filter interactive CBSE science experiments by subject, class, concept, and difficulty." />
   <link rel="stylesheet" href="/assets/css/styles.css" />
 </head>
 <body data-theme="dark">
   <div id="navbar-container"></div>
   <main class="main-container" id="app-root">
-    <section class="seo-subjects" style="padding: 40px 20px; max-width: 1000px; margin: 0 auto; min-height:80vh;">
-      
-      <div style="text-align: center; margin-bottom: 60px;">
-        <h1 style="font-family:'Space Grotesk', sans-serif; font-size:42px; margin-bottom:16px;">Science Experiments</h1>
-        <p style="color:var(--text-secondary); font-size:18px; max-width: 600px; margin: 0 auto;">Select a subject to discover interactive lab simulations for the CBSE curriculum.</p>
+    <section class="explore-page" id="flt1">
+      <div class="explore-page-hero">
+        <div class="hero-badge">🔍 Multi-dimensional Explorer</div>
+        <h1>Science Experiments</h1>
+        <p>Use one experiment dataset to explore labs by subject, class, concept, and difficulty. Filters update instantly without page reloads.</p>
       </div>
 
-      <div class="subject-grid" id="subject-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px;">
-        <!-- Physics -->
-        <a href="/experiments/physics.html" class="subject-card subject-physics" style="text-decoration:none;">
-          <div class="subject-card-glow"></div>
-          <div class="subject-icon-wrap"><div class="subject-icon">⚡</div></div>
-          <div class="subject-info">
-            <h2 class="subject-name">Physics</h2>
-            <p class="subject-desc">Circuits, pendulums, optics, motion & more</p>
-            <div class="subject-meta"><span class="exp-count">16 Experiments</span><span class="subject-arrow">→</span></div>
-          </div>
-        </a>
+      <div class="filter-panel glass-card">
+        <div class="filter-field">
+          <label for="filter-subject">Subject</label>
+          <select id="filter-subject" data-experiment-filter>
+            <option value="">All Subjects</option>
+          </select>
+        </div>
+        <div class="filter-field">
+          <label for="filter-class">Class</label>
+          <select id="filter-class" data-experiment-filter>
+            <option value="">All Classes</option>
+          </select>
+        </div>
+        <div class="filter-field">
+          <label for="filter-category">Concept</label>
+          <select id="filter-category" data-experiment-filter>
+            <option value="">All Concepts</option>
+          </select>
+        </div>
+        <div class="filter-field">
+          <label for="filter-difficulty">Difficulty</label>
+          <select id="filter-difficulty" data-experiment-filter>
+            <option value="">All Difficulty</option>
+          </select>
+        </div>
+        <button class="clear-filter-btn" id="clear-filters" type="button">Clear Filters</button>
+      </div>
 
-        <!-- Chemistry -->
-        <a href="/experiments/chemistry.html" class="subject-card subject-chemistry" style="text-decoration:none;">
-          <div class="subject-card-glow"></div>
-          <div class="subject-icon-wrap"><div class="subject-icon">🧪</div></div>
-          <div class="subject-info">
-            <h2 class="subject-name">Chemistry</h2>
-            <p class="subject-desc">pH, reactions, sublimation, acids & solutions</p>
-            <div class="subject-meta"><span class="exp-count">13 Experiments</span><span class="subject-arrow">→</span></div>
-          </div>
-        </a>
+      <div class="section-heading-row explore-results-heading">
+        <div>
+          <div class="section-label">Experiment Library</div>
+          <p class="section-subtitle" id="filtered-count">Loading experiments...</p>
+        </div>
+      </div>
 
-        <!-- Biology -->
-        <a href="/experiments/biology.html" class="subject-card subject-biology" style="text-decoration:none;">
-          <div class="subject-card-glow"></div>
-          <div class="subject-icon-wrap"><div class="subject-icon">🌿</div></div>
-          <div class="subject-info">
-            <h2 class="subject-name">Biology</h2>
-            <p class="subject-desc">Cells, stomata, respiration, reproduction</p>
-            <div class="subject-meta"><span class="exp-count">11 Experiments</span><span class="subject-arrow">→</span></div>
-          </div>
-        </a>
+      <div class="explore-exp-grid" id="filtered-experiment-grid"></div>
+      <div class="glass-card filter-empty" id="filtered-empty" hidden>
+        No experiments match these filters. Try a broader subject, class, concept, or difficulty.
       </div>
     </section>
   </main>
-  
+
   <script src="/assets/js/navbar.js"></script>
+  <script src="/assets/js/explore.js"></script>
   <script src="/assets/js/app.js"></script>
 </body>
 </html>

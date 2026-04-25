@@ -10,6 +10,31 @@ document.addEventListener("DOMContentLoaded", function() {
         </div>
       </div>
       <div class="nav-breadcrumb" id="nav-breadcrumb"></div>
+      <div class="nav-menu" aria-label="Primary navigation">
+        <a class="nav-menu-link" href="/index.html">Home</a>
+        <a class="nav-menu-link" href="/experiments.html">Experiments</a>
+        <a class="nav-menu-link" href="/experiments/physics.html">Physics</a>
+        <a class="nav-menu-link" href="/experiments/chemistry.html">Chemistry</a>
+        <a class="nav-menu-link" href="/experiments/biology.html">Biology</a>
+        <div class="nav-menu-dropdown">
+          <button class="nav-menu-link nav-menu-button" type="button">Classes ▾</button>
+          <div class="nav-menu-panel">
+            <a href="/experiments.html?class=6-8">Classes 6–8</a>
+            <a href="/experiments.html?class=9-10">Classes 9–10</a>
+            <a href="/experiments.html?class=11-12">Classes 11–12</a>
+          </div>
+        </div>
+        <div class="nav-menu-dropdown">
+          <button class="nav-menu-link nav-menu-button" type="button">Concepts ▾</button>
+          <div class="nav-menu-panel nav-menu-panel-wide">
+            <a href="/experiments.html?category=electricity">Electricity</a>
+            <a href="/experiments.html?category=optics">Optics</a>
+            <a href="/experiments.html?category=reactions">Reactions</a>
+            <a href="/experiments.html?category=life-processes">Life Processes</a>
+            <a href="/experiments.html?category=separation-techniques">Separation</a>
+          </div>
+        </div>
+      </div>
       <div class="nav-actions">
         <!-- Language Picker -->
         <div class="lang-picker" id="lang-picker">

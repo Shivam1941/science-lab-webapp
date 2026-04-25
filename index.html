@@ -36,20 +36,24 @@
       <div class="landing-grid-overlay"></div>
     </div>
     <div class="landing-hero-content">
-      <div class="landing-badge">🔬 Virtual Science Lab · CBSE Curriculum</div>
+      <div class="landing-badge">🔬 SchoolUp Lab · CBSE Curriculum</div>
       <h1 class="landing-title">
-        Science Digital<br>
-        <span class="landing-gradient">Laboratory</span>
+        SchoolUp<br>
+        <span class="landing-gradient">Lab</span>
       </h1>
       <p class="landing-desc">
-        Explore 40 interactive experiments across Physics, Chemistry &amp; Biology.
-        Real-time simulations, detailed observations, and viva assessments — all in your browser.
+        Interactive Science Experiments for Classes 6–12.
+        Explore simulations by subject, class, concept, and difficulty — all from one guided learning platform.
       </p>
       <div class="landing-cta-group">
         <button class="landing-cta-btn" id="landing-cta" onclick="scrollToApp()">
-          Start Exploring
+          Explore Experiments
           <span class="landing-cta-arrow">→</span>
         </button>
+        <a class="landing-cta-btn landing-cta-secondary" href="/experiments.html">
+          Start Learning
+          <span class="landing-cta-arrow">→</span>
+        </a>
         <div class="landing-cta-sub">Free · No signup required · Works offline</div>
       </div>
       <div class="landing-pills">
@@ -81,13 +85,50 @@
           <div class="orb orb-green"></div>
         </div>
         <div class="hero-content">
-          <div class="hero-badge" id="hero-badge">🔬 Virtual Science Lab</div>
-          <h1 class="hero-title"><span id="hero-title1">Science Digital</span><br /><span class="gradient-text"
-              id="hero-title2">Laboratory</span></h1>
-          <p class="hero-desc" id="hero-desc">Explore interactive experiments in Physics, Chemistry & Biology. Real-time
-            simulations, animated canvases, and detailed observations — all in your browser.</p>
+          <div class="hero-badge" id="hero-badge">🔬 SchoolUp Lab</div>
+          <h1 class="hero-title"><span id="hero-title1">Interactive Science</span><br /><span class="gradient-text"
+              id="hero-title2">Experiments</span></h1>
+          <p class="hero-desc" id="hero-desc">Interactive Science Experiments for Classes 6–12. Explore by subject, class,
+            concept, and difficulty with simulations, procedures, and viva practice.</p>
         </div>
       </div>
+
+      <section class="explore-hub-section" id="explore-hub">
+        <div class="section-label">Explore By</div>
+        <div class="explore-hub-grid">
+          <a class="explore-hub-card glass-card" href="/experiments.html?subject=physics">
+            <span class="explore-hub-icon">⚡</span>
+            <h2>Explore by Subject</h2>
+            <p>Browse Physics, Chemistry, and Biology labs with focused subject pathways.</p>
+          </a>
+          <a class="explore-hub-card glass-card" href="/experiments.html?class=9-10">
+            <span class="explore-hub-icon">🎓</span>
+            <h2>Explore by Class</h2>
+            <p>Find experiments aligned to Classes 6–8, 9–10, and 11–12.</p>
+          </a>
+          <a class="explore-hub-card glass-card" href="/experiments.html?category=electricity">
+            <span class="explore-hub-icon">🧠</span>
+            <h2>Explore by Concept</h2>
+            <p>Jump into electricity, optics, reactions, cells, life processes, and more.</p>
+          </a>
+          <a class="explore-hub-card glass-card" href="/experiments.html?difficulty=beginner">
+            <span class="explore-hub-icon">📈</span>
+            <h2>Explore by Difficulty</h2>
+            <p>Choose beginner, intermediate, or advanced labs based on readiness.</p>
+          </a>
+        </div>
+      </section>
+
+      <section class="featured-experiments-section">
+        <div class="section-heading-row">
+          <div>
+            <div class="section-label">Featured Experiments</div>
+            <p class="section-subtitle">Popular simulations selected from the same experiment dataset.</p>
+          </div>
+          <a class="section-link" href="/experiments.html">View all experiments →</a>
+        </div>
+        <div class="explore-exp-grid featured-grid" id="featured-experiment-grid"></div>
+      </section>
 
       <div id="dashboard-gamification"
         style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px; margin-bottom: 40px;">
@@ -255,6 +296,7 @@
   <script src="/assets/js/i18n_experiments_bn.js"></script>
   <script src="/assets/js/i18n_experiments_mr.js"></script>
   <script src="/assets/js/viva_system.js"></script>
+  <script src="/assets/js/explore.js"></script>
   <script src="/assets/js/app.js?v=2"></script>
   
   <!-- Experiment Simulation logic must be loaded so app.js can access window.experimentRenderers -->

@@ -62,6 +62,28 @@ function getVivaQuestions(exp) {
   ].map(question => question.replace(escapeHtml(apparatus), apparatus).replace('proper lab precautions', precaution));
 }
 
+function getRelatedExperiments(exp, subject) {
+  const allExperiments = Object.entries(data).flatMap(([itemSubject, experiments]) => {
+    return experiments.map(item => ({ ...item, subject: item.subject || itemSubject }));
+  });
+
+  const related = allExperiments
+    .filter(item => item.id !== exp.id)
+    .map(item => {
+      let score = 0;
+      if (item.subject === subject) score += 3;
+      if (item.category && item.category === exp.category) score += 4;
+      if (item.class && item.class === exp.class) score += 2;
+      if (item.difficulty && item.difficulty === exp.difficulty) score += 1;
+      return { ...item, score };
+    })
+    .filter(item => item.score > 0)
+    .sort((a, b) => b.score - a.score || a.title.localeCompare(b.title))
+    .slice(0, 5);
+
+  return related.length ? related : allExperiments.filter(item => item.id !== exp.id).slice(0, 5);
+}
+
 function discoverRendererFiles() {
   const rendererFiles = {};
   const expRoot = path.join(__dirname, 'experiments');
@@ -140,6 +162,7 @@ function experimentViewTemplate(exp) {
   const formula = getFormulaText(exp);
   const vivaQuestions = getVivaQuestions(exp);
   const experimentHeading = getExperimentHeading(exp);
+  const relatedExperiments = getRelatedExperiments(exp, exp.subject);
 
   return `    <section class="seo-experiment" style="padding: 40px 0; width: 100%; margin: 0 auto;">
       <article class="glass-card" style="padding: 28px; margin-bottom: 28px;">
@@ -158,6 +181,10 @@ function experimentViewTemplate(exp) {
         <ol style="color:var(--text-secondary);line-height:1.7;">${exp.procedure.map(item => `<li>${escapeHtml(item)}</li>`).join('')}</ol>
         <h2 style="font-size:22px;margin:24px 0 10px;">Viva Questions</h2>
         <ol style="color:var(--text-secondary);line-height:1.7;">${vivaQuestions.map(item => `<li>${escapeHtml(item)}</li>`).join('')}</ol>
+        <div class="related-experiments">
+          <h3>Related Experiments</h3>
+          <ul>${relatedExperiments.map(item => `<li><a href="/experiments/${item.subject}/${item.id}.html">${escapeHtml(item.title)}</a></li>`).join('')}</ul>
+        </div>
       </article>
 
       <section class="view" id="view-experiment" style="margin-top: 40px; padding: 20px;">
