@@ -1,518 +1,1264 @@
 {
-  physics: [
+  "physics": [
     {
-      id: 'ohms_law',
-      title: "Ohm's Law",
-      description: 'Study the relationship between voltage, current, and resistance in an electrical circuit.',
-      icon: '⚡',
-      iconBg: 'rgba(245, 158, 11, 0.15)',
-      iconColor: '#f59e0b',
-      aim: "To verify Ohm's Law — V = IR — and study the linear relationship between voltage and current for a given resistor.",
-      apparatus: ['Battery / DC power supply', 'Ammeter', 'Voltmeter', 'Rheostat / Variable resistor', 'Connecting wires', 'Resistor (known value)', 'Key / Switch'],
-      procedure: ['Connect the circuit: battery → key → ammeter → resistor → battery.', 'Connect the voltmeter in parallel across the resistor.', 'Close the key and note the ammeter and voltmeter readings.', 'Vary the resistance using the rheostat to get different readings.', 'Plot V vs I graph — it should be a straight line through origin.'],
-      precautions: ['Ensure tight connections to avoid heating.', 'Do not exceed the rated current of the ammeter.', 'Tap the key briefly first to confirm correct polarity.', 'Take at least 5 readings for an accurate graph.'],
-      conclusion: 'The V-I graph is a straight line through the origin, confirming V = IR. The slope of the graph gives the resistance R of the conductor.'
+      "id": "ohms_law",
+      "title": "Ohm's Law",
+      "description": "Study the relationship between voltage, current, and resistance in an electrical circuit.",
+      "icon": "⚡",
+      "iconBg": "rgba(245, 158, 11, 0.15)",
+      "iconColor": "#f59e0b",
+      "aim": "To verify Ohm's Law — V = IR — and study the linear relationship between voltage and current for a given resistor.",
+      "apparatus": [
+        "Battery / DC power supply",
+        "Ammeter",
+        "Voltmeter",
+        "Rheostat / Variable resistor",
+        "Connecting wires",
+        "Resistor (known value)",
+        "Key / Switch"
+      ],
+      "procedure": [
+        "Connect the circuit: battery → key → ammeter → resistor → battery.",
+        "Connect the voltmeter in parallel across the resistor.",
+        "Close the key and note the ammeter and voltmeter readings.",
+        "Vary the resistance using the rheostat to get different readings.",
+        "Plot V vs I graph — it should be a straight line through origin."
+      ],
+      "precautions": [
+        "Ensure tight connections to avoid heating.",
+        "Do not exceed the rated current of the ammeter.",
+        "Tap the key briefly first to confirm correct polarity.",
+        "Take at least 5 readings for an accurate graph."
+      ],
+      "conclusion": "The V-I graph is a straight line through the origin, confirming V = IR. The slope of the graph gives the resistance R of the conductor."
     },
     {
-      id: 'simple_pendulum',
-      title: 'Simple Pendulum',
-      description: 'Investigate the relationship between pendulum length and time period using real-time physics.',
-      icon: '🔄',
-      iconBg: 'rgba(59, 130, 246, 0.15)',
-      iconColor: '#3b82f6',
-      aim: 'To study the relationship between length and time period of a simple pendulum, and to verify T = 2π√(L/g).',
-      apparatus: ['Clamp stand with clamp', 'Thread / String (inextensible)', 'Bob (metallic sphere)', 'Stopwatch', 'Meter scale', 'Split cork'],
-      procedure: ['Clamp the pendulum at a fixed height using split cork.', 'Measure the effective length L from point of suspension to centre of bob.', 'Displace the bob slightly (< 15°) and release.', 'Measure time for 20 complete oscillations using stopwatch.', 'Calculate T (period) = total time / 20.', 'Repeat for different lengths and plot T² vs L graph.'],
-      precautions: ['Amplitude should be small (< 15°) for simple harmonic motion.', 'Count oscillations from the mean position.', 'Avoid air drafts during experiment.', 'Measure length to the centre of the bob.'],
-      conclusion: 'T² is directly proportional to L. The graph of T² vs L is a straight line through the origin, verifying T = 2π√(L/g).'
+      "id": "simple_pendulum",
+      "title": "Simple Pendulum",
+      "description": "Investigate the relationship between pendulum length and time period using real-time physics.",
+      "icon": "🔄",
+      "iconBg": "rgba(59, 130, 246, 0.15)",
+      "iconColor": "#3b82f6",
+      "aim": "To study the relationship between length and time period of a simple pendulum, and to verify T = 2π√(L/g).",
+      "apparatus": [
+        "Clamp stand with clamp",
+        "Thread / String (inextensible)",
+        "Bob (metallic sphere)",
+        "Stopwatch",
+        "Meter scale",
+        "Split cork"
+      ],
+      "procedure": [
+        "Clamp the pendulum at a fixed height using split cork.",
+        "Measure the effective length L from point of suspension to centre of bob.",
+        "Displace the bob slightly (< 15°) and release.",
+        "Measure time for 20 complete oscillations using stopwatch.",
+        "Calculate T (period) = total time / 20.",
+        "Repeat for different lengths and plot T² vs L graph."
+      ],
+      "precautions": [
+        "Amplitude should be small (< 15°) for simple harmonic motion.",
+        "Count oscillations from the mean position.",
+        "Avoid air drafts during experiment.",
+        "Measure length to the centre of the bob."
+      ],
+      "conclusion": "T² is directly proportional to L. The graph of T² vs L is a straight line through the origin, verifying T = 2π√(L/g)."
     },
     {
-      id: 'reflection_of_light',
-      title: 'Reflection of Light',
-      description: 'Study the law of reflection with interactive mirror and ray diagrams.',
-      icon: '🪞',
-      iconBg: 'rgba(168, 85, 247, 0.15)',
-      iconColor: '#a855f7',
-      aim: 'To verify the laws of reflection: (1) angle of incidence = angle of reflection, and (2) the incident ray, reflected ray, and normal all lie in the same plane.',
-      apparatus: ['Plane mirror', 'Protractor / Circular disc', 'Pins (drawing pins)', 'Drawing board', 'White paper', 'Scale / Ruler'],
-      procedure: ['Fix white paper on drawing board.', 'Draw a line and place the mirror on it.', 'Draw a normal (perpendicular) at the point of incidence.', 'Place two pins along the incident ray.', 'Looking from the other side, place two more pins such that all four appear in line.', 'Measure angle of incidence and angle of reflection with protractor.', 'Repeat for different angles.'],
-      precautions: ['Mirror must be vertical and placed exactly on the line.', 'Pins must be vertical and sufficiently apart.', 'Measure angles from the normal, not from the mirror surface.', 'Use at least 5 different angles for verification.'],
-      conclusion: 'For every angle of incidence, the angle of reflection is equal. The incident ray, normal, and reflected ray lie in the same plane. This verifies both laws of reflection.'
+      "id": "reflection_of_light",
+      "title": "Reflection of Light",
+      "description": "Study the law of reflection with interactive mirror and ray diagrams.",
+      "icon": "🪞",
+      "iconBg": "rgba(168, 85, 247, 0.15)",
+      "iconColor": "#a855f7",
+      "aim": "To verify the laws of reflection: (1) angle of incidence = angle of reflection, and (2) the incident ray, reflected ray, and normal all lie in the same plane.",
+      "apparatus": [
+        "Plane mirror",
+        "Protractor / Circular disc",
+        "Pins (drawing pins)",
+        "Drawing board",
+        "White paper",
+        "Scale / Ruler"
+      ],
+      "procedure": [
+        "Fix white paper on drawing board.",
+        "Draw a line and place the mirror on it.",
+        "Draw a normal (perpendicular) at the point of incidence.",
+        "Place two pins along the incident ray.",
+        "Looking from the other side, place two more pins such that all four appear in line.",
+        "Measure angle of incidence and angle of reflection with protractor.",
+        "Repeat for different angles."
+      ],
+      "precautions": [
+        "Mirror must be vertical and placed exactly on the line.",
+        "Pins must be vertical and sufficiently apart.",
+        "Measure angles from the normal, not from the mirror surface.",
+        "Use at least 5 different angles for verification."
+      ],
+      "conclusion": "For every angle of incidence, the angle of reflection is equal. The incident ray, normal, and reflected ray lie in the same plane. This verifies both laws of reflection."
     },
     {
-      id: 'lens_formation',
-      title: 'Image Formation by Lenses',
-      description: 'Explore ray diagrams through convex and concave lenses with interactive controls.',
-      icon: '🔍',
-      iconBg: 'rgba(99, 102, 241, 0.15)',
-      iconColor: '#6366f1',
-      aim: 'To study the image formation by convex and concave lenses for various object positions, and to verify the lens formula 1/v − 1/u = 1/f.',
-      apparatus: ['Convex lens (known focal length)', 'Concave lens (known focal length)', 'Optical bench with uprights', 'Illuminated object (candle or LED arrow)', 'Screen', 'Meter scale'],
-      procedure: ['Place the lens at the centre of the optical bench.', 'Place the illuminated object at various distances from the lens.', 'For convex lens: move the screen to find a sharp real image.', 'Note the object distance (u) and image distance (v).', 'Repeat for different object positions: beyond 2F, at 2F, between F and 2F, at F.', 'For concave lens: use a virtual image method with a convex lens.'],
-      precautions: ['Lens, object, and screen should be at the same height.', 'Measure distances from the optical centre of the lens.', 'Use sign convention consistently.', 'Ensure the image is sharp before recording.'],
-      conclusion: 'The lens formula 1/v − 1/u = 1/f is verified. Convex lens forms real, inverted images for objects beyond F, and virtual, erect, magnified images for objects within F.'
+      "id": "lens_formation",
+      "title": "Image Formation by Lenses",
+      "description": "Explore ray diagrams through convex and concave lenses with interactive controls.",
+      "icon": "🔍",
+      "iconBg": "rgba(99, 102, 241, 0.15)",
+      "iconColor": "#6366f1",
+      "aim": "To study the image formation by convex and concave lenses for various object positions, and to verify the lens formula 1/v − 1/u = 1/f.",
+      "apparatus": [
+        "Convex lens (known focal length)",
+        "Concave lens (known focal length)",
+        "Optical bench with uprights",
+        "Illuminated object (candle or LED arrow)",
+        "Screen",
+        "Meter scale"
+      ],
+      "procedure": [
+        "Place the lens at the centre of the optical bench.",
+        "Place the illuminated object at various distances from the lens.",
+        "For convex lens: move the screen to find a sharp real image.",
+        "Note the object distance (u) and image distance (v).",
+        "Repeat for different object positions: beyond 2F, at 2F, between F and 2F, at F.",
+        "For concave lens: use a virtual image method with a convex lens."
+      ],
+      "precautions": [
+        "Lens, object, and screen should be at the same height.",
+        "Measure distances from the optical centre of the lens.",
+        "Use sign convention consistently.",
+        "Ensure the image is sharp before recording."
+      ],
+      "conclusion": "The lens formula 1/v − 1/u = 1/f is verified. Convex lens forms real, inverted images for objects beyond F, and virtual, erect, magnified images for objects within F."
     },
     {
-      id: 'motion_simulator',
-      title: 'Motion Simulator',
-      description: 'Visualize position, velocity, and acceleration graphs for uniform and accelerated motion.',
-      icon: '🚀',
-      iconBg: 'rgba(20, 184, 166, 0.15)',
-      iconColor: '#14b8a6',
-      aim: 'To study different types of motion (uniform, uniformly accelerated, decelerated) and understand the relationships between displacement, velocity, and acceleration.',
-      apparatus: ['Ticker tape timer (or motion sensor)', 'Trolley / Cart on track', 'Power supply for ticker timer', 'Ruler / Measuring tape', 'Inclined plane (for acceleration)'],
-      procedure: ['Set up the ticker timer and thread the tape.', 'Give the trolley a push for uniform motion — observe equal spacing.', 'Use inclined plane for accelerated motion — observe increasing spacing.', 'Calculate velocity for each interval using v = Δs/Δt.', 'Plot position-time, velocity-time, and acceleration-time graphs.'],
-      precautions: ['Ensure the track is smooth and level for uniform motion.', 'Record data at regular time intervals.', 'Minimize friction for accurate results.', 'Use SI units consistently.'],
-      conclusion: 'Uniform motion produces a linear s-t graph and a horizontal v-t line. Uniformly accelerated motion produces a parabolic s-t graph and a linear v-t line. The area under v-t graph equals displacement.'
+      "id": "motion_simulator",
+      "title": "Motion Simulator",
+      "description": "Visualize position, velocity, and acceleration graphs for uniform and accelerated motion.",
+      "icon": "🚀",
+      "iconBg": "rgba(20, 184, 166, 0.15)",
+      "iconColor": "#14b8a6",
+      "aim": "To study different types of motion (uniform, uniformly accelerated, decelerated) and understand the relationships between displacement, velocity, and acceleration.",
+      "apparatus": [
+        "Ticker tape timer (or motion sensor)",
+        "Trolley / Cart on track",
+        "Power supply for ticker timer",
+        "Ruler / Measuring tape",
+        "Inclined plane (for acceleration)"
+      ],
+      "procedure": [
+        "Set up the ticker timer and thread the tape.",
+        "Give the trolley a push for uniform motion — observe equal spacing.",
+        "Use inclined plane for accelerated motion — observe increasing spacing.",
+        "Calculate velocity for each interval using v = Δs/Δt.",
+        "Plot position-time, velocity-time, and acceleration-time graphs."
+      ],
+      "precautions": [
+        "Ensure the track is smooth and level for uniform motion.",
+        "Record data at regular time intervals.",
+        "Minimize friction for accurate results.",
+        "Use SI units consistently."
+      ],
+      "conclusion": "Uniform motion produces a linear s-t graph and a horizontal v-t line. Uniformly accelerated motion produces a parabolic s-t graph and a linear v-t line. The area under v-t graph equals displacement."
     },
     {
-      id: 'refraction_dispersion_prism',
-      title: 'Prism Refraction & Dispersion',
-      description: 'Study refraction and dispersion of white light through a glass prism.',
-      icon: '🌈',
-      iconBg: 'rgba(99, 102, 241, 0.15)',
-      iconColor: '#6366f1',
-      aim: 'To study the refraction and dispersion of white light through a glass prism, observe the formation of a spectrum, and verify Snell\'s law at both refracting surfaces.',
-      apparatus: ['Glass prism (equilateral, 60°)', 'Ray box or laser pointer', 'White screen', 'Protractor', 'Drawing board with white paper', 'Pins'],
-      procedure: ['Place the prism on the drawing board and trace its outline.', 'Direct a narrow beam of white light at one face of the prism.', 'Observe the refracted ray exiting from the other face.', 'Mark the incident and emergent rays using pins.', 'Measure angles of incidence (i), emergence (e), and deviation (D).', 'Switch to white light and observe the VIBGYOR spectrum on screen.', 'Vary the angle of incidence and plot i vs D graph to find minimum deviation.'],
-      precautions: ['Use a narrow beam of light for clear rays.', 'Keep the prism on the same traced outline.', 'Measure all angles from the normal, not from the surface.', 'Darken the room for better spectrum observation.'],
-      conclusion: 'White light disperses into VIBGYOR spectrum because different wavelengths have different refractive indices (violet bends most, red least). The deviation angle D = (i + e) − A, and the i-D graph shows a minimum deviation.'
+      "id": "refraction_dispersion_prism",
+      "title": "Prism Refraction & Dispersion",
+      "description": "Study refraction and dispersion of white light through a glass prism.",
+      "icon": "🌈",
+      "iconBg": "rgba(99, 102, 241, 0.15)",
+      "iconColor": "#6366f1",
+      "aim": "To study the refraction and dispersion of white light through a glass prism, observe the formation of a spectrum, and verify Snell's law at both refracting surfaces.",
+      "apparatus": [
+        "Glass prism (equilateral, 60°)",
+        "Ray box or laser pointer",
+        "White screen",
+        "Protractor",
+        "Drawing board with white paper",
+        "Pins"
+      ],
+      "procedure": [
+        "Place the prism on the drawing board and trace its outline.",
+        "Direct a narrow beam of white light at one face of the prism.",
+        "Observe the refracted ray exiting from the other face.",
+        "Mark the incident and emergent rays using pins.",
+        "Measure angles of incidence (i), emergence (e), and deviation (D).",
+        "Switch to white light and observe the VIBGYOR spectrum on screen.",
+        "Vary the angle of incidence and plot i vs D graph to find minimum deviation."
+      ],
+      "precautions": [
+        "Use a narrow beam of light for clear rays.",
+        "Keep the prism on the same traced outline.",
+        "Measure all angles from the normal, not from the surface.",
+        "Darken the room for better spectrum observation."
+      ],
+      "conclusion": "White light disperses into VIBGYOR spectrum because different wavelengths have different refractive indices (violet bends most, red least). The deviation angle D = (i + e) − A, and the i-D graph shows a minimum deviation."
     },
     {
-      id: 'virtual_breadboard',
-      title: 'Virtual Breadboard',
-      description: 'Build series and parallel resistor circuits and calculate equivalent resistance.',
-      icon: '🔌',
-      iconBg: 'rgba(15, 118, 110, 0.15)',
-      iconColor: '#0f766e',
-      aim: 'To study series and parallel combinations of resistors and calculate the equivalent resistance using a virtual breadboard.',
-      apparatus: ['Breadboard', 'Resistors (various values)', 'Battery / DC power supply', 'Ammeter and Voltmeter', 'Connecting wires', 'Multimeter'],
-      procedure: ['Select resistors from the component tray.', 'Add resistors to the series rail — they are connected end-to-end.', 'Add resistors to the parallel rail — they are connected across the same two points.', 'Read the equivalent resistance from the multimeter display.', 'Observe how current distributes in series vs parallel.', 'Try the challenge: create 15Ω from three 10Ω resistors.'],
-      precautions: ['Ensure all connections are tight and correct.', 'Do not exceed the rated current of any resistor.', 'Verify polarity of ammeter/voltmeter connections.', 'Use color bands to identify resistor values.'],
-      conclusion: 'In series, Req = R₁ + R₂ + R₃... (resistance adds up). In parallel, 1/Req = 1/R₁ + 1/R₂ + 1/R₃... (effective resistance decreases). A combination of both gives hybrid circuits.'
+      "id": "virtual_breadboard",
+      "title": "Virtual Breadboard",
+      "description": "Build series and parallel resistor circuits and calculate equivalent resistance.",
+      "icon": "🔌",
+      "iconBg": "rgba(15, 118, 110, 0.15)",
+      "iconColor": "#0f766e",
+      "aim": "To study series and parallel combinations of resistors and calculate the equivalent resistance using a virtual breadboard.",
+      "apparatus": [
+        "Breadboard",
+        "Resistors (various values)",
+        "Battery / DC power supply",
+        "Ammeter and Voltmeter",
+        "Connecting wires",
+        "Multimeter"
+      ],
+      "procedure": [
+        "Select resistors from the component tray.",
+        "Add resistors to the series rail — they are connected end-to-end.",
+        "Add resistors to the parallel rail — they are connected across the same two points.",
+        "Read the equivalent resistance from the multimeter display.",
+        "Observe how current distributes in series vs parallel.",
+        "Try the challenge: create 15Ω from three 10Ω resistors."
+      ],
+      "precautions": [
+        "Ensure all connections are tight and correct.",
+        "Do not exceed the rated current of any resistor.",
+        "Verify polarity of ammeter/voltmeter connections.",
+        "Use color bands to identify resistor values."
+      ],
+      "conclusion": "In series, Req = R₁ + R₂ + R₃... (resistance adds up). In parallel, 1/Req = 1/R₁ + 1/R₂ + 1/R₃... (effective resistance decreases). A combination of both gives hybrid circuits."
     },
     {
-      id: 'lateral_displacement_refraction',
-      title: 'Lateral Displacement',
-      description: 'Study the lateral displacement of light passing through a rectangular glass slab.',
-      icon: '📐',
-      iconBg: 'rgba(59, 130, 246, 0.15)',
-      iconColor: '#3b82f6',
-      aim: 'To trace the path of a ray of light through a rectangular glass slab and measure the lateral displacement.',
-      apparatus: ['Rectangular glass slab', 'Drawing board', 'White paper', 'Pins (4)', 'Protractor', 'Scale / Ruler'],
-      procedure: ['Place the glass slab on white paper and trace its outline.', 'Fix two pins P₁ and P₂ on the incident ray side.', 'Look through the slab from the other side and fix pins P₃ and P₄ in line with images of P₁ and P₂.', 'Remove the slab and join P₃-P₄ to get the emergent ray.', 'Draw normals at entry and exit points.', 'Measure angle of incidence (i), angle of refraction (r), and lateral displacement (d).', 'Repeat for different angles of incidence.'],
-      precautions: ['Use a thick glass slab for measurable displacement.', 'Pins should be vertical and well-separated.', 'Mark entry and exit points precisely.', 'The emergent ray should be parallel to the incident ray.'],
-      conclusion: 'The emergent ray is parallel to the incident ray but laterally displaced. Lateral displacement d = t × sin(i−r) / cos(r), where t is slab thickness. It increases with angle of incidence and slab thickness.'
+      "id": "lateral_displacement_refraction",
+      "title": "Lateral Displacement",
+      "description": "Study the lateral displacement of light passing through a rectangular glass slab.",
+      "icon": "📐",
+      "iconBg": "rgba(59, 130, 246, 0.15)",
+      "iconColor": "#3b82f6",
+      "aim": "To trace the path of a ray of light through a rectangular glass slab and measure the lateral displacement.",
+      "apparatus": [
+        "Rectangular glass slab",
+        "Drawing board",
+        "White paper",
+        "Pins (4)",
+        "Protractor",
+        "Scale / Ruler"
+      ],
+      "procedure": [
+        "Place the glass slab on white paper and trace its outline.",
+        "Fix two pins P₁ and P₂ on the incident ray side.",
+        "Look through the slab from the other side and fix pins P₃ and P₄ in line with images of P₁ and P₂.",
+        "Remove the slab and join P₃-P₄ to get the emergent ray.",
+        "Draw normals at entry and exit points.",
+        "Measure angle of incidence (i), angle of refraction (r), and lateral displacement (d).",
+        "Repeat for different angles of incidence."
+      ],
+      "precautions": [
+        "Use a thick glass slab for measurable displacement.",
+        "Pins should be vertical and well-separated.",
+        "Mark entry and exit points precisely.",
+        "The emergent ray should be parallel to the incident ray."
+      ],
+      "conclusion": "The emergent ray is parallel to the incident ray but laterally displaced. Lateral displacement d = t × sin(i−r) / cos(r), where t is slab thickness. It increases with angle of incidence and slab thickness."
     },
     {
-      id: 'buoyancy_density_lab',
-      title: 'Buoyancy & Density Lab',
-      description: 'Explore Archimedes\' principle with objects floating and sinking in different liquids.',
-      icon: '🌊',
-      iconBg: 'rgba(14, 165, 233, 0.15)',
-      iconColor: '#0ea5e9',
-      aim: 'To verify Archimedes\' principle and study the relationship between buoyant force, object density, and liquid density.',
-      apparatus: ['Spring balance', 'Overflow can', 'Measuring cylinder', 'Objects of different densities', 'Water, salt water, oil', 'Thread'],
-      procedure: ['Weigh the object in air using a spring balance (W₁).', 'Immerse the object fully in water and note the apparent weight (W₂).', 'Collect the overflowing water in a measuring cylinder.', 'Buoyant force = W₁ − W₂ = weight of water displaced.', 'Repeat with different liquids (salt water, oil).', 'Observe: objects float when ρ_object < ρ_liquid, sink when ρ_object > ρ_liquid.'],
-      precautions: ['Ensure the object is fully submerged.', 'Read the spring balance at eye level.', 'Fill the overflow can to the brim before submerging.', 'Use thread thin enough not to affect readings.'],
-      conclusion: 'Archimedes\' principle is verified: the buoyant force equals the weight of liquid displaced. Objects with density less than the liquid float; denser objects sink. The apparent weight loss equals the buoyant force.'
+      "id": "buoyancy_density_lab",
+      "title": "Buoyancy & Density Lab",
+      "description": "Explore Archimedes' principle with objects floating and sinking in different liquids.",
+      "icon": "🌊",
+      "iconBg": "rgba(14, 165, 233, 0.15)",
+      "iconColor": "#0ea5e9",
+      "aim": "To verify Archimedes' principle and study the relationship between buoyant force, object density, and liquid density.",
+      "apparatus": [
+        "Spring balance",
+        "Overflow can",
+        "Measuring cylinder",
+        "Objects of different densities",
+        "Water, salt water, oil",
+        "Thread"
+      ],
+      "procedure": [
+        "Weigh the object in air using a spring balance (W₁).",
+        "Immerse the object fully in water and note the apparent weight (W₂).",
+        "Collect the overflowing water in a measuring cylinder.",
+        "Buoyant force = W₁ − W₂ = weight of water displaced.",
+        "Repeat with different liquids (salt water, oil).",
+        "Observe: objects float when ρ_object < ρ_liquid, sink when ρ_object > ρ_liquid."
+      ],
+      "precautions": [
+        "Ensure the object is fully submerged.",
+        "Read the spring balance at eye level.",
+        "Fill the overflow can to the brim before submerging.",
+        "Use thread thin enough not to affect readings."
+      ],
+      "conclusion": "Archimedes' principle is verified: the buoyant force equals the weight of liquid displaced. Objects with density less than the liquid float; denser objects sink. The apparent weight loss equals the buoyant force."
     },
     {
-      id: 'pulse_velocity_experiment',
-      title: 'Wave / Pulse Velocity',
-      description: 'Visualize transverse and longitudinal waves and measure wave velocity.',
-      icon: '〰️',
-      iconBg: 'rgba(14, 165, 233, 0.15)',
-      iconColor: '#0ea5e9',
-      aim: 'To study the properties of waves (frequency, wavelength, amplitude) and verify the wave equation v = fλ for both transverse and longitudinal waves.',
-      apparatus: ['Slinky spring', 'Stopwatch', 'Measuring tape', 'Tuning fork (optional)', 'Ripple tank (optional)'],
-      procedure: ['Stretch the slinky on a flat surface.', 'For transverse wave: flick one end sideways and observe the pulse.', 'For longitudinal wave: push one end along the slinky axis.', 'Measure the wavelength (λ) — distance between two consecutive crests.', 'Count the number of complete waves passing a point per second (frequency f).', 'Calculate velocity: v = f × λ.', 'Vary frequency and observe the change in wavelength.'],
-      precautions: ['Keep the medium (slinky) uniform in tension.', 'Measure multiple wavelengths and take an average.', 'Avoid reflecting waves from the far end.', 'Use a stopwatch to time several oscillations for accurate frequency.'],
-      conclusion: 'The wave velocity v = fλ is verified. In transverse waves, particles oscillate perpendicular to the wave direction. In longitudinal waves, particles oscillate along the wave direction. Velocity depends on the medium, not on frequency or amplitude.'
+      "id": "pulse_velocity_experiment",
+      "title": "Wave / Pulse Velocity",
+      "description": "Visualize transverse and longitudinal waves and measure wave velocity.",
+      "icon": "〰️",
+      "iconBg": "rgba(14, 165, 233, 0.15)",
+      "iconColor": "#0ea5e9",
+      "aim": "To study the properties of waves (frequency, wavelength, amplitude) and verify the wave equation v = fλ for both transverse and longitudinal waves.",
+      "apparatus": [
+        "Slinky spring",
+        "Stopwatch",
+        "Measuring tape",
+        "Tuning fork (optional)",
+        "Ripple tank (optional)"
+      ],
+      "procedure": [
+        "Stretch the slinky on a flat surface.",
+        "For transverse wave: flick one end sideways and observe the pulse.",
+        "For longitudinal wave: push one end along the slinky axis.",
+        "Measure the wavelength (λ) — distance between two consecutive crests.",
+        "Count the number of complete waves passing a point per second (frequency f).",
+        "Calculate velocity: v = f × λ.",
+        "Vary frequency and observe the change in wavelength."
+      ],
+      "precautions": [
+        "Keep the medium (slinky) uniform in tension.",
+        "Measure multiple wavelengths and take an average.",
+        "Avoid reflecting waves from the far end.",
+        "Use a stopwatch to time several oscillations for accurate frequency."
+      ],
+      "conclusion": "The wave velocity v = fλ is verified. In transverse waves, particles oscillate perpendicular to the wave direction. In longitudinal waves, particles oscillate along the wave direction. Velocity depends on the medium, not on frequency or amplitude."
     },
     {
-      id: 'sound_reflection_workstation',
-      title: 'Sound Reflection Workstation',
-      description: 'Study echo, sound reflection, and the effect of distance and surface materials.',
-      icon: '🔊',
-      iconBg: 'rgba(124, 58, 237, 0.15)',
-      iconColor: '#7c3aed',
-      aim: 'To study the reflection of sound, determine the conditions for hearing an echo, and explore how surface materials affect sound absorption.',
-      apparatus: ['Two cardboard tubes', 'Smooth reflecting surface (wall)', 'Stopwatch', 'Measuring tape', 'Sound source (clap / buzzer)'],
-      procedure: ['Stand at a known distance from a large reflecting surface (wall).', 'Produce a sharp sound (clap) and listen for the echo.', 'Measure the time between the original sound and the echo.', 'Calculate speed of sound: v = 2d/t.', 'Repeat at different distances.', 'Test different reflecting surfaces (concrete, wood, glass, curtain).', 'Observe: echo is heard only when t ≥ 0.1 s (minimum distance ≈ 17 m).'],
-      precautions: ['Perform in a quiet environment.', 'Use a large, flat reflecting surface.', 'Minimum distance must be about 17 m for a distinct echo.', 'Repeat measurements and take average for accuracy.'],
-      conclusion: 'Sound reflects from hard surfaces following the law of reflection. Echo is heard when the time gap is ≥ 0.1 s. Speed of sound at room temperature ≈ 343 m/s. Soft surfaces like curtains absorb more sound and produce weaker echoes.'
+      "id": "sound_reflection_workstation",
+      "title": "Sound Reflection Workstation",
+      "description": "Study echo, sound reflection, and the effect of distance and surface materials.",
+      "icon": "🔊",
+      "iconBg": "rgba(124, 58, 237, 0.15)",
+      "iconColor": "#7c3aed",
+      "aim": "To study the reflection of sound, determine the conditions for hearing an echo, and explore how surface materials affect sound absorption.",
+      "apparatus": [
+        "Two cardboard tubes",
+        "Smooth reflecting surface (wall)",
+        "Stopwatch",
+        "Measuring tape",
+        "Sound source (clap / buzzer)"
+      ],
+      "procedure": [
+        "Stand at a known distance from a large reflecting surface (wall).",
+        "Produce a sharp sound (clap) and listen for the echo.",
+        "Measure the time between the original sound and the echo.",
+        "Calculate speed of sound: v = 2d/t.",
+        "Repeat at different distances.",
+        "Test different reflecting surfaces (concrete, wood, glass, curtain).",
+        "Observe: echo is heard only when t ≥ 0.1 s (minimum distance ≈ 17 m)."
+      ],
+      "precautions": [
+        "Perform in a quiet environment.",
+        "Use a large, flat reflecting surface.",
+        "Minimum distance must be about 17 m for a distinct echo.",
+        "Repeat measurements and take average for accuracy."
+      ],
+      "conclusion": "Sound reflects from hard surfaces following the law of reflection. Echo is heard when the time gap is ≥ 0.1 s. Speed of sound at room temperature ≈ 343 m/s. Soft surfaces like curtains absorb more sound and produce weaker echoes."
     },
     {
-      id: 'magnetic_field_sim',
-      title: 'Magnetic Field Lines',
-      description: 'Visualize magnetic field lines around a bar magnet, current-carrying conductor, and solenoid.',
-      icon: '🧲',
-      iconBg: 'rgba(168, 85, 247, 0.15)',
-      iconColor: '#a855f7',
-      aim: 'To study the pattern of magnetic field lines around a bar magnet, a straight current-carrying conductor, and a solenoid, and verify the right-hand thumb rule.',
-      apparatus: ['Bar magnet', 'Iron filings', 'Compass needle', 'Straight conductor (wire)', 'Battery / DC power supply', 'Rheostat', 'Solenoid (coil)', 'Cardboard sheet'],
-      procedure: ['Place a bar magnet on a cardboard and sprinkle iron filings to observe field pattern.', 'Move a compass needle around the magnet and note its alignment.', 'Pass current through a straight conductor and observe concentric circular field lines.', 'Reverse current direction and observe the change in field direction.', 'Pass current through a solenoid and observe the field pattern similar to a bar magnet.', 'Vary current strength and observe changes in field intensity.'],
-      precautions: ['Keep magnets away from electronic devices.', 'Ensure tight electrical connections.', 'Do not short-circuit the battery.', 'Use a rheostat to control current.'],
-      conclusion: 'Magnetic field lines form closed loops from N to S pole externally. Around a straight conductor, field lines are concentric circles (right-hand rule). A solenoid behaves like a bar magnet with well-defined poles.'
+      "id": "magnetic_field_sim",
+      "title": "Magnetic Field Lines",
+      "description": "Visualize magnetic field lines around a bar magnet, current-carrying conductor, and solenoid.",
+      "icon": "🧲",
+      "iconBg": "rgba(168, 85, 247, 0.15)",
+      "iconColor": "#a855f7",
+      "aim": "To study the pattern of magnetic field lines around a bar magnet, a straight current-carrying conductor, and a solenoid, and verify the right-hand thumb rule.",
+      "apparatus": [
+        "Bar magnet",
+        "Iron filings",
+        "Compass needle",
+        "Straight conductor (wire)",
+        "Battery / DC power supply",
+        "Rheostat",
+        "Solenoid (coil)",
+        "Cardboard sheet"
+      ],
+      "procedure": [
+        "Place a bar magnet on a cardboard and sprinkle iron filings to observe field pattern.",
+        "Move a compass needle around the magnet and note its alignment.",
+        "Pass current through a straight conductor and observe concentric circular field lines.",
+        "Reverse current direction and observe the change in field direction.",
+        "Pass current through a solenoid and observe the field pattern similar to a bar magnet.",
+        "Vary current strength and observe changes in field intensity."
+      ],
+      "precautions": [
+        "Keep magnets away from electronic devices.",
+        "Ensure tight electrical connections.",
+        "Do not short-circuit the battery.",
+        "Use a rheostat to control current."
+      ],
+      "conclusion": "Magnetic field lines form closed loops from N to S pole externally. Around a straight conductor, field lines are concentric circles (right-hand rule). A solenoid behaves like a bar magnet with well-defined poles."
     },
     {
-      id: 'heat_transfer_sim',
-      title: 'Heat Transfer & Thermal Expansion',
-      description: 'Explore conduction, convection, radiation, and the ball-and-ring thermal expansion experiment.',
-      icon: '🔥',
-      iconBg: 'rgba(239, 68, 68, 0.15)',
-      iconColor: '#ef4444',
-      aim: 'To study the three modes of heat transfer (conduction, convection, radiation) and demonstrate thermal expansion of solids using the ball-and-ring experiment.',
-      apparatus: ['Metal ball and ring apparatus', 'Spirit lamp / Bunsen burner', 'Metal rod with wax dots', 'Beaker with water and potassium permanganate', 'Thermometer', 'Tongs'],
-      procedure: ['Heat the metal ball and try passing it through the ring — observe thermal expansion.', 'Cool the ball and try again — observe contraction.', 'Fix wax dots on a metal rod and heat one end — observe conduction as dots melt sequentially.', 'Heat water with KMnO₄ crystals at the bottom — observe convection currents.', 'Place your hand near (not touching) a hot object — feel radiation.'],
-      precautions: ['Handle hot objects with tongs.', 'Do not overheat the ball — it may damage the surface.', 'Keep flammable materials away from flame.', 'Use a thermometer carefully.'],
-      conclusion: 'Solids expand on heating and contract on cooling. Heat transfers via conduction (particle to particle), convection (bulk fluid movement), and radiation (electromagnetic waves without medium).'
+      "id": "heat_transfer_sim",
+      "title": "Heat Transfer & Thermal Expansion",
+      "description": "Explore conduction, convection, radiation, and the ball-and-ring thermal expansion experiment.",
+      "icon": "🔥",
+      "iconBg": "rgba(239, 68, 68, 0.15)",
+      "iconColor": "#ef4444",
+      "aim": "To study the three modes of heat transfer (conduction, convection, radiation) and demonstrate thermal expansion of solids using the ball-and-ring experiment.",
+      "apparatus": [
+        "Metal ball and ring apparatus",
+        "Spirit lamp / Bunsen burner",
+        "Metal rod with wax dots",
+        "Beaker with water and potassium permanganate",
+        "Thermometer",
+        "Tongs"
+      ],
+      "procedure": [
+        "Heat the metal ball and try passing it through the ring — observe thermal expansion.",
+        "Cool the ball and try again — observe contraction.",
+        "Fix wax dots on a metal rod and heat one end — observe conduction as dots melt sequentially.",
+        "Heat water with KMnO₄ crystals at the bottom — observe convection currents.",
+        "Place your hand near (not touching) a hot object — feel radiation."
+      ],
+      "precautions": [
+        "Handle hot objects with tongs.",
+        "Do not overheat the ball — it may damage the surface.",
+        "Keep flammable materials away from flame.",
+        "Use a thermometer carefully."
+      ],
+      "conclusion": "Solids expand on heating and contract on cooling. Heat transfers via conduction (particle to particle), convection (bulk fluid movement), and radiation (electromagnetic waves without medium)."
     },
     {
-      id: 'energy_conservation',
-      title: 'Work, Energy & Conservation',
-      description: 'Roller-coaster simulation demonstrating PE ↔ KE conversion and conservation of energy.',
-      icon: '⚡',
-      iconBg: 'rgba(234, 179, 8, 0.15)',
-      iconColor: '#eab308',
-      aim: 'To demonstrate the conservation of mechanical energy and the interconversion of kinetic and potential energy using a roller-coaster track simulation.',
-      apparatus: ['Roller-coaster track (virtual)', 'Ball of variable mass', 'Height-adjustable ramp', 'Energy meter display'],
-      procedure: ['Set the initial height and mass of the ball.', 'Release the ball from rest and observe it gaining speed as it descends (PE → KE).', 'Observe the ball slowing as it climbs (KE → PE).', 'Monitor the energy bars and graph to verify total energy stays constant.', 'Enable friction and observe energy loss as heat.', 'Try different track shapes by dragging control points.'],
-      precautions: ['Observe that total energy remains constant without friction.', 'Note that with friction, total energy decreases over time.', 'Compare velocity at the lowest and highest points of the track.'],
-      conclusion: 'Mechanical energy (PE + KE) is conserved in the absence of friction. PE converts to KE during descent and KE converts to PE during ascent. Friction causes energy dissipation as heat.'
+      "id": "energy_conservation",
+      "title": "Work, Energy & Conservation",
+      "description": "Roller-coaster simulation demonstrating PE ↔ KE conversion and conservation of energy.",
+      "icon": "⚡",
+      "iconBg": "rgba(234, 179, 8, 0.15)",
+      "iconColor": "#eab308",
+      "aim": "To demonstrate the conservation of mechanical energy and the interconversion of kinetic and potential energy using a roller-coaster track simulation.",
+      "apparatus": [
+        "Roller-coaster track (virtual)",
+        "Ball of variable mass",
+        "Height-adjustable ramp",
+        "Energy meter display"
+      ],
+      "procedure": [
+        "Set the initial height and mass of the ball.",
+        "Release the ball from rest and observe it gaining speed as it descends (PE → KE).",
+        "Observe the ball slowing as it climbs (KE → PE).",
+        "Monitor the energy bars and graph to verify total energy stays constant.",
+        "Enable friction and observe energy loss as heat.",
+        "Try different track shapes by dragging control points."
+      ],
+      "precautions": [
+        "Observe that total energy remains constant without friction.",
+        "Note that with friction, total energy decreases over time.",
+        "Compare velocity at the lowest and highest points of the track."
+      ],
+      "conclusion": "Mechanical energy (PE + KE) is conserved in the absence of friction. PE converts to KE during descent and KE converts to PE during ascent. Friction causes energy dissipation as heat."
     },
     {
-      id: 'vernier_caliper',
-      title: 'Vernier Caliper Measurement',
-      description: 'Learn to measure length precisely using a virtual Vernier caliper with real scale reading.',
-      icon: '📏',
-      iconBg: 'rgba(14, 165, 233, 0.15)',
-      iconColor: '#0ea5e9',
-      aim: 'To measure the dimensions of a given object accurately using a Vernier caliper and to understand least count, zero error, and scale reading.',
-      apparatus: ['Vernier caliper', 'Cylinder', 'Coin', 'Rectangular block'],
-      procedure: ['Close the jaws completely and check for zero error.', 'Place the object between the jaws.', 'Slide the movable jaw until it gently touches the object.', 'Read the Main Scale Reading (MSR) — the mark just before the Vernier zero.', 'Find the Vernier Scale Division (VSD) that coincides with any main scale mark.', 'Calculate: Reading = MSR + (VSD × Least Count).', 'Record the observation and repeat for other objects.'],
-      precautions: ['Do not over-tighten the jaws.', 'Check and correct for zero error before measurement.', 'Read the scale at eye level to avoid parallax.', 'Handle the caliper by the frame, not the jaws.'],
-      conclusion: 'The Vernier caliper allows measurement with a precision of 0.01 cm (0.1 mm). The least count is the difference between one MSD and one VSD. Zero error must be accounted for in every reading.'
+      "id": "vernier_caliper",
+      "title": "Vernier Caliper Measurement",
+      "description": "Learn to measure length precisely using a virtual Vernier caliper with real scale reading.",
+      "icon": "📏",
+      "iconBg": "rgba(14, 165, 233, 0.15)",
+      "iconColor": "#0ea5e9",
+      "aim": "To measure the dimensions of a given object accurately using a Vernier caliper and to understand least count, zero error, and scale reading.",
+      "apparatus": [
+        "Vernier caliper",
+        "Cylinder",
+        "Coin",
+        "Rectangular block"
+      ],
+      "procedure": [
+        "Close the jaws completely and check for zero error.",
+        "Place the object between the jaws.",
+        "Slide the movable jaw until it gently touches the object.",
+        "Read the Main Scale Reading (MSR) — the mark just before the Vernier zero.",
+        "Find the Vernier Scale Division (VSD) that coincides with any main scale mark.",
+        "Calculate: Reading = MSR + (VSD × Least Count).",
+        "Record the observation and repeat for other objects."
+      ],
+      "precautions": [
+        "Do not over-tighten the jaws.",
+        "Check and correct for zero error before measurement.",
+        "Read the scale at eye level to avoid parallax.",
+        "Handle the caliper by the frame, not the jaws."
+      ],
+      "conclusion": "The Vernier caliper allows measurement with a precision of 0.01 cm (0.1 mm). The least count is the difference between one MSD and one VSD. Zero error must be accounted for in every reading."
+    },
+    {
+      "id": "meter_bridge",
+      "title": "Meter Bridge Experiment",
+      "description": "Determine unknown resistance using the Wheatstone bridge principle and find the null point on a 1-metre uniform wire.",
+      "icon": "⚖️",
+      "iconBg": "rgba(34, 197, 94, 0.15)",
+      "iconColor": "#22c55e",
+      "aim": "To determine the unknown resistance X using a Meter Bridge based on the Wheatstone bridge principle, and to verify the formula X = R(100 − l)/l.",
+      "apparatus": [
+        "Meter bridge wire (1 m uniform resistance wire)",
+        "Resistance box (known resistance R)",
+        "Unknown resistance X",
+        "Galvanometer",
+        "Jockey",
+        "Battery / EMF source",
+        "Connecting wires and key"
+      ],
+      "procedure": [
+        "Connect the known resistance R in the left gap and unknown resistance X in the right gap of the meter bridge.",
+        "Connect the battery across the ends A and B, and the galvanometer between the midpoint D and the jockey J.",
+        "Slide the jockey along the wire and press lightly at various points.",
+        "Find the position where the galvanometer shows zero deflection (null point).",
+        "Record the balancing length l (from end A).",
+        "Calculate X using X = R × (100 − l) / l.",
+        "Repeat with different values of R and take the mean of X."
+      ],
+      "precautions": [
+        "Use a uniform, clean resistance wire for accurate results.",
+        "Keep the jockey moving gently — do not press hard and scratch the wire.",
+        "Ensure tight and clean connections at all terminals.",
+        "The null point should preferably be between 30 cm and 70 cm for minimum error.",
+        "Correct for end error if balance point is near the ends."
+      ],
+      "conclusion": "The unknown resistance X is determined using the balance condition X = R(100 − l)/l. When the bridge is balanced, no current flows through the galvanometer, confirming the Wheatstone bridge principle."
     }
   ],
-
-  chemistry: [
+  "chemistry": [
     {
-      id: 'ph_scale',
-      title: 'pH Scale & Indicators',
-      description: 'Measure pH of various solutions using a digital pH meter and indicator colours.',
-      icon: '🧫',
-      iconBg: 'rgba(6, 182, 212, 0.15)',
-      iconColor: '#06b6d4',
-      aim: 'To determine the pH of given samples using pH paper / universal indicator and to classify them as acidic, basic, or neutral.',
-      apparatus: ['pH paper / Universal indicator strips', 'Test tubes and test tube stand', 'Dropper', 'Sample solutions: HCl, NaOH, Lemon juice, Soap solution, Salt solution, Distilled water'],
-      procedure: ['Take small amounts of each sample in separate test tubes.', 'Dip pH paper strip into each solution.', 'Compare the colour change with the standard pH colour chart.', 'Record the pH value for each solution.', 'Classify each solution as acidic (pH < 7), neutral (pH = 7), or basic (pH > 7).'],
-      precautions: ['Use fresh pH paper for each test.', 'Do not touch the pH paper with fingers on the indicator zone.', 'Rinse the dropper between samples.', 'Handle HCl and NaOH with care — they are corrosive.'],
-      conclusion: 'Solutions with pH < 7 are acidic, pH = 7 are neutral, and pH > 7 are basic. The pH scale provides a quantitative measure of the hydrogen ion concentration in a solution.'
+      "id": "ph_scale",
+      "title": "pH Scale & Indicators",
+      "description": "Measure pH of various solutions using a digital pH meter and indicator colours.",
+      "icon": "🧫",
+      "iconBg": "rgba(6, 182, 212, 0.15)",
+      "iconColor": "#06b6d4",
+      "aim": "To determine the pH of given samples using pH paper / universal indicator and to classify them as acidic, basic, or neutral.",
+      "apparatus": [
+        "pH paper / Universal indicator strips",
+        "Test tubes and test tube stand",
+        "Dropper",
+        "Sample solutions: HCl, NaOH, Lemon juice, Soap solution, Salt solution, Distilled water"
+      ],
+      "procedure": [
+        "Take small amounts of each sample in separate test tubes.",
+        "Dip pH paper strip into each solution.",
+        "Compare the colour change with the standard pH colour chart.",
+        "Record the pH value for each solution.",
+        "Classify each solution as acidic (pH < 7), neutral (pH = 7), or basic (pH > 7)."
+      ],
+      "precautions": [
+        "Use fresh pH paper for each test.",
+        "Do not touch the pH paper with fingers on the indicator zone.",
+        "Rinse the dropper between samples.",
+        "Handle HCl and NaOH with care — they are corrosive."
+      ],
+      "conclusion": "Solutions with pH < 7 are acidic, pH = 7 are neutral, and pH > 7 are basic. The pH scale provides a quantitative measure of the hydrogen ion concentration in a solution."
     },
     {
-      id: 'sublimation_ammonium_chloride',
-      title: 'Sublimation of NH₄Cl',
-      description: 'Separate ammonium chloride from sand by sublimation with animated vapor simulation.',
-      icon: '🔥',
-      iconBg: 'rgba(139, 92, 246, 0.15)',
-      iconColor: '#8b5cf6',
-      aim: 'To separate Ammonium Chloride (NH₄Cl) from a mixture of NH₄Cl and sand by the process of sublimation.',
-      apparatus: ['China dish', 'Inverted glass funnel', 'Cotton plug', 'Bunsen burner', 'Wire gauze & tripod stand', 'Watch glass', 'Mixture of NH₄Cl and sand'],
-      procedure: ['Place the mixture of NH₄Cl and sand in the china dish.', 'Insert cotton plug into the stem of the inverted funnel.', 'Place the funnel inverted over the china dish.', 'Heat gently using the Bunsen burner.', 'Observe NH₄Cl vapour rising and depositing on the cool funnel surface.', 'After complete sublimation, turn off the burner.', 'Scrape the deposited NH₄Cl from the funnel into a watch glass.'],
-      precautions: ['Always insert the cotton plug before heating.', 'Heat gently — do not overheat above 500°C.', 'Let the apparatus cool before scraping.', 'Handle hot apparatus with tongs only.'],
-      conclusion: 'NH₄Cl sublimes at ~338°C and deposits on the cool funnel surface. Sand remains in the china dish. This confirms sublimation can separate sublimable substances from non-sublimable impurities.'
+      "id": "sublimation_ammonium_chloride",
+      "title": "Sublimation of NH₄Cl",
+      "description": "Separate ammonium chloride from sand by sublimation with animated vapor simulation.",
+      "icon": "🔥",
+      "iconBg": "rgba(139, 92, 246, 0.15)",
+      "iconColor": "#8b5cf6",
+      "aim": "To separate Ammonium Chloride (NH₄Cl) from a mixture of NH₄Cl and sand by the process of sublimation.",
+      "apparatus": [
+        "China dish",
+        "Inverted glass funnel",
+        "Cotton plug",
+        "Bunsen burner",
+        "Wire gauze & tripod stand",
+        "Watch glass",
+        "Mixture of NH₄Cl and sand"
+      ],
+      "procedure": [
+        "Place the mixture of NH₄Cl and sand in the china dish.",
+        "Insert cotton plug into the stem of the inverted funnel.",
+        "Place the funnel inverted over the china dish.",
+        "Heat gently using the Bunsen burner.",
+        "Observe NH₄Cl vapour rising and depositing on the cool funnel surface.",
+        "After complete sublimation, turn off the burner.",
+        "Scrape the deposited NH₄Cl from the funnel into a watch glass."
+      ],
+      "precautions": [
+        "Always insert the cotton plug before heating.",
+        "Heat gently — do not overheat above 500°C.",
+        "Let the apparatus cool before scraping.",
+        "Handle hot apparatus with tongs only."
+      ],
+      "conclusion": "NH₄Cl sublimes at ~338°C and deposits on the cool funnel surface. Sand remains in the china dish. This confirms sublimation can separate sublimable substances from non-sublimable impurities."
     },
     {
-      id: 'reaction_lab',
-      title: 'Chemical Reactions Lab',
-      description: 'Observe different types of chemical reactions: combination, decomposition, displacement.',
-      icon: '⚗️',
-      iconBg: 'rgba(14, 165, 233, 0.15)',
-      iconColor: '#0ea5e9',
-      aim: 'To perform and observe different types of chemical reactions and classify them as combination, decomposition, displacement, or double displacement reactions.',
-      apparatus: ['Test tubes & test tube holder', 'Bunsen burner', 'Spatula', 'Chemicals: Iron filings, Copper sulfate solution, Zinc granules, Lead nitrate, Potassium iodide, Ferrous sulfate crystals'],
-      procedure: ['Combination: Heat iron filings in air → iron oxide forms.', 'Decomposition: Heat ferrous sulfate crystals → colour change from green to brown.', 'Displacement: Add zinc granules to copper sulfate solution → solution turns colourless.', 'Double Displacement: Mix lead nitrate + potassium iodide → yellow precipitate of PbI₂.'],
-      precautions: ['Wear safety goggles during all reactions.', 'Handle chemicals with spatula, not hands.', 'Heat test tubes pointing away from people.', 'Dispose of chemicals safely after the experiment.'],
-      conclusion: 'Different types of chemical reactions were observed and classified. The changes in colour, temperature, and precipitate formation confirm the occurrence of chemical reactions.'
+      "id": "reaction_lab",
+      "title": "Chemical Reactions Lab",
+      "description": "Observe different types of chemical reactions: combination, decomposition, displacement.",
+      "icon": "⚗️",
+      "iconBg": "rgba(14, 165, 233, 0.15)",
+      "iconColor": "#0ea5e9",
+      "aim": "To perform and observe different types of chemical reactions and classify them as combination, decomposition, displacement, or double displacement reactions.",
+      "apparatus": [
+        "Test tubes & test tube holder",
+        "Bunsen burner",
+        "Spatula",
+        "Chemicals: Iron filings, Copper sulfate solution, Zinc granules, Lead nitrate, Potassium iodide, Ferrous sulfate crystals"
+      ],
+      "procedure": [
+        "Combination: Heat iron filings in air → iron oxide forms.",
+        "Decomposition: Heat ferrous sulfate crystals → colour change from green to brown.",
+        "Displacement: Add zinc granules to copper sulfate solution → solution turns colourless.",
+        "Double Displacement: Mix lead nitrate + potassium iodide → yellow precipitate of PbI₂."
+      ],
+      "precautions": [
+        "Wear safety goggles during all reactions.",
+        "Handle chemicals with spatula, not hands.",
+        "Heat test tubes pointing away from people.",
+        "Dispose of chemicals safely after the experiment."
+      ],
+      "conclusion": "Different types of chemical reactions were observed and classified. The changes in colour, temperature, and precipitate formation confirm the occurrence of chemical reactions."
     },
     {
-      id: 'solutions_colloids_suspensions',
-      title: 'Solutions, Colloids & Suspensions',
-      description: 'Compare true solutions, colloids, and suspensions using the Tyndall effect.',
-      icon: '💧',
-      iconBg: 'rgba(6, 182, 212, 0.15)',
-      iconColor: '#06b6d4',
-      aim: 'To distinguish between a true solution, a colloidal solution, and a suspension based on transparency, filtration, and the Tyndall effect.',
-      apparatus: ['Three beakers', 'Laser pointer or torch', 'Filter paper and funnel', 'Salt (for true solution)', 'Starch / Milk (for colloid)', 'Chalk powder / Mud (for suspension)', 'Distilled water'],
-      procedure: ['Prepare three mixtures: salt+water, starch+water, chalk+water.', 'Observe transparency of each mixture.', 'Shine a laser beam through each — observe scattering (Tyndall effect).', 'Filter each mixture — check if solute passes through.', 'Let them stand undisturbed — check for settling.'],
-      precautions: ['Use distilled water for accurate results.', 'Stir each mixture well before testing.', 'Use a narrow beam of light for Tyndall effect.', 'Label all beakers clearly.'],
-      conclusion: 'True solutions are transparent, show no Tyndall effect, and cannot be filtered. Colloids show the Tyndall effect but do not settle. Suspensions are opaque, settle on standing, and can be filtered.'
+      "id": "solutions_colloids_suspensions",
+      "title": "Solutions, Colloids & Suspensions",
+      "description": "Compare true solutions, colloids, and suspensions using the Tyndall effect.",
+      "icon": "💧",
+      "iconBg": "rgba(6, 182, 212, 0.15)",
+      "iconColor": "#06b6d4",
+      "aim": "To distinguish between a true solution, a colloidal solution, and a suspension based on transparency, filtration, and the Tyndall effect.",
+      "apparatus": [
+        "Three beakers",
+        "Laser pointer or torch",
+        "Filter paper and funnel",
+        "Salt (for true solution)",
+        "Starch / Milk (for colloid)",
+        "Chalk powder / Mud (for suspension)",
+        "Distilled water"
+      ],
+      "procedure": [
+        "Prepare three mixtures: salt+water, starch+water, chalk+water.",
+        "Observe transparency of each mixture.",
+        "Shine a laser beam through each — observe scattering (Tyndall effect).",
+        "Filter each mixture — check if solute passes through.",
+        "Let them stand undisturbed — check for settling."
+      ],
+      "precautions": [
+        "Use distilled water for accurate results.",
+        "Stir each mixture well before testing.",
+        "Use a narrow beam of light for Tyndall effect.",
+        "Label all beakers clearly."
+      ],
+      "conclusion": "True solutions are transparent, show no Tyndall effect, and cannot be filtered. Colloids show the Tyndall effect but do not settle. Suspensions are opaque, settle on standing, and can be filtered."
     },
     {
-      id: 'chemical_reactivity_workstation',
-      title: 'Chemical Reactivity Workstation',
-      description: 'Test reactivity of different metals with acids, water, and salt solutions.',
-      icon: '🔬',
-      iconBg: 'rgba(20, 184, 166, 0.15)',
-      iconColor: '#14b8a6',
-      aim: 'To study the reactivity of metals (Zn, Fe, Cu, Mg) with dilute acids and to arrange them in order of reactivity.',
-      apparatus: ['Test tubes', 'Dilute HCl', 'Dilute H₂SO₄', 'Metal samples: Zinc, Iron, Copper, Magnesium', 'Delivery tube', 'Soap solution (for hydrogen testing)'],
-      procedure: ['Add dilute HCl to each metal sample in separate test tubes.', 'Observe the rate of hydrogen gas evolution.', 'Test the gas with a burning splint (pop sound = H₂).', 'Record observations and arrange metals by reactivity.'],
-      precautions: ['Handle acids with care — use dilute solutions.', 'Do not bring burning splint too close to the test tube.', 'Use small pieces of metal for uniform results.', 'Perform in a well-ventilated area.'],
-      conclusion: 'Reactivity order: Mg > Zn > Fe > Cu. Magnesium reacts vigorously, zinc and iron react moderately, copper does not react with dilute HCl.'
-    },
-
-    {
-      id: 'metal_reactivity_matrix',
-      title: 'Metal Reactivity Matrix',
-      description: 'Compare displacement reactions between different metals and salt solutions in a matrix.',
-      icon: '📊',
-      iconBg: 'rgba(15, 118, 110, 0.15)',
-      iconColor: '#0f766e',
-      aim: 'To study displacement reactions and establish the reactivity series of metals using a matrix of metal-salt solution combinations.',
-      apparatus: ['Test tubes (12+)', 'Metal strips: Zn, Fe, Cu, Pb', 'Salt solutions: ZnSO₄, FeSO₄, CuSO₄, Pb(NO₃)₂', 'Sandpaper', 'Test tube stand'],
-      procedure: ['Clean all metal strips with sandpaper.', 'Place each metal strip in each salt solution (4×4 matrix).', 'Observe for colour change and deposition.', 'A more reactive metal displaces a less reactive metal from its salt solution.', 'Record results in a matrix table.'],
-      precautions: ['Clean metals thoroughly for clear reactions.', 'Use freshly prepared salt solutions.', 'Do not touch chemicals with bare hands.', 'Allow sufficient time for slower reactions.'],
-      conclusion: 'The reactivity series Zn > Fe > Pb > Cu is verified. A more reactive metal can displace a less reactive metal from its salt solution, confirming the activity series.'
-    },
-    {
-      id: 'ethanoic_acid_properties',
-      title: 'Properties of Ethanoic Acid',
-      description: 'Study physical and chemical properties of acetic acid including esterification.',
-      icon: '🧪',
-      iconBg: 'rgba(14, 165, 233, 0.15)',
-      iconColor: '#0ea5e9',
-      aim: "To study the physical and chemical properties of ethanoic acid (CH₃COOH), including its reaction with NaHCO₃, NaOH, and alcohol (esterification).",
-      apparatus: ['Test tubes', 'Bunsen burner', 'Ethanoic acid (glacial acetic acid)', 'NaHCO₃ solution', 'NaOH solution', 'Ethanol', 'Conc. H₂SO₄ (catalyst)', 'Litmus paper'],
-      procedure: ['Test smell and solubility of ethanoic acid in water.', 'Add ethanoic acid to NaHCO₃ solution — observe effervescence (CO₂).', 'Add ethanoic acid to NaOH — neutralization reaction.', 'Mix ethanoic acid + ethanol + few drops conc. H₂SO₄ — warm gently.', 'A fruity smell indicates ester (ethyl ethanoate) formation.'],
-      precautions: ['Handle glacial acetic acid and conc. H₂SO₄ carefully.', 'Warm gently during esterification — do not boil.', 'Use very small quantities of chemicals.', 'Perform in well-ventilated area.'],
-      conclusion: 'Ethanoic acid is a weak acid. It reacts with NaHCO₃ to give CO₂, with NaOH in neutralization, and with ethanol to form a sweet-smelling ester via esterification.'
+      "id": "chemical_reactivity_workstation",
+      "title": "Chemical Reactivity Workstation",
+      "description": "Test reactivity of different metals with acids, water, and salt solutions.",
+      "icon": "🔬",
+      "iconBg": "rgba(20, 184, 166, 0.15)",
+      "iconColor": "#14b8a6",
+      "aim": "To study the reactivity of metals (Zn, Fe, Cu, Mg) with dilute acids and to arrange them in order of reactivity.",
+      "apparatus": [
+        "Test tubes",
+        "Dilute HCl",
+        "Dilute H₂SO₄",
+        "Metal samples: Zinc, Iron, Copper, Magnesium",
+        "Delivery tube",
+        "Soap solution (for hydrogen testing)"
+      ],
+      "procedure": [
+        "Add dilute HCl to each metal sample in separate test tubes.",
+        "Observe the rate of hydrogen gas evolution.",
+        "Test the gas with a burning splint (pop sound = H₂).",
+        "Record observations and arrange metals by reactivity."
+      ],
+      "precautions": [
+        "Handle acids with care — use dilute solutions.",
+        "Do not bring burning splint too close to the test tube.",
+        "Use small pieces of metal for uniform results.",
+        "Perform in a well-ventilated area."
+      ],
+      "conclusion": "Reactivity order: Mg > Zn > Fe > Cu. Magnesium reacts vigorously, zinc and iron react moderately, copper does not react with dilute HCl."
     },
     {
-      id: 'soap_capacity_hard_water',
-      title: 'Soap in Hard vs Soft Water',
-      description: 'Compare the cleaning capacity of soap in hard water vs soft water.',
-      icon: '🫧',
-      iconBg: 'rgba(37, 99, 235, 0.15)',
-      iconColor: '#2563eb',
-      aim: 'To compare the foaming capacity of soap in soft water and hard water, and understand the effect of dissolved calcium/magnesium salts.',
-      apparatus: ['Two test tubes', 'Soft water (distilled)', 'Hard water (containing CaCl₂)', 'Soap solution', 'Stopper for test tubes'],
-      procedure: ['Take equal volumes of soft water and hard water in two test tubes.', 'Add equal amounts of soap solution to each.', 'Stopper and shake both test tubes equally (20 times).', 'Compare the quantity and persistence of foam.', 'Observe the scum/precipitate formed in hard water.'],
-      precautions: ['Use equal volumes of water and soap solution.', 'Shake both test tubes with equal force and count.', 'Use freshly prepared soap solution.', 'Label test tubes clearly as Hard and Soft.'],
-      conclusion: 'Soap produces more and longer-lasting foam in soft water. In hard water, soap reacts with Ca²⁺/Mg²⁺ ions to form an insoluble scum, reducing its cleaning ability.'
+      "id": "metal_reactivity_matrix",
+      "title": "Metal Reactivity Matrix",
+      "description": "Compare displacement reactions between different metals and salt solutions in a matrix.",
+      "icon": "📊",
+      "iconBg": "rgba(15, 118, 110, 0.15)",
+      "iconColor": "#0f766e",
+      "aim": "To study displacement reactions and establish the reactivity series of metals using a matrix of metal-salt solution combinations.",
+      "apparatus": [
+        "Test tubes (12+)",
+        "Metal strips: Zn, Fe, Cu, Pb",
+        "Salt solutions: ZnSO₄, FeSO₄, CuSO₄, Pb(NO₃)₂",
+        "Sandpaper",
+        "Test tube stand"
+      ],
+      "procedure": [
+        "Clean all metal strips with sandpaper.",
+        "Place each metal strip in each salt solution (4×4 matrix).",
+        "Observe for colour change and deposition.",
+        "A more reactive metal displaces a less reactive metal from its salt solution.",
+        "Record results in a matrix table."
+      ],
+      "precautions": [
+        "Clean metals thoroughly for clear reactions.",
+        "Use freshly prepared salt solutions.",
+        "Do not touch chemicals with bare hands.",
+        "Allow sufficient time for slower reactions."
+      ],
+      "conclusion": "The reactivity series Zn > Fe > Pb > Cu is verified. A more reactive metal can displace a less reactive metal from its salt solution, confirming the activity series."
     },
     {
-      id: "filtration_technique",
-      title: "Filtration",
-      description: "Separate an insoluble solid from a liquid using a filter funnel and paper.",
-      icon: "⚗️",
-      iconBg: "rgba(14, 165, 233, 0.15)",
-      iconColor: "#0ea5e9",
-      aim: "To separate an insoluble solid (like chalk/sand) from a liquid (water) using the process of filtration.",
-      apparatus: ["Beaker","Filter paper","Glass funnel","Conical flask","Glass rod","Mixture of sand and water"],
-      procedure: ["Fold the filter paper into a cone and place it into the glass funnel.","Place the funnel over a conical flask.","Gently pour the mixture of sand and water into the funnel using a glass rod.","Observe the clear water (filtrate) collecting in the flask.","Observe the sand particles (residue) remaining on the filter paper."],
-      precautions: ["Wet the filter paper slightly so it sticks to the funnel.","Pour the mixture slowly to avoid overflowing the filter paper.","Use a glass rod to guide the liquid into the funnel."],
-      conclusion: "Filtration effectively separates insoluble solids from liquids. The clear liquid collected is the filtrate, and the solid left behind is the residue."
+      "id": "ethanoic_acid_properties",
+      "title": "Properties of Ethanoic Acid",
+      "description": "Study physical and chemical properties of acetic acid including esterification.",
+      "icon": "🧪",
+      "iconBg": "rgba(14, 165, 233, 0.15)",
+      "iconColor": "#0ea5e9",
+      "aim": "To study the physical and chemical properties of ethanoic acid (CH₃COOH), including its reaction with NaHCO₃, NaOH, and alcohol (esterification).",
+      "apparatus": [
+        "Test tubes",
+        "Bunsen burner",
+        "Ethanoic acid (glacial acetic acid)",
+        "NaHCO₃ solution",
+        "NaOH solution",
+        "Ethanol",
+        "Conc. H₂SO₄ (catalyst)",
+        "Litmus paper"
+      ],
+      "procedure": [
+        "Test smell and solubility of ethanoic acid in water.",
+        "Add ethanoic acid to NaHCO₃ solution — observe effervescence (CO₂).",
+        "Add ethanoic acid to NaOH — neutralization reaction.",
+        "Mix ethanoic acid + ethanol + few drops conc. H₂SO₄ — warm gently.",
+        "A fruity smell indicates ester (ethyl ethanoate) formation."
+      ],
+      "precautions": [
+        "Handle glacial acetic acid and conc. H₂SO₄ carefully.",
+        "Warm gently during esterification — do not boil.",
+        "Use very small quantities of chemicals.",
+        "Perform in well-ventilated area."
+      ],
+      "conclusion": "Ethanoic acid is a weak acid. It reacts with NaHCO₃ to give CO₂, with NaOH in neutralization, and with ethanol to form a sweet-smelling ester via esterification."
     },
     {
-      id: "evaporation_technique",
-      title: "Evaporation",
-      description: "Separate a dissolved solid from a liquid by heating and evaporating the solvent.",
-      icon: "♨️",
-      iconBg: "rgba(239, 68, 68, 0.15)",
-      iconColor: "#ef4444",
-      aim: "To separate a dissolved solid solute (like salt) from its solvent (water) by the process of evaporation.",
-      apparatus: ["China dish","Tripod stand","Wire gauze","Bunsen burner","Salt solution (salt dissolved in water)"],
-      procedure: ["Pour the salt water solution into the china dish.","Place the china dish on the wire gauze over the tripod stand.","Light the Bunsen burner and gently heat the solution.","Continue heating until all the water evaporates.","Observe the white solid residue left behind in the dish."],
-      precautions: ["Heat gently to avoid spattering of the hot solution.","Do not evaporate to complete dryness rapidly, to avoid charring.","Use tongs to handle the hot china dish."],
-      conclusion: "Evaporation separates a volatile solvent from a non-volatile solute. The water turns into vapor, leaving the solid salt behind."
+      "id": "soap_capacity_hard_water",
+      "title": "Soap in Hard vs Soft Water",
+      "description": "Compare the cleaning capacity of soap in hard water vs soft water.",
+      "icon": "🫧",
+      "iconBg": "rgba(37, 99, 235, 0.15)",
+      "iconColor": "#2563eb",
+      "aim": "To compare the foaming capacity of soap in soft water and hard water, and understand the effect of dissolved calcium/magnesium salts.",
+      "apparatus": [
+        "Two test tubes",
+        "Soft water (distilled)",
+        "Hard water (containing CaCl₂)",
+        "Soap solution",
+        "Stopper for test tubes"
+      ],
+      "procedure": [
+        "Take equal volumes of soft water and hard water in two test tubes.",
+        "Add equal amounts of soap solution to each.",
+        "Stopper and shake both test tubes equally (20 times).",
+        "Compare the quantity and persistence of foam.",
+        "Observe the scum/precipitate formed in hard water."
+      ],
+      "precautions": [
+        "Use equal volumes of water and soap solution.",
+        "Shake both test tubes with equal force and count.",
+        "Use freshly prepared soap solution.",
+        "Label test tubes clearly as Hard and Soft."
+      ],
+      "conclusion": "Soap produces more and longer-lasting foam in soft water. In hard water, soap reacts with Ca²⁺/Mg²⁺ ions to form an insoluble scum, reducing its cleaning ability."
     },
     {
-      id: "distillation_technique",
-      title: "Distillation",
-      description: "Separate miscible liquids with different boiling points or purify a liquid containing dissolved impurities.",
-      icon: "💧",
-      iconBg: "rgba(59, 130, 246, 0.15)",
-      iconColor: "#3b82f6",
-      aim: "To separate a mixture of two miscible liquids with a sufficient difference in boiling points, or to purify a liquid by distillation.",
-      apparatus: ["Distillation flask","Thermometer","Liebig condenser","Receiving flask","Bunsen burner","Cork with holes"],
-      procedure: ["Place the mixture into the distillation flask.","Fit the flask with a thermometer and connect it to the Liebig condenser.","Place the receiving flask at the end of the condenser.","Heat the flask gently. The liquid with the lower boiling point evaporates first.","The vapors pass through the condenser, cool down, and liquefy.","The pure liquid (distillate) collects in the receiving flask."],
-      precautions: ["Add boiling chips to the distillation flask for smooth boiling.","Ensure cold water flows into the condenser from the lower end and out from the upper end.","Monitor the temperature carefully to identify the boiling component."],
-      conclusion: "Distillation separates components based on boiling point differences. The lower boiling component evaporates, condenses, and is collected as distillate."
+      "id": "filtration_technique",
+      "title": "Filtration",
+      "description": "Separate an insoluble solid from a liquid using a filter funnel and paper.",
+      "icon": "⚗️",
+      "iconBg": "rgba(14, 165, 233, 0.15)",
+      "iconColor": "#0ea5e9",
+      "aim": "To separate an insoluble solid (like chalk/sand) from a liquid (water) using the process of filtration.",
+      "apparatus": [
+        "Beaker",
+        "Filter paper",
+        "Glass funnel",
+        "Conical flask",
+        "Glass rod",
+        "Mixture of sand and water"
+      ],
+      "procedure": [
+        "Fold the filter paper into a cone and place it into the glass funnel.",
+        "Place the funnel over a conical flask.",
+        "Gently pour the mixture of sand and water into the funnel using a glass rod.",
+        "Observe the clear water (filtrate) collecting in the flask.",
+        "Observe the sand particles (residue) remaining on the filter paper."
+      ],
+      "precautions": [
+        "Wet the filter paper slightly so it sticks to the funnel.",
+        "Pour the mixture slowly to avoid overflowing the filter paper.",
+        "Use a glass rod to guide the liquid into the funnel."
+      ],
+      "conclusion": "Filtration effectively separates insoluble solids from liquids. The clear liquid collected is the filtrate, and the solid left behind is the residue."
     },
     {
-      id: "fractional_distillation",
-      title: "Fractional Distillation",
-      description: "Separate a mixture of miscible liquids with closely related boiling points using a fractionating column.",
-      icon: "🌡️",
-      iconBg: "rgba(168, 85, 247, 0.15)",
-      iconColor: "#a855f7",
-      aim: "To separate two or more miscible liquids with boiling points differing by less than 25 K using fractional distillation.",
-      apparatus: ["Distillation flask","Fractionating column (packed with glass beads)","Thermometer","Condenser","Receiving flask","Heat source"],
-      procedure: ["Set up the distillation apparatus with a fractionating column placed between the flask and condenser.","Heat the mixture. Vapors of both liquids rise into the fractionating column.","The column provides surface area for repeated condensation and vaporization.","The more volatile liquid reaches the top first, enters the condenser, and is collected.","Once the first liquid is completely distilled, the temperature rises, and the second liquid distills."],
-      precautions: ["Heat the mixture very slowly and steadily.","Wrap the fractionating column with insulator if necessary to prevent heat loss.","Change the receiving flask immediately when the temperature jumps."],
-      conclusion: "The fractionating column allows multiple evaporation-condensation cycles, resulting in efficient separation of liquids with close boiling points."
+      "id": "evaporation_technique",
+      "title": "Evaporation",
+      "description": "Separate a dissolved solid from a liquid by heating and evaporating the solvent.",
+      "icon": "♨️",
+      "iconBg": "rgba(239, 68, 68, 0.15)",
+      "iconColor": "#ef4444",
+      "aim": "To separate a dissolved solid solute (like salt) from its solvent (water) by the process of evaporation.",
+      "apparatus": [
+        "China dish",
+        "Tripod stand",
+        "Wire gauze",
+        "Bunsen burner",
+        "Salt solution (salt dissolved in water)"
+      ],
+      "procedure": [
+        "Pour the salt water solution into the china dish.",
+        "Place the china dish on the wire gauze over the tripod stand.",
+        "Light the Bunsen burner and gently heat the solution.",
+        "Continue heating until all the water evaporates.",
+        "Observe the white solid residue left behind in the dish."
+      ],
+      "precautions": [
+        "Heat gently to avoid spattering of the hot solution.",
+        "Do not evaporate to complete dryness rapidly, to avoid charring.",
+        "Use tongs to handle the hot china dish."
+      ],
+      "conclusion": "Evaporation separates a volatile solvent from a non-volatile solute. The water turns into vapor, leaving the solid salt behind."
     },
     {
-      id: "chromatography_technique",
-      title: "Paper Chromatography",
-      description: "Separate the different colored dyes present in black ink using a solvent and filter paper.",
-      icon: "📜",
-      iconBg: "rgba(16, 185, 129, 0.15)",
-      iconColor: "#10b981",
-      aim: "To separate the components of a mixture (like dyes in black ink) based on their different solubilities in a solvent.",
-      apparatus: ["Strip of filter paper (chromatography paper)","Capillary tube","Beaker/Glass jar with lid","Paper clip / Glass rod","Black ink spot","Solvent (Water or alcohol)"],
-      procedure: ["Draw a pencil line about 3 cm from the bottom of the filter paper strip.","Put a small drop of black ink in the center of the pencil line.","Pour a small amount of solvent into the jar.","Suspend the paper strip in the jar so the tip is in the solvent, but the ink spot is above the solvent level.","Cover the jar and let the solvent rise up the paper.","Observe the separation of colors as the solvent moves upward."],
-      precautions: ["Ensure the ink spot does not submerge directly in the solvent.","Cover the jar to prevent solvent evaporation.","Remove the paper before the solvent front reaches the very top."],
-      conclusion: "Chromatography separates mixture components based on how fast they travel with the solvent. Different dyes in the black ink have different solubilities and rise at different rates."
+      "id": "distillation_technique",
+      "title": "Distillation",
+      "description": "Separate miscible liquids with different boiling points or purify a liquid containing dissolved impurities.",
+      "icon": "💧",
+      "iconBg": "rgba(59, 130, 246, 0.15)",
+      "iconColor": "#3b82f6",
+      "aim": "To separate a mixture of two miscible liquids with a sufficient difference in boiling points, or to purify a liquid by distillation.",
+      "apparatus": [
+        "Distillation flask",
+        "Thermometer",
+        "Liebig condenser",
+        "Receiving flask",
+        "Bunsen burner",
+        "Cork with holes"
+      ],
+      "procedure": [
+        "Place the mixture into the distillation flask.",
+        "Fit the flask with a thermometer and connect it to the Liebig condenser.",
+        "Place the receiving flask at the end of the condenser.",
+        "Heat the flask gently. The liquid with the lower boiling point evaporates first.",
+        "The vapors pass through the condenser, cool down, and liquefy.",
+        "The pure liquid (distillate) collects in the receiving flask."
+      ],
+      "precautions": [
+        "Add boiling chips to the distillation flask for smooth boiling.",
+        "Ensure cold water flows into the condenser from the lower end and out from the upper end.",
+        "Monitor the temperature carefully to identify the boiling component."
+      ],
+      "conclusion": "Distillation separates components based on boiling point differences. The lower boiling component evaporates, condenses, and is collected as distillate."
+    },
+    {
+      "id": "fractional_distillation",
+      "title": "Fractional Distillation",
+      "description": "Separate a mixture of miscible liquids with closely related boiling points using a fractionating column.",
+      "icon": "🌡️",
+      "iconBg": "rgba(168, 85, 247, 0.15)",
+      "iconColor": "#a855f7",
+      "aim": "To separate two or more miscible liquids with boiling points differing by less than 25 K using fractional distillation.",
+      "apparatus": [
+        "Distillation flask",
+        "Fractionating column (packed with glass beads)",
+        "Thermometer",
+        "Condenser",
+        "Receiving flask",
+        "Heat source"
+      ],
+      "procedure": [
+        "Set up the distillation apparatus with a fractionating column placed between the flask and condenser.",
+        "Heat the mixture. Vapors of both liquids rise into the fractionating column.",
+        "The column provides surface area for repeated condensation and vaporization.",
+        "The more volatile liquid reaches the top first, enters the condenser, and is collected.",
+        "Once the first liquid is completely distilled, the temperature rises, and the second liquid distills."
+      ],
+      "precautions": [
+        "Heat the mixture very slowly and steadily.",
+        "Wrap the fractionating column with insulator if necessary to prevent heat loss.",
+        "Change the receiving flask immediately when the temperature jumps."
+      ],
+      "conclusion": "The fractionating column allows multiple evaporation-condensation cycles, resulting in efficient separation of liquids with close boiling points."
+    },
+    {
+      "id": "chromatography_technique",
+      "title": "Paper Chromatography",
+      "description": "Separate the different colored dyes present in black ink using a solvent and filter paper.",
+      "icon": "📜",
+      "iconBg": "rgba(16, 185, 129, 0.15)",
+      "iconColor": "#10b981",
+      "aim": "To separate the components of a mixture (like dyes in black ink) based on their different solubilities in a solvent.",
+      "apparatus": [
+        "Strip of filter paper (chromatography paper)",
+        "Capillary tube",
+        "Beaker/Glass jar with lid",
+        "Paper clip / Glass rod",
+        "Black ink spot",
+        "Solvent (Water or alcohol)"
+      ],
+      "procedure": [
+        "Draw a pencil line about 3 cm from the bottom of the filter paper strip.",
+        "Put a small drop of black ink in the center of the pencil line.",
+        "Pour a small amount of solvent into the jar.",
+        "Suspend the paper strip in the jar so the tip is in the solvent, but the ink spot is above the solvent level.",
+        "Cover the jar and let the solvent rise up the paper.",
+        "Observe the separation of colors as the solvent moves upward."
+      ],
+      "precautions": [
+        "Ensure the ink spot does not submerge directly in the solvent.",
+        "Cover the jar to prevent solvent evaporation.",
+        "Remove the paper before the solvent front reaches the very top."
+      ],
+      "conclusion": "Chromatography separates mixture components based on how fast they travel with the solvent. Different dyes in the black ink have different solubilities and rise at different rates."
     }
   ],
-
-  biology: [
+  "biology": [
     {
-      id: 'plant_cell_explorer',
-      title: 'Plant Cell Explorer',
-      description: 'Examine the structure of a plant cell with interactive labelled diagrams.',
-      icon: '🌱',
-      iconBg: 'rgba(34, 197, 94, 0.15)',
-      iconColor: '#22c55e',
-      aim: 'To prepare a temporary mount of an onion peel and observe plant cell structure under a microscope.',
-      apparatus: ['Microscope', 'Onion', 'Glass slides and cover slips', 'Forceps and needle', 'Safranin stain', 'Dropper and blotting paper', 'Watch glass'],
-      procedure: ['Peel a thin layer from the inner surface of an onion scale.', 'Place the peel on a clean glass slide.', 'Add a drop of safranin stain and wait 2 minutes.', 'Place a cover slip gently, avoiding air bubbles.', 'Observe under low power (10x) then high power (40x).', 'Identify cell wall, cell membrane, nucleus, and vacuole.'],
-      precautions: ['Use a thin, single-layer peel.', 'Avoid air bubbles while placing cover slip.', 'Do not over-stain — it makes structures less visible.', 'Handle microscope with care.'],
-      conclusion: 'Plant cells have a rigid cell wall, large central vacuole, and well-defined nucleus. The cell wall gives the characteristic rectangular shape to plant cells.'
+      "id": "plant_cell_explorer",
+      "title": "Plant Cell Explorer",
+      "description": "Examine the structure of a plant cell with interactive labelled diagrams.",
+      "icon": "🌱",
+      "iconBg": "rgba(34, 197, 94, 0.15)",
+      "iconColor": "#22c55e",
+      "aim": "To prepare a temporary mount of an onion peel and observe plant cell structure under a microscope.",
+      "apparatus": [
+        "Microscope",
+        "Onion",
+        "Glass slides and cover slips",
+        "Forceps and needle",
+        "Safranin stain",
+        "Dropper and blotting paper",
+        "Watch glass"
+      ],
+      "procedure": [
+        "Peel a thin layer from the inner surface of an onion scale.",
+        "Place the peel on a clean glass slide.",
+        "Add a drop of safranin stain and wait 2 minutes.",
+        "Place a cover slip gently, avoiding air bubbles.",
+        "Observe under low power (10x) then high power (40x).",
+        "Identify cell wall, cell membrane, nucleus, and vacuole."
+      ],
+      "precautions": [
+        "Use a thin, single-layer peel.",
+        "Avoid air bubbles while placing cover slip.",
+        "Do not over-stain — it makes structures less visible.",
+        "Handle microscope with care."
+      ],
+      "conclusion": "Plant cells have a rigid cell wall, large central vacuole, and well-defined nucleus. The cell wall gives the characteristic rectangular shape to plant cells."
     },
     {
-      id: 'cell_structure',
-      title: 'Cell Structure Explorer',
-      description: 'Explore animal and plant cell structures with interactive labelled diagrams.',
-      icon: '🔬',
-      iconBg: 'rgba(34, 197, 94, 0.15)',
-      iconColor: '#22c55e',
-      aim: 'To study and compare the structure of animal and plant cells, identifying their key organelles.',
-      apparatus: ['Microscope', 'Prepared slides of animal and plant cells', 'Drawing sheet and pencils'],
-      procedure: ['Place the plant cell slide under the microscope.', 'Focus at low power (10x), then switch to high power (40x).', 'Identify and draw: cell wall, cell membrane, nucleus, vacuole, chloroplasts.', 'Repeat with the animal cell slide.', 'Compare structures: note the absence of cell wall and chloroplasts in animal cells.'],
-      precautions: ['Handle microscope with care.', 'Always start with low power before high power.', 'Clean the lens with lens paper only.', 'Draw diagrams to scale with proper labelling.'],
-      conclusion: 'Plant cells have a rigid cell wall, large vacuole, and chloroplasts which are absent in animal cells. Both have nucleus, cell membrane, cytoplasm, and mitochondria.'
+      "id": "cell_structure",
+      "title": "Cell Structure Explorer",
+      "description": "Explore animal and plant cell structures with interactive labelled diagrams.",
+      "icon": "🔬",
+      "iconBg": "rgba(34, 197, 94, 0.15)",
+      "iconColor": "#22c55e",
+      "aim": "To study and compare the structure of animal and plant cells, identifying their key organelles.",
+      "apparatus": [
+        "Microscope",
+        "Prepared slides of animal and plant cells",
+        "Drawing sheet and pencils"
+      ],
+      "procedure": [
+        "Place the plant cell slide under the microscope.",
+        "Focus at low power (10x), then switch to high power (40x).",
+        "Identify and draw: cell wall, cell membrane, nucleus, vacuole, chloroplasts.",
+        "Repeat with the animal cell slide.",
+        "Compare structures: note the absence of cell wall and chloroplasts in animal cells."
+      ],
+      "precautions": [
+        "Handle microscope with care.",
+        "Always start with low power before high power.",
+        "Clean the lens with lens paper only.",
+        "Draw diagrams to scale with proper labelling."
+      ],
+      "conclusion": "Plant cells have a rigid cell wall, large vacuole, and chloroplasts which are absent in animal cells. Both have nucleus, cell membrane, cytoplasm, and mitochondria."
     },
     {
-      id: 'microscopic_stomata',
-      title: 'Stomata Exploration',
-      description: 'Observe stomatal pores on leaf epidermis under a virtual microscope.',
-      icon: '🍃',
-      iconBg: 'rgba(22, 163, 74, 0.15)',
-      iconColor: '#16a34a',
-      aim: 'To prepare a temporary mount of a leaf peel and observe stomata under a microscope.',
-      apparatus: ['Microscope', 'Fresh leaf (Tradescantia / Rhoeo)', 'Glass slide and cover slip', 'Safranin stain', 'Needle and forceps', 'Dropper and blotting paper'],
-      procedure: ['Fold the leaf and gently peel the lower epidermis.', 'Place the peel on a slide with a drop of water.', 'Add safranin stain, wait 2 minutes, then place cover slip.', 'Observe under 10x then 40x magnification.', 'Identify guard cells, stomatal pore, and epidermal cells.', 'Count stomata in the field of view.'],
-      precautions: ['Use fresh, turgid leaves for clear stomata.', 'Peel should be thin — single cell layer.', 'Avoid air bubbles under cover slip.', 'Do not press the cover slip too hard.'],
-      conclusion: 'Stomata are minute pores on the leaf surface, each surrounded by two kidney-shaped guard cells. They regulate gas exchange and transpiration in plants.'
+      "id": "microscopic_stomata",
+      "title": "Stomata Exploration",
+      "description": "Observe stomatal pores on leaf epidermis under a virtual microscope.",
+      "icon": "🍃",
+      "iconBg": "rgba(22, 163, 74, 0.15)",
+      "iconColor": "#16a34a",
+      "aim": "To prepare a temporary mount of a leaf peel and observe stomata under a microscope.",
+      "apparatus": [
+        "Microscope",
+        "Fresh leaf (Tradescantia / Rhoeo)",
+        "Glass slide and cover slip",
+        "Safranin stain",
+        "Needle and forceps",
+        "Dropper and blotting paper"
+      ],
+      "procedure": [
+        "Fold the leaf and gently peel the lower epidermis.",
+        "Place the peel on a slide with a drop of water.",
+        "Add safranin stain, wait 2 minutes, then place cover slip.",
+        "Observe under 10x then 40x magnification.",
+        "Identify guard cells, stomatal pore, and epidermal cells.",
+        "Count stomata in the field of view."
+      ],
+      "precautions": [
+        "Use fresh, turgid leaves for clear stomata.",
+        "Peel should be thin — single cell layer.",
+        "Avoid air bubbles under cover slip.",
+        "Do not press the cover slip too hard."
+      ],
+      "conclusion": "Stomata are minute pores on the leaf surface, each surrounded by two kidney-shaped guard cells. They regulate gas exchange and transpiration in plants."
     },
     {
-      id: 'respiration_lab',
-      title: 'Respiration Lab',
-      description: 'Demonstrate aerobic and anaerobic respiration using interactive simulations.',
-      icon: '🫁',
-      iconBg: 'rgba(14, 165, 233, 0.15)',
-      iconColor: '#0ea5e9',
-      aim: 'To demonstrate that CO₂ is released during respiration by germinating seeds.',
-      apparatus: ['Conical flask', 'Germinating seeds (gram/pea)', 'KOH solution (to absorb CO₂)', 'Lime water (Ca(OH)₂)', 'Delivery tube', 'Cotton plug'],
-      procedure: ['Place germinating seeds in a conical flask.', 'Connect the flask to a test tube containing lime water via delivery tube.', 'Seal the flask with a cotton plug.', 'Leave for 1-2 hours.', 'Observe the lime water turning milky → confirms CO₂ release.', 'Repeat with boiled (dead) seeds as control — no change in lime water.'],
-      precautions: ['Use well-germinated seeds (soaked 24 hrs).', 'Ensure all connections are airtight.', 'Use fresh lime water for clear results.', 'Keep control setup (boiled seeds) for comparison.'],
-      conclusion: 'Germinating seeds release CO₂ during respiration, which turns lime water milky. Boiled seeds show no CO₂ release, confirming that respiration occurs only in living cells.'
+      "id": "respiration_lab",
+      "title": "Respiration Lab",
+      "description": "Demonstrate aerobic and anaerobic respiration using interactive simulations.",
+      "icon": "🫁",
+      "iconBg": "rgba(14, 165, 233, 0.15)",
+      "iconColor": "#0ea5e9",
+      "aim": "To demonstrate that CO₂ is released during respiration by germinating seeds.",
+      "apparatus": [
+        "Conical flask",
+        "Germinating seeds (gram/pea)",
+        "KOH solution (to absorb CO₂)",
+        "Lime water (Ca(OH)₂)",
+        "Delivery tube",
+        "Cotton plug"
+      ],
+      "procedure": [
+        "Place germinating seeds in a conical flask.",
+        "Connect the flask to a test tube containing lime water via delivery tube.",
+        "Seal the flask with a cotton plug.",
+        "Leave for 1-2 hours.",
+        "Observe the lime water turning milky → confirms CO₂ release.",
+        "Repeat with boiled (dead) seeds as control — no change in lime water."
+      ],
+      "precautions": [
+        "Use well-germinated seeds (soaked 24 hrs).",
+        "Ensure all connections are airtight.",
+        "Use fresh lime water for clear results.",
+        "Keep control setup (boiled seeds) for comparison."
+      ],
+      "conclusion": "Germinating seeds release CO₂ during respiration, which turns lime water milky. Boiled seeds show no CO₂ release, confirming that respiration occurs only in living cells."
     },
     {
-      id: 'asexual_reproduction',
-      title: 'Asexual Reproduction',
-      description: 'Study different modes of asexual reproduction: binary fission, budding, spore formation.',
-      icon: '🧬',
-      iconBg: 'rgba(168, 85, 247, 0.15)',
-      iconColor: '#a855f7',
-      aim: 'To study different modes of asexual reproduction in organisms: binary fission in Amoeba, budding in yeast/Hydra, and spore formation in Rhizopus.',
-      apparatus: ['Microscope', 'Prepared slides: Amoeba, Hydra, Rhizopus', 'Yeast culture', 'Sugar solution', 'Drawing materials'],
-      procedure: ['Observe Amoeba slide — identify the constriction in binary fission.', 'Observe Hydra slide — identify outgrowth/bud.', 'Observe Rhizopus slide — identify sporangium with spores.', 'Prepare wet mount of yeast in sugar solution — observe budding cells.', 'Draw and label each organism showing the mode of reproduction.'],
-      precautions: ['Start with low magnification.', 'Focus carefully to see dividing cells.', 'Do not press cover slip on yeast mount.', 'Draw diagrams with proper labels and titles.'],
-      conclusion: 'Asexual reproduction involves a single parent. Binary fission (Amoeba) splits the cell into two, budding (Hydra/Yeast) produces a small outgrowth, and spore formation (Rhizopus) disperses spores for new organisms.'
+      "id": "asexual_reproduction",
+      "title": "Asexual Reproduction",
+      "description": "Study different modes of asexual reproduction: binary fission, budding, spore formation.",
+      "icon": "🧬",
+      "iconBg": "rgba(168, 85, 247, 0.15)",
+      "iconColor": "#a855f7",
+      "aim": "To study different modes of asexual reproduction in organisms: binary fission in Amoeba, budding in yeast/Hydra, and spore formation in Rhizopus.",
+      "apparatus": [
+        "Microscope",
+        "Prepared slides: Amoeba, Hydra, Rhizopus",
+        "Yeast culture",
+        "Sugar solution",
+        "Drawing materials"
+      ],
+      "procedure": [
+        "Observe Amoeba slide — identify the constriction in binary fission.",
+        "Observe Hydra slide — identify outgrowth/bud.",
+        "Observe Rhizopus slide — identify sporangium with spores.",
+        "Prepare wet mount of yeast in sugar solution — observe budding cells.",
+        "Draw and label each organism showing the mode of reproduction."
+      ],
+      "precautions": [
+        "Start with low magnification.",
+        "Focus carefully to see dividing cells.",
+        "Do not press cover slip on yeast mount.",
+        "Draw diagrams with proper labels and titles."
+      ],
+      "conclusion": "Asexual reproduction involves a single parent. Binary fission (Amoeba) splits the cell into two, budding (Hydra/Yeast) produces a small outgrowth, and spore formation (Rhizopus) disperses spores for new organisms."
     },
     {
-      id: 'virtual_seed_dissection',
-      title: 'Virtual Seed Dissection',
-      description: 'Dissect and explore the internal structure of monocot and dicot seeds.',
-      icon: '🌰',
-      iconBg: 'rgba(132, 204, 22, 0.15)',
-      iconColor: '#84cc16',
-      aim: 'To study the external and internal structure of monocot (maize) and dicot (gram/bean) seeds through dissection.',
-      apparatus: ['Soaked gram seeds (dicot)', 'Soaked maize seeds (monocot)', 'Scalpel / Blade', 'Magnifying glass', 'Iodine solution', 'Drawing sheet'],
-      procedure: ['Soak seeds overnight in water.', 'Observe external features: seed coat, hilum, micropyle.', 'Carefully split the dicot seed — identify two cotyledons, radicle, plumule.', 'Cut the monocot seed longitudinally — identify endosperm, single cotyledon (scutellum), coleoptile, coleorhiza.', 'Apply iodine on endosperm — blue-black confirms starch.', 'Draw labelled diagrams of both types.'],
-      precautions: ['Soak seeds for at least 12 hours.', 'Use a sharp blade and cut carefully.', 'Avoid damaging the embryo during cutting.', 'Compare structures side by side.'],
-      conclusion: 'Dicot seeds have two cotyledons and store food in cotyledons, while monocot seeds have one cotyledon and store food in endosperm. Both contain embryo (radicle + plumule) protected by the seed coat.'
+      "id": "virtual_seed_dissection",
+      "title": "Virtual Seed Dissection",
+      "description": "Dissect and explore the internal structure of monocot and dicot seeds.",
+      "icon": "🌰",
+      "iconBg": "rgba(132, 204, 22, 0.15)",
+      "iconColor": "#84cc16",
+      "aim": "To study the external and internal structure of monocot (maize) and dicot (gram/bean) seeds through dissection.",
+      "apparatus": [
+        "Soaked gram seeds (dicot)",
+        "Soaked maize seeds (monocot)",
+        "Scalpel / Blade",
+        "Magnifying glass",
+        "Iodine solution",
+        "Drawing sheet"
+      ],
+      "procedure": [
+        "Soak seeds overnight in water.",
+        "Observe external features: seed coat, hilum, micropyle.",
+        "Carefully split the dicot seed — identify two cotyledons, radicle, plumule.",
+        "Cut the monocot seed longitudinally — identify endosperm, single cotyledon (scutellum), coleoptile, coleorhiza.",
+        "Apply iodine on endosperm — blue-black confirms starch.",
+        "Draw labelled diagrams of both types."
+      ],
+      "precautions": [
+        "Soak seeds for at least 12 hours.",
+        "Use a sharp blade and cut carefully.",
+        "Avoid damaging the embryo during cutting.",
+        "Compare structures side by side."
+      ],
+      "conclusion": "Dicot seeds have two cotyledons and store food in cotyledons, while monocot seeds have one cotyledon and store food in endosperm. Both contain embryo (radicle + plumule) protected by the seed coat."
     },
     {
-      id: 'photosynthesis_starch_test',
-      title: 'Photosynthesis – Starch Test (Iodine)',
-      description: 'Perform the iodine starch test on a variegated leaf to prove photosynthesis requires light and chlorophyll.',
-      icon: '🍃',
-      iconBg: 'rgba(34, 197, 94, 0.15)',
-      iconColor: '#22c55e',
-      aim: 'To test for the presence of starch in a leaf and prove that light and chlorophyll are necessary for photosynthesis using the iodine test.',
-      apparatus: ['Potted plant (destarched for 48 hrs in dark)', 'Black paper and clips', 'Beaker with water', 'Beaker with alcohol (ethanol)', 'Bunsen burner / hot plate', 'Iodine solution', 'Petri dish', 'Forceps', 'Water bath'],
-      procedure: ['Destarch the plant by keeping it in a dark cupboard for 48 hours.', 'Cover part of a leaf with black paper secured with paper clips.', 'Place the plant in sunlight for 4–6 hours.', 'Pluck the leaf and boil it in water for 5 minutes to kill cells and stop reactions.', 'Transfer the leaf to a beaker of alcohol and heat in a water bath until the leaf turns pale/white (chlorophyll removed).', 'Remove the leaf, rinse with water, and spread it flat in a petri dish.', 'Add iodine solution drops over the entire leaf.', 'Observe: the exposed area turns blue-black (starch present); the covered area stays brown/yellow (no starch).'],
-      precautions: ['Do not heat alcohol directly over a flame — use a water bath.', 'Ensure the plant is fully destarched before starting.', 'Handle hot apparatus with forceps.', 'Use fresh iodine solution for accurate colour change.'],
-      conclusion: 'The part of the leaf exposed to sunlight turns blue-black with iodine, confirming starch production by photosynthesis. The covered part does not turn blue-black, proving that light is essential for photosynthesis.'
+      "id": "photosynthesis_starch_test",
+      "title": "Photosynthesis – Starch Test (Iodine)",
+      "description": "Perform the iodine starch test on a variegated leaf to prove photosynthesis requires light and chlorophyll.",
+      "icon": "🍃",
+      "iconBg": "rgba(34, 197, 94, 0.15)",
+      "iconColor": "#22c55e",
+      "aim": "To test for the presence of starch in a leaf and prove that light and chlorophyll are necessary for photosynthesis using the iodine test.",
+      "apparatus": [
+        "Potted plant (destarched for 48 hrs in dark)",
+        "Black paper and clips",
+        "Beaker with water",
+        "Beaker with alcohol (ethanol)",
+        "Bunsen burner / hot plate",
+        "Iodine solution",
+        "Petri dish",
+        "Forceps",
+        "Water bath"
+      ],
+      "procedure": [
+        "Destarch the plant by keeping it in a dark cupboard for 48 hours.",
+        "Cover part of a leaf with black paper secured with paper clips.",
+        "Place the plant in sunlight for 4–6 hours.",
+        "Pluck the leaf and boil it in water for 5 minutes to kill cells and stop reactions.",
+        "Transfer the leaf to a beaker of alcohol and heat in a water bath until the leaf turns pale/white (chlorophyll removed).",
+        "Remove the leaf, rinse with water, and spread it flat in a petri dish.",
+        "Add iodine solution drops over the entire leaf.",
+        "Observe: the exposed area turns blue-black (starch present); the covered area stays brown/yellow (no starch)."
+      ],
+      "precautions": [
+        "Do not heat alcohol directly over a flame — use a water bath.",
+        "Ensure the plant is fully destarched before starting.",
+        "Handle hot apparatus with forceps.",
+        "Use fresh iodine solution for accurate colour change."
+      ],
+      "conclusion": "The part of the leaf exposed to sunlight turns blue-black with iodine, confirming starch production by photosynthesis. The covered part does not turn blue-black, proving that light is essential for photosynthesis."
     },
     {
-      id: 'water_transport_xylem',
-      title: 'Water Transport in Plants (Xylem)',
-      description: 'Demonstrate how water travels through xylem vessels using a coloured dye and celery / white flower stem.',
-      icon: '💧',
-      iconBg: 'rgba(6, 182, 212, 0.15)',
-      iconColor: '#06b6d4',
-      aim: 'To demonstrate that water and dissolved substances are transported upward through xylem vessels in plants using a coloured dye experiment.',
-      apparatus: ['Fresh celery stalk with leaves (or white carnation)', 'Glass beaker / jar (250 mL)', 'Food colouring / coloured dye (red, blue, or green)', 'Sharp knife / blade', 'Water', 'Ruler', 'Clock / stopwatch'],
-      procedure: ['Select a fresh celery stalk or white flower stem and make a fresh diagonal cut at the base.', 'Fill the beaker with water and add several drops of food colouring. Stir well.', 'Place the freshly cut stem into the coloured water immediately.', 'Leave the setup in a bright, warm location for 2–4 hours (or overnight for deeper colour).', 'Observe gradual colour change in the stem, leaves, and petals.', 'Optionally, cut the stem cross-sectionally to observe coloured xylem vessels.'],
-      precautions: ['Make a fresh diagonal cut for better water uptake surface area.', 'Use a deep, saturated dye colour for visible results.', 'Do not leave the stem out of water after cutting — air enters and blocks xylem.', 'Keep the plant in a warm, lit area to promote transpiration.'],
-      conclusion: 'The coloured dye moves upward through the xylem vessels, colouring the stem, veins, and petals. This confirms that xylem is responsible for the upward transport of water and dissolved substances in plants, driven by transpiration pull.'
+      "id": "water_transport_xylem",
+      "title": "Water Transport in Plants (Xylem)",
+      "description": "Demonstrate how water travels through xylem vessels using a coloured dye and celery / white flower stem.",
+      "icon": "💧",
+      "iconBg": "rgba(6, 182, 212, 0.15)",
+      "iconColor": "#06b6d4",
+      "aim": "To demonstrate that water and dissolved substances are transported upward through xylem vessels in plants using a coloured dye experiment.",
+      "apparatus": [
+        "Fresh celery stalk with leaves (or white carnation)",
+        "Glass beaker / jar (250 mL)",
+        "Food colouring / coloured dye (red, blue, or green)",
+        "Sharp knife / blade",
+        "Water",
+        "Ruler",
+        "Clock / stopwatch"
+      ],
+      "procedure": [
+        "Select a fresh celery stalk or white flower stem and make a fresh diagonal cut at the base.",
+        "Fill the beaker with water and add several drops of food colouring. Stir well.",
+        "Place the freshly cut stem into the coloured water immediately.",
+        "Leave the setup in a bright, warm location for 2–4 hours (or overnight for deeper colour).",
+        "Observe gradual colour change in the stem, leaves, and petals.",
+        "Optionally, cut the stem cross-sectionally to observe coloured xylem vessels."
+      ],
+      "precautions": [
+        "Make a fresh diagonal cut for better water uptake surface area.",
+        "Use a deep, saturated dye colour for visible results.",
+        "Do not leave the stem out of water after cutting — air enters and blocks xylem.",
+        "Keep the plant in a warm, lit area to promote transpiration."
+      ],
+      "conclusion": "The coloured dye moves upward through the xylem vessels, colouring the stem, veins, and petals. This confirms that xylem is responsible for the upward transport of water and dissolved substances in plants, driven by transpiration pull."
     },
     {
-      id: 'bread_mold_fungus',
-      title: 'Microorganisms – Bread Mold Growth',
-      description: 'Simulate fungal growth (Rhizopus) on bread over time under different environmental conditions.',
-      icon: '🍞',
-      iconBg: 'rgba(234, 179, 8, 0.15)',
-      iconColor: '#eab308',
-      aim: 'To observe the growth of bread mold (fungus) under different conditions of moisture and temperature, and conclude the optimal environment for fungal growth.',
-      apparatus: ['Fresh bread slices', 'Sealable clear plastic bags or petri dishes', 'Water sprayer', 'Magnifying glass or microscope', 'Warm, dark cupboard', 'Refrigerator', 'Dry environment'],
-      procedure: ['Select the type of bread condition (Dry or Moistened with water).', 'Choose the environmental condition: Warm/Dark, Room Temperature, or Cold (Fridge).', 'Place the bread slice inside a simulated container and seal it.', 'Advance the time day by day (Day 1 to 5+) to observe visible changes.', 'Compare the growth rate across different setups to identify the optimal condition.', 'Use the microscope view to observe fungal hyphae and sporangia.'],
-      precautions: ['Always wash hands after handling moldy bread in a real lab.', 'Keep containers sealed to prevent the spread of fungal spores in the room.', 'Do not directly inhale spores.'],
-      conclusion: 'Fungi (such as Rhizopus) grow best in environments that are rich in nutrients, moist, and warm. Cold or very dry environments significantly inhibit or halt fungal growth.'
+      "id": "bread_mold_fungus",
+      "title": "Microorganisms – Bread Mold Growth",
+      "description": "Simulate fungal growth (Rhizopus) on bread over time under different environmental conditions.",
+      "icon": "🍞",
+      "iconBg": "rgba(234, 179, 8, 0.15)",
+      "iconColor": "#eab308",
+      "aim": "To observe the growth of bread mold (fungus) under different conditions of moisture and temperature, and conclude the optimal environment for fungal growth.",
+      "apparatus": [
+        "Fresh bread slices",
+        "Sealable clear plastic bags or petri dishes",
+        "Water sprayer",
+        "Magnifying glass or microscope",
+        "Warm, dark cupboard",
+        "Refrigerator",
+        "Dry environment"
+      ],
+      "procedure": [
+        "Select the type of bread condition (Dry or Moistened with water).",
+        "Choose the environmental condition: Warm/Dark, Room Temperature, or Cold (Fridge).",
+        "Place the bread slice inside a simulated container and seal it.",
+        "Advance the time day by day (Day 1 to 5+) to observe visible changes.",
+        "Compare the growth rate across different setups to identify the optimal condition.",
+        "Use the microscope view to observe fungal hyphae and sporangia."
+      ],
+      "precautions": [
+        "Always wash hands after handling moldy bread in a real lab.",
+        "Keep containers sealed to prevent the spread of fungal spores in the room.",
+        "Do not directly inhale spores."
+      ],
+      "conclusion": "Fungi (such as Rhizopus) grow best in environments that are rich in nutrients, moist, and warm. Cold or very dry environments significantly inhibit or halt fungal growth."
     },
     {
-      id: 'pulse_rate_experiment',
-      title: 'Measurement of Pulse Rate',
-      description: 'Measure pulse rate before and after different exercises to understand cardiovascular response.',
-      icon: '🫀',
-      iconBg: 'rgba(239, 68, 68, 0.15)',
-      iconColor: '#ef4444',
-      aim: 'To measure the pulse rate at rest and observe the effect of different physical exercises on the pulse rate and recovery time.',
-      apparatus: ['Stopwatch / Timer', 'Human subject (interactive model)', 'Virtual Pulse Monitor'],
-      procedure: ['Ensure the subject is at rest and measure the resting pulse rate for 60 seconds.', 'Select the fitness level of the subject.', 'Choose an exercise (Running, Jumping Jacks, Skipping) and a duration.', 'Perform the exercise and immediately measure the post-exercise pulse rate.', 'Observe the pulse graph and record data in the observation table.', 'Monitor the recovery time until pulse returns to the resting rate.'],
-      precautions: ['Ensure exact finger placement on the radial artery (wrist) or carotid artery (neck).', 'Do not press too hard while feeling the pulse.', 'Count accurately or use the auto-calculation feature.'],
-      conclusion: 'Exercise increases the body\'s demand for oxygen and energy, causing the heart to pump blood faster, thus increasing the pulse rate. Faster recovery indicates a higher fitness level.'
+      "id": "pulse_rate_experiment",
+      "title": "Measurement of Pulse Rate",
+      "description": "Measure pulse rate before and after different exercises to understand cardiovascular response.",
+      "icon": "🫀",
+      "iconBg": "rgba(239, 68, 68, 0.15)",
+      "iconColor": "#ef4444",
+      "aim": "To measure the pulse rate at rest and observe the effect of different physical exercises on the pulse rate and recovery time.",
+      "apparatus": [
+        "Stopwatch / Timer",
+        "Human subject (interactive model)",
+        "Virtual Pulse Monitor"
+      ],
+      "procedure": [
+        "Ensure the subject is at rest and measure the resting pulse rate for 60 seconds.",
+        "Select the fitness level of the subject.",
+        "Choose an exercise (Running, Jumping Jacks, Skipping) and a duration.",
+        "Perform the exercise and immediately measure the post-exercise pulse rate.",
+        "Observe the pulse graph and record data in the observation table.",
+        "Monitor the recovery time until pulse returns to the resting rate."
+      ],
+      "precautions": [
+        "Ensure exact finger placement on the radial artery (wrist) or carotid artery (neck).",
+        "Do not press too hard while feeling the pulse.",
+        "Count accurately or use the auto-calculation feature."
+      ],
+      "conclusion": "Exercise increases the body's demand for oxygen and energy, causing the heart to pump blood faster, thus increasing the pulse rate. Faster recovery indicates a higher fitness level."
     },
     {
-      id: 'heart_3d_explorer',
-      title: '3D Human Heart Explorer',
-      description: 'Interactive 3D dissection, labelled anatomy, and blood flow simulation of the human heart.',
-      icon: '🫀',
-      iconBg: 'rgba(220, 38, 38, 0.15)',
-      iconColor: '#dc2626',
-      aim: 'To study the external and internal structure of the human heart, understand the four chambers, valves, and trace the path of blood through pulmonary and systemic circulation.',
-      apparatus: ['3D Heart Model (virtual)', 'Interactive dissection tools', 'Blood flow particle simulator', 'Labelled anatomy overlay'],
-      procedure: ['Rotate and zoom the 3D heart model to observe external anatomy.', 'Enable labels to identify the four chambers, major vessels, and valves.', 'Activate Dissection Mode to reveal internal structures and the septum.', 'Enable Blood Flow mode to trace oxygenated (red) and deoxygenated (blue) blood paths.', 'Use X-Ray mode for a semi-transparent view of all structures.', 'Take the quiz to test your knowledge of heart anatomy.'],
-      precautions: ['Observe the thickness difference between left and right ventricle walls.', 'Note the direction of blood flow through each valve.', 'Understand why the septum prevents mixing of oxygenated and deoxygenated blood.'],
-      conclusion: 'The human heart is a four-chambered organ that acts as a double pump. The right side handles deoxygenated blood (to lungs), and the left side handles oxygenated blood (to body). Valves ensure unidirectional flow.'
+      "id": "heart_3d_explorer",
+      "title": "3D Human Heart Explorer",
+      "description": "Interactive 3D dissection, labelled anatomy, and blood flow simulation of the human heart.",
+      "icon": "🫀",
+      "iconBg": "rgba(220, 38, 38, 0.15)",
+      "iconColor": "#dc2626",
+      "aim": "To study the external and internal structure of the human heart, understand the four chambers, valves, and trace the path of blood through pulmonary and systemic circulation.",
+      "apparatus": [
+        "3D Heart Model (virtual)",
+        "Interactive dissection tools",
+        "Blood flow particle simulator",
+        "Labelled anatomy overlay"
+      ],
+      "procedure": [
+        "Rotate and zoom the 3D heart model to observe external anatomy.",
+        "Enable labels to identify the four chambers, major vessels, and valves.",
+        "Activate Dissection Mode to reveal internal structures and the septum.",
+        "Enable Blood Flow mode to trace oxygenated (red) and deoxygenated (blue) blood paths.",
+        "Use X-Ray mode for a semi-transparent view of all structures.",
+        "Take the quiz to test your knowledge of heart anatomy."
+      ],
+      "precautions": [
+        "Observe the thickness difference between left and right ventricle walls.",
+        "Note the direction of blood flow through each valve.",
+        "Understand why the septum prevents mixing of oxygenated and deoxygenated blood."
+      ],
+      "conclusion": "The human heart is a four-chambered organ that acts as a double pump. The right side handles deoxygenated blood (to lungs), and the left side handles oxygenated blood (to body). Valves ensure unidirectional flow."
     }
   ]
 }

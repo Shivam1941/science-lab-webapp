@@ -32,9 +32,9 @@ const TRANSLATIONS = {
     physicsDesc: 'Circuits, pendulums, optics, motion & more',
     chemistryDesc: 'pH, reactions, sublimation, acids & solutions',
     biologyDesc: 'Cells, stomata, respiration, reproduction',
-    physicsCount: '11 Experiments',
-    chemistryCount: '9 Experiments',
-    biologyCount: '5 Experiments',
+    physicsCount: '16 Experiments',
+    chemistryCount: '13 Experiments',
+    biologyCount: '11 Experiments',
     /* Stats */
     statExperiments: 'Experiments',
     statSubjects: 'Subjects',
@@ -346,7 +346,10 @@ function renderDashboard() {
     const countEl = document.getElementById(`${subj}-count`);
     if (nameEl) nameEl.textContent = t(subj);
     if (descEl) descEl.textContent = t(`${subj}Desc`);
-    if (countEl) countEl.textContent = t(`${subj}Count`);
+    if (countEl) {
+      const count = window.EXPERIMENTS && window.EXPERIMENTS[subj] ? window.EXPERIMENTS[subj].length : 0;
+      countEl.textContent = `${count} ${t('statExperiments')}`;
+    }
   });
 
   // Stats

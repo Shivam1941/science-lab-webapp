@@ -5,130 +5,133 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Chemistry Experiments | Virtual Science Lab</title>
-  <meta name="description" content="Interactive chemistry virtual lab experiments." />
+  <meta name="description" content="Interactive chemistry virtual lab experiments for CBSE students." />
+  <link rel="canonical" href="https://schooluplab.com/experiments/chemistry.html" />
+  <meta property="og:title" content="Chemistry Experiments | Virtual Science Lab" />
+  <meta property="og:description" content="Interactive chemistry virtual lab experiments for CBSE students." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://schooluplab.com/experiments/chemistry.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/assets/css/styles.css" />
 </head>
-<body data-theme="dark">
+<body>
   <div id="navbar-container"></div>
   <main class="main-container" id="app-root">
-    <div id="view-subject" style="display:none;"></div>
-    <section class="seo-subject" style="padding: 40px 20px; max-width: 850px; margin: 0 auto; min-height:80vh;">
-      <button onclick="window.location.href='/index.html'" style="background:transparent; border:none; color:var(--text-secondary); cursor:pointer; font-family:'Inter', sans-serif; font-size:14px; margin-bottom:20px;">
-        <span style="margin-right:8px;">←</span> Back to Dashboard
-      </button>
-      <h1 style="font-family:'Space Grotesk', sans-serif; text-transform:capitalize; font-size:36px; margin-bottom:10px;">chemistry Experiments</h1>
-      <p style="color:var(--text-secondary); margin-bottom:40px; font-size:16px;">Explore all <strong>13</strong> interactive chemistry experiments for CBSE curriculum.</p>
-      
-    <a href="/experiments/chemistry/ph_scale.html" style="display:block; text-decoration:none; color:inherit; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.1); padding:20px; border-radius:12px; margin-bottom:16px; cursor:pointer;" onmouseover="this.style.background='rgba(255,255,255,0.07)'" onmouseout="this.style.background='rgba(255,255,255,0.03)'">
-      <div style="font-size:32px; display:inline-block; vertical-align:middle; margin-right:16px; background:rgba(6, 182, 212, 0.15); padding:10px; border-radius:8px;">🧫</div>
-      <div style="display:inline-block; vertical-align:middle;">
-        <h2 style="margin:0; font-family:'Space Grotesk', sans-serif; font-size:20px; color:var(--chemistry-primary, var(--text-primary));">pH Scale & Indicators</h2>
-        <p style="margin:4px 0 0; color:var(--text-secondary); font-size:14px;">Measure pH of various solutions using a digital pH meter and indicator colours.</p>
+    <section class="seo-subject" style="padding: 40px 0; width: 100%; margin: 0 auto; min-height:80vh;">
+      <a href="/index.html" class="back-btn" style="display:inline-flex;text-decoration:none;margin-bottom:24px;"><span class="back-arrow">←</span> Back to Dashboard</a>
+      <h1 style="font-family:'Space Grotesk', sans-serif; text-transform:capitalize; font-size:42px; margin-bottom:10px;">Chemistry Experiments</h1>
+      <p style="color:var(--text-secondary); margin-bottom:36px; font-size:16px; line-height:1.7;">Explore all <strong>13</strong> interactive chemistry experiments for the CBSE science curriculum.</p>
+      <div class="exp-list">
+        <a href="/experiments/chemistry/ph_scale.html" class="exp-list-item" style="text-decoration:none;color:inherit;">
+          <div class="exp-item-icon" style="background:rgba(6, 182, 212, 0.15)"><span>🧫</span></div>
+          <div class="exp-item-info">
+            <h2 class="exp-item-title" style="margin:0;">pH Scale &amp; Indicators</h2>
+            <p class="exp-item-desc">Measure pH of various solutions using a digital pH meter and indicator colours.</p>
+          </div>
+          <span class="exp-item-arrow">→</span>
+        </a>
+        <a href="/experiments/chemistry/sublimation_ammonium_chloride.html" class="exp-list-item" style="text-decoration:none;color:inherit;">
+          <div class="exp-item-icon" style="background:rgba(139, 92, 246, 0.15)"><span>🔥</span></div>
+          <div class="exp-item-info">
+            <h2 class="exp-item-title" style="margin:0;">Sublimation of NH₄Cl</h2>
+            <p class="exp-item-desc">Separate ammonium chloride from sand by sublimation with animated vapor simulation.</p>
+          </div>
+          <span class="exp-item-arrow">→</span>
+        </a>
+        <a href="/experiments/chemistry/reaction_lab.html" class="exp-list-item" style="text-decoration:none;color:inherit;">
+          <div class="exp-item-icon" style="background:rgba(14, 165, 233, 0.15)"><span>⚗️</span></div>
+          <div class="exp-item-info">
+            <h2 class="exp-item-title" style="margin:0;">Chemical Reactions Lab</h2>
+            <p class="exp-item-desc">Observe different types of chemical reactions: combination, decomposition, displacement.</p>
+          </div>
+          <span class="exp-item-arrow">→</span>
+        </a>
+        <a href="/experiments/chemistry/solutions_colloids_suspensions.html" class="exp-list-item" style="text-decoration:none;color:inherit;">
+          <div class="exp-item-icon" style="background:rgba(6, 182, 212, 0.15)"><span>💧</span></div>
+          <div class="exp-item-info">
+            <h2 class="exp-item-title" style="margin:0;">Solutions, Colloids &amp; Suspensions</h2>
+            <p class="exp-item-desc">Compare true solutions, colloids, and suspensions using the Tyndall effect.</p>
+          </div>
+          <span class="exp-item-arrow">→</span>
+        </a>
+        <a href="/experiments/chemistry/chemical_reactivity_workstation.html" class="exp-list-item" style="text-decoration:none;color:inherit;">
+          <div class="exp-item-icon" style="background:rgba(20, 184, 166, 0.15)"><span>🔬</span></div>
+          <div class="exp-item-info">
+            <h2 class="exp-item-title" style="margin:0;">Chemical Reactivity Workstation</h2>
+            <p class="exp-item-desc">Test reactivity of different metals with acids, water, and salt solutions.</p>
+          </div>
+          <span class="exp-item-arrow">→</span>
+        </a>
+        <a href="/experiments/chemistry/metal_reactivity_matrix.html" class="exp-list-item" style="text-decoration:none;color:inherit;">
+          <div class="exp-item-icon" style="background:rgba(15, 118, 110, 0.15)"><span>📊</span></div>
+          <div class="exp-item-info">
+            <h2 class="exp-item-title" style="margin:0;">Metal Reactivity Matrix</h2>
+            <p class="exp-item-desc">Compare displacement reactions between different metals and salt solutions in a matrix.</p>
+          </div>
+          <span class="exp-item-arrow">→</span>
+        </a>
+        <a href="/experiments/chemistry/ethanoic_acid_properties.html" class="exp-list-item" style="text-decoration:none;color:inherit;">
+          <div class="exp-item-icon" style="background:rgba(14, 165, 233, 0.15)"><span>🧪</span></div>
+          <div class="exp-item-info">
+            <h2 class="exp-item-title" style="margin:0;">Properties of Ethanoic Acid</h2>
+            <p class="exp-item-desc">Study physical and chemical properties of acetic acid including esterification.</p>
+          </div>
+          <span class="exp-item-arrow">→</span>
+        </a>
+        <a href="/experiments/chemistry/soap_capacity_hard_water.html" class="exp-list-item" style="text-decoration:none;color:inherit;">
+          <div class="exp-item-icon" style="background:rgba(37, 99, 235, 0.15)"><span>🫧</span></div>
+          <div class="exp-item-info">
+            <h2 class="exp-item-title" style="margin:0;">Soap in Hard vs Soft Water</h2>
+            <p class="exp-item-desc">Compare the cleaning capacity of soap in hard water vs soft water.</p>
+          </div>
+          <span class="exp-item-arrow">→</span>
+        </a>
+        <a href="/experiments/chemistry/filtration_technique.html" class="exp-list-item" style="text-decoration:none;color:inherit;">
+          <div class="exp-item-icon" style="background:rgba(14, 165, 233, 0.15)"><span>⚗️</span></div>
+          <div class="exp-item-info">
+            <h2 class="exp-item-title" style="margin:0;">Filtration</h2>
+            <p class="exp-item-desc">Separate an insoluble solid from a liquid using a filter funnel and paper.</p>
+          </div>
+          <span class="exp-item-arrow">→</span>
+        </a>
+        <a href="/experiments/chemistry/evaporation_technique.html" class="exp-list-item" style="text-decoration:none;color:inherit;">
+          <div class="exp-item-icon" style="background:rgba(239, 68, 68, 0.15)"><span>♨️</span></div>
+          <div class="exp-item-info">
+            <h2 class="exp-item-title" style="margin:0;">Evaporation</h2>
+            <p class="exp-item-desc">Separate a dissolved solid from a liquid by heating and evaporating the solvent.</p>
+          </div>
+          <span class="exp-item-arrow">→</span>
+        </a>
+        <a href="/experiments/chemistry/distillation_technique.html" class="exp-list-item" style="text-decoration:none;color:inherit;">
+          <div class="exp-item-icon" style="background:rgba(59, 130, 246, 0.15)"><span>💧</span></div>
+          <div class="exp-item-info">
+            <h2 class="exp-item-title" style="margin:0;">Distillation</h2>
+            <p class="exp-item-desc">Separate miscible liquids with different boiling points or purify a liquid containing dissolved impurities.</p>
+          </div>
+          <span class="exp-item-arrow">→</span>
+        </a>
+        <a href="/experiments/chemistry/fractional_distillation.html" class="exp-list-item" style="text-decoration:none;color:inherit;">
+          <div class="exp-item-icon" style="background:rgba(168, 85, 247, 0.15)"><span>🌡️</span></div>
+          <div class="exp-item-info">
+            <h2 class="exp-item-title" style="margin:0;">Fractional Distillation</h2>
+            <p class="exp-item-desc">Separate a mixture of miscible liquids with closely related boiling points using a fractionating column.</p>
+          </div>
+          <span class="exp-item-arrow">→</span>
+        </a>
+        <a href="/experiments/chemistry/chromatography_technique.html" class="exp-list-item" style="text-decoration:none;color:inherit;">
+          <div class="exp-item-icon" style="background:rgba(16, 185, 129, 0.15)"><span>📜</span></div>
+          <div class="exp-item-info">
+            <h2 class="exp-item-title" style="margin:0;">Paper Chromatography</h2>
+            <p class="exp-item-desc">Separate the different colored dyes present in black ink using a solvent and filter paper.</p>
+          </div>
+          <span class="exp-item-arrow">→</span>
+        </a>
       </div>
-    </a>
-  
-    <a href="/experiments/chemistry/sublimation_ammonium_chloride.html" style="display:block; text-decoration:none; color:inherit; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.1); padding:20px; border-radius:12px; margin-bottom:16px; cursor:pointer;" onmouseover="this.style.background='rgba(255,255,255,0.07)'" onmouseout="this.style.background='rgba(255,255,255,0.03)'">
-      <div style="font-size:32px; display:inline-block; vertical-align:middle; margin-right:16px; background:rgba(139, 92, 246, 0.15); padding:10px; border-radius:8px;">🔥</div>
-      <div style="display:inline-block; vertical-align:middle;">
-        <h2 style="margin:0; font-family:'Space Grotesk', sans-serif; font-size:20px; color:var(--chemistry-primary, var(--text-primary));">Sublimation of NH₄Cl</h2>
-        <p style="margin:4px 0 0; color:var(--text-secondary); font-size:14px;">Separate ammonium chloride from sand by sublimation with animated vapor simulation.</p>
-      </div>
-    </a>
-  
-    <a href="/experiments/chemistry/reaction_lab.html" style="display:block; text-decoration:none; color:inherit; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.1); padding:20px; border-radius:12px; margin-bottom:16px; cursor:pointer;" onmouseover="this.style.background='rgba(255,255,255,0.07)'" onmouseout="this.style.background='rgba(255,255,255,0.03)'">
-      <div style="font-size:32px; display:inline-block; vertical-align:middle; margin-right:16px; background:rgba(14, 165, 233, 0.15); padding:10px; border-radius:8px;">⚗️</div>
-      <div style="display:inline-block; vertical-align:middle;">
-        <h2 style="margin:0; font-family:'Space Grotesk', sans-serif; font-size:20px; color:var(--chemistry-primary, var(--text-primary));">Chemical Reactions Lab</h2>
-        <p style="margin:4px 0 0; color:var(--text-secondary); font-size:14px;">Observe different types of chemical reactions: combination, decomposition, displacement.</p>
-      </div>
-    </a>
-  
-    <a href="/experiments/chemistry/solutions_colloids_suspensions.html" style="display:block; text-decoration:none; color:inherit; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.1); padding:20px; border-radius:12px; margin-bottom:16px; cursor:pointer;" onmouseover="this.style.background='rgba(255,255,255,0.07)'" onmouseout="this.style.background='rgba(255,255,255,0.03)'">
-      <div style="font-size:32px; display:inline-block; vertical-align:middle; margin-right:16px; background:rgba(6, 182, 212, 0.15); padding:10px; border-radius:8px;">💧</div>
-      <div style="display:inline-block; vertical-align:middle;">
-        <h2 style="margin:0; font-family:'Space Grotesk', sans-serif; font-size:20px; color:var(--chemistry-primary, var(--text-primary));">Solutions, Colloids & Suspensions</h2>
-        <p style="margin:4px 0 0; color:var(--text-secondary); font-size:14px;">Compare true solutions, colloids, and suspensions using the Tyndall effect.</p>
-      </div>
-    </a>
-  
-    <a href="/experiments/chemistry/chemical_reactivity_workstation.html" style="display:block; text-decoration:none; color:inherit; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.1); padding:20px; border-radius:12px; margin-bottom:16px; cursor:pointer;" onmouseover="this.style.background='rgba(255,255,255,0.07)'" onmouseout="this.style.background='rgba(255,255,255,0.03)'">
-      <div style="font-size:32px; display:inline-block; vertical-align:middle; margin-right:16px; background:rgba(20, 184, 166, 0.15); padding:10px; border-radius:8px;">🔬</div>
-      <div style="display:inline-block; vertical-align:middle;">
-        <h2 style="margin:0; font-family:'Space Grotesk', sans-serif; font-size:20px; color:var(--chemistry-primary, var(--text-primary));">Chemical Reactivity Workstation</h2>
-        <p style="margin:4px 0 0; color:var(--text-secondary); font-size:14px;">Test reactivity of different metals with acids, water, and salt solutions.</p>
-      </div>
-    </a>
-  
-    <a href="/experiments/chemistry/metal_reactivity_matrix.html" style="display:block; text-decoration:none; color:inherit; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.1); padding:20px; border-radius:12px; margin-bottom:16px; cursor:pointer;" onmouseover="this.style.background='rgba(255,255,255,0.07)'" onmouseout="this.style.background='rgba(255,255,255,0.03)'">
-      <div style="font-size:32px; display:inline-block; vertical-align:middle; margin-right:16px; background:rgba(15, 118, 110, 0.15); padding:10px; border-radius:8px;">📊</div>
-      <div style="display:inline-block; vertical-align:middle;">
-        <h2 style="margin:0; font-family:'Space Grotesk', sans-serif; font-size:20px; color:var(--chemistry-primary, var(--text-primary));">Metal Reactivity Matrix</h2>
-        <p style="margin:4px 0 0; color:var(--text-secondary); font-size:14px;">Compare displacement reactions between different metals and salt solutions in a matrix.</p>
-      </div>
-    </a>
-  
-    <a href="/experiments/chemistry/ethanoic_acid_properties.html" style="display:block; text-decoration:none; color:inherit; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.1); padding:20px; border-radius:12px; margin-bottom:16px; cursor:pointer;" onmouseover="this.style.background='rgba(255,255,255,0.07)'" onmouseout="this.style.background='rgba(255,255,255,0.03)'">
-      <div style="font-size:32px; display:inline-block; vertical-align:middle; margin-right:16px; background:rgba(14, 165, 233, 0.15); padding:10px; border-radius:8px;">🧪</div>
-      <div style="display:inline-block; vertical-align:middle;">
-        <h2 style="margin:0; font-family:'Space Grotesk', sans-serif; font-size:20px; color:var(--chemistry-primary, var(--text-primary));">Properties of Ethanoic Acid</h2>
-        <p style="margin:4px 0 0; color:var(--text-secondary); font-size:14px;">Study physical and chemical properties of acetic acid including esterification.</p>
-      </div>
-    </a>
-  
-    <a href="/experiments/chemistry/soap_capacity_hard_water.html" style="display:block; text-decoration:none; color:inherit; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.1); padding:20px; border-radius:12px; margin-bottom:16px; cursor:pointer;" onmouseover="this.style.background='rgba(255,255,255,0.07)'" onmouseout="this.style.background='rgba(255,255,255,0.03)'">
-      <div style="font-size:32px; display:inline-block; vertical-align:middle; margin-right:16px; background:rgba(37, 99, 235, 0.15); padding:10px; border-radius:8px;">🫧</div>
-      <div style="display:inline-block; vertical-align:middle;">
-        <h2 style="margin:0; font-family:'Space Grotesk', sans-serif; font-size:20px; color:var(--chemistry-primary, var(--text-primary));">Soap in Hard vs Soft Water</h2>
-        <p style="margin:4px 0 0; color:var(--text-secondary); font-size:14px;">Compare the cleaning capacity of soap in hard water vs soft water.</p>
-      </div>
-    </a>
-  
-    <h2 style="font-family:'Space Grotesk', sans-serif; font-size:24px; margin: 40px 0 20px; color:var(--text-primary);">Separation Techniques</h2>
-
-    <a href="/experiments/chemistry/filtration_technique.html" style="display:block; text-decoration:none; color:inherit; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.1); padding:20px; border-radius:12px; margin-bottom:16px; cursor:pointer;" onmouseover="this.style.background='rgba(255,255,255,0.07)'" onmouseout="this.style.background='rgba(255,255,255,0.03)'">
-      <div style="font-size:32px; display:inline-block; vertical-align:middle; margin-right:16px; background:rgba(14, 165, 233, 0.15); padding:10px; border-radius:8px;">⚗️</div>
-      <div style="display:inline-block; vertical-align:middle;">
-        <h2 style="margin:0; font-family:'Space Grotesk', sans-serif; font-size:20px; color:var(--chemistry-primary, var(--text-primary));">Filtration</h2>
-        <p style="margin:4px 0 0; color:var(--text-secondary); font-size:14px;">Separate an insoluble solid from a liquid using a filter funnel and paper.</p>
-      </div>
-    </a>
-  
-    <a href="/experiments/chemistry/evaporation_technique.html" style="display:block; text-decoration:none; color:inherit; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.1); padding:20px; border-radius:12px; margin-bottom:16px; cursor:pointer;" onmouseover="this.style.background='rgba(255,255,255,0.07)'" onmouseout="this.style.background='rgba(255,255,255,0.03)'">
-      <div style="font-size:32px; display:inline-block; vertical-align:middle; margin-right:16px; background:rgba(239, 68, 68, 0.15); padding:10px; border-radius:8px;">♨️</div>
-      <div style="display:inline-block; vertical-align:middle;">
-        <h2 style="margin:0; font-family:'Space Grotesk', sans-serif; font-size:20px; color:var(--chemistry-primary, var(--text-primary));">Evaporation</h2>
-        <p style="margin:4px 0 0; color:var(--text-secondary); font-size:14px;">Separate a dissolved solid from a liquid by heating and evaporating the solvent.</p>
-      </div>
-    </a>
-  
-    <a href="/experiments/chemistry/distillation_technique.html" style="display:block; text-decoration:none; color:inherit; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.1); padding:20px; border-radius:12px; margin-bottom:16px; cursor:pointer;" onmouseover="this.style.background='rgba(255,255,255,0.07)'" onmouseout="this.style.background='rgba(255,255,255,0.03)'">
-      <div style="font-size:32px; display:inline-block; vertical-align:middle; margin-right:16px; background:rgba(59, 130, 246, 0.15); padding:10px; border-radius:8px;">💧</div>
-      <div style="display:inline-block; vertical-align:middle;">
-        <h2 style="margin:0; font-family:'Space Grotesk', sans-serif; font-size:20px; color:var(--chemistry-primary, var(--text-primary));">Distillation</h2>
-        <p style="margin:4px 0 0; color:var(--text-secondary); font-size:14px;">Separate miscible liquids with different boiling points or purify a liquid containing dissolved impurities.</p>
-      </div>
-    </a>
-  
-    <a href="/experiments/chemistry/fractional_distillation.html" style="display:block; text-decoration:none; color:inherit; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.1); padding:20px; border-radius:12px; margin-bottom:16px; cursor:pointer;" onmouseover="this.style.background='rgba(255,255,255,0.07)'" onmouseout="this.style.background='rgba(255,255,255,0.03)'">
-      <div style="font-size:32px; display:inline-block; vertical-align:middle; margin-right:16px; background:rgba(168, 85, 247, 0.15); padding:10px; border-radius:8px;">🌡️</div>
-      <div style="display:inline-block; vertical-align:middle;">
-        <h2 style="margin:0; font-family:'Space Grotesk', sans-serif; font-size:20px; color:var(--chemistry-primary, var(--text-primary));">Fractional Distillation</h2>
-        <p style="margin:4px 0 0; color:var(--text-secondary); font-size:14px;">Separate a mixture of miscible liquids with closely related boiling points using a fractionating column.</p>
-      </div>
-    </a>
-  
-    <a href="/experiments/chemistry/chromatography_technique.html" style="display:block; text-decoration:none; color:inherit; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.1); padding:20px; border-radius:12px; margin-bottom:16px; cursor:pointer;" onmouseover="this.style.background='rgba(255,255,255,0.07)'" onmouseout="this.style.background='rgba(255,255,255,0.03)'">
-      <div style="font-size:32px; display:inline-block; vertical-align:middle; margin-right:16px; background:rgba(16, 185, 129, 0.15); padding:10px; border-radius:8px;">📜</div>
-      <div style="display:inline-block; vertical-align:middle;">
-        <h2 style="margin:0; font-family:'Space Grotesk', sans-serif; font-size:20px; color:var(--chemistry-primary, var(--text-primary));">Paper Chromatography</h2>
-        <p style="margin:4px 0 0; color:var(--text-secondary); font-size:14px;">Separate the different colored dyes present in black ink using a solvent and filter paper.</p>
-      </div>
-    </a>
-  
     </section>
-  
   </main>
-  
+
   <script src="/assets/js/navbar.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
   <script src="/assets/js/gamification.js"></script>
@@ -141,49 +144,5 @@
   <script src="/assets/js/i18n_experiments_mr.js"></script>
   <script src="/assets/js/viva_system.js"></script>
   <script src="/assets/js/app.js"></script>
-  
-  <!-- All experiments attached so simulation logic is available -->
-  <script src="/experiments/physics/ohms_law.js"></script>
-  <script src="/experiments/physics/simple_pendulum.js"></script>
-  <script src="/experiments/physics/reflection_of_light.js"></script>
-  <script src="/experiments/physics/lens_formation.js"></script>
-  <script src="/experiments/physics/motion_simulator.js"></script>
-  <script src="/experiments/physics/refraction_dispersion_prism.js"></script>
-  <script src="/experiments/physics/virtual_breadboard.js"></script>
-  <script src="/experiments/physics/lateral_displacement_refraction.js"></script>
-  <script src="/experiments/physics/buoyancy_density_lab.js"></script>
-  <script src="/experiments/physics/pulse_velocity_experiment.js"></script>
-  <script src="/experiments/physics/sound_reflection_workstation.js"></script>
-  <script src="/experiments/physics/magnetic_field_sim.js"></script>
-  <script src="/experiments/physics/heat_transfer_sim.js"></script>
-  <script src="/experiments/physics/energy_conservation.js"></script>
-  <script src="/experiments/physics/vernier_caliper.js"></script>
-  <script src="/experiments/chemistry/ph_scale.js"></script>
-  <script src="/experiments/chemistry/sublimation_ammonium_chloride.js"></script>
-  <script src="/experiments/chemistry/reaction_lab.js"></script>
-  <script src="/experiments/chemistry/solutions_colloids_suspensions.js"></script>
-  <script src="/experiments/chemistry/chemical_reactivity_workstation.js"></script>
-  <script src="/experiments/chemistry/metal_reactivity_matrix.js"></script>
-  <script src="/experiments/chemistry/ethanoic_acid_properties.js"></script>
-  <script src="/experiments/chemistry/soap_capacity_hard_water.js"></script>
-  <script src="/experiments/chemistry/filtration_technique.js"></script>
-  <script src="/experiments/chemistry/evaporation_technique.js"></script>
-  <script src="/experiments/chemistry/distillation_technique.js"></script>
-  <script src="/experiments/chemistry/fractional_distillation.js"></script>
-  <script src="/experiments/chemistry/chromatography_technique.js"></script>
-  <script src="/experiments/biology/plant_cell_explorer.js"></script>
-  <script src="/experiments/biology/cell_structure.js"></script>
-  <script src="/experiments/biology/microscopic_stomata.js"></script>
-  <script src="/experiments/biology/respiration_lab.js"></script>
-  <script src="/experiments/biology/asexual_reproduction.js"></script>
-  <script src="/experiments/biology/virtual_seed_dissection.js"></script>
-  <script src="/experiments/biology/photosynthesis_starch_test.js"></script>
-  <script src="/experiments/biology/water_transport_xylem.js"></script>
-  <script src="/experiments/biology/bread_mold_fungus.js"></script>
-  <script src="/experiments/biology/pulse_rate_experiment.js"></script>
-  <script src="/experiments/biology/heart_3d_explorer.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
-  <script src="/experiments/biology/heart_3d.js"></script>
 </body>
 </html>
